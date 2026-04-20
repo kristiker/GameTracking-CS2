@@ -18545,6 +18545,7 @@ GPUVendor
 GQ@33S@
 GRAPHICSTRING
 GRENADES
+GROUP
 GSync
 GSyncHelpLink
 GSyncPanel
@@ -25738,6 +25739,7 @@ TestMusicVolume
 TestScriptManager
 TestSpread
 Test_CheckPoint 
+Text
 TextAngleOverride
 TextButton
 TextCursorColor
@@ -26438,6 +26440,7 @@ VGG@
 VGuiPaintSurfaceLayout
 VIDEOTEXSTRING
 VIEWEFFECTS_SAVE_RESTORE_VERSION
+VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM Did not start!\n

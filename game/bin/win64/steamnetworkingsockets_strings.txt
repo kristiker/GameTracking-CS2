@@ -4916,6 +4916,7 @@ Using cert from SDR_PRIVATE_KEY and SDR_CERT environment vars\n
 Ut]<E
 V22dN::t
 VIDEOTEXSTRING
+VISIBLE
 VISIBLESTRING
 Valve.SteamNetworkingSockets
 Verify failure\n

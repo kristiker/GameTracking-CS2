@@ -1343,6 +1343,7 @@ Blackwell
 BlockMatchSamplerQCOM
 BlockMatchTextureQCOM
 BlockingPipesINTEL
+Bottom
 BoundImageNV
 BoundSamplerNV
 BranchConditional
@@ -4009,6 +4010,7 @@ Rendong Liang
 Rendong Liang spq
 ReorderThreadWithHintNV
 ReorderThreadWithHitObjectNV
+Repeat
 RepeatMirrored
 ReplicatedCompositesEXT
 ReportIntersectionKHR

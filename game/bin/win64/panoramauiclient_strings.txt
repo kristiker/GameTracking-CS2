@@ -1471,6 +1471,7 @@ TabButton
 TabContents
 TabForward
 TabSelected
+Text
 TextButton
 TextEntry
 TextEntryAutocomplete

@@ -1468,6 +1468,7 @@ Borders
 Borders, background
 Both
 Both types:
+Bottom
 Bottom-left
 Bottom-right
 Bound Last Frame
@@ -4024,6 +4025,7 @@ OutputToTestEngine
 OutputVB
 Outputdepth
 Outputs
+Outside
 Overlap Mode
 Overlapping
 OverlayProjectionDirection
@@ -5145,6 +5147,7 @@ Testing how various types of items are interacting with the IsItemXXX functions.
 Tex Mem
 Tex: %dx%d
 TexID = %s, BackendUserData = %p
+Text
 Text Baseline Alignment
 Text Clipping
 Text Filter

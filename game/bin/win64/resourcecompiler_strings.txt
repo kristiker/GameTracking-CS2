@@ -21711,6 +21711,7 @@ Bh;+j
 Bias
 Bias to Center
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
+Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 BinaryBlobArg
@@ -30802,6 +30803,7 @@ Path Overflow, must be less than 260 characters.
 Path Parameter
 Path Type
 Path: %s
+PathEntity
 PathParameter
 Pathing Ceofficients
 Pathing Direction
@@ -30986,6 +30988,7 @@ Point Names
 Point Type
 Point bone's X axis at their parent or children
 Point is a single vertex.
+PointEntity
 PointTemplate
 Point_%i
 Pole Vector for Axis
@@ -31365,6 +31368,7 @@ RFC 5639 curve over a 512 bit prime field
 RFCY
 RGBM
 RH/Y
+RIGHT
 RIGID
 RIPEMD160
 RMS Time MS
@@ -31662,6 +31666,7 @@ Render internally at this size for effective super-sampling.
 Render mesh markup data
 Render this object with other dynamic objects
 Render to Cubemaps
+Render unlit maps as fullbright
 Render with Dynamic Objects
 RenderMesh
 RenderMesh List
@@ -31846,6 +31851,7 @@ Reverse
 Reverse Preview Unit
 Reverse Properties Completed after %d iterations\n
 Reverse Properties Iteration ----------\n
+Reverse Y
 Reverse the direction of the animation.  This happens after the frame range is truncated.
 Revolute joint.
 Rg4I
@@ -32654,6 +32660,7 @@ Soft Link
 Softbody
 Software
 Solid Collision at Zero Weight
+SolidEntity
 Solved
 Solved Foot 
 Solved Knee
@@ -33239,6 +33246,7 @@ TexCoordUV2FromUV1
 TexCoordUV2FromUV1_Center
 TexCoordUV2FromUV1_Rotation
 Texcoord0: %s\n
+Text
 Text content inside of element is not permitted.
 Texture %s doesn't have mipmaps down to %i, loaded %ix%i \n
 Texture Alignment
@@ -34090,6 +34098,7 @@ VFX_RULE_UNKNOWN
 VGCXDATA compile failed!
 VGG@
 VIDEOTEXSTRING
+VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM%G]f
@@ -35842,6 +35851,7 @@ bLockBlendOnReset
 bLockToPath
 bLockWhenWaning
 bLoop
+bMoveSelectedEnabled
 bN.l
 bOrientAlongLine
 bPb:L7X)
@@ -35852,6 +35862,8 @@ bResetOnChange
 bSetEnabled
 bSh&+
 bShaderBlended
+bShowSelectionModeChangeNotificationIcons
+bShowToolChangeNotificationIcons
 bStartEnabled
 bSyncCycles
 bSyncCyclesOnChange
@@ -35859,6 +35871,7 @@ bUseAcceleraion
 bUseFixedUpDirection
 bUseProjectedDistance
 bValue
+bViewFocusStealing
 bV}TS
 bWantsFBCopyTexture
 b\fzUkm

@@ -882,6 +882,7 @@ Arrow
 AutoHideWidget
 B8{o
 Background
+Bottom
 C%br
 CDockWidget*
 CbWG 

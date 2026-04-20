@@ -14787,6 +14787,7 @@ TempLocation
 Temporary Directory
 Teso
 Tests
+Text
 TextAlignmentRole
 TextBrowserInteraction
 TextBypassShaping

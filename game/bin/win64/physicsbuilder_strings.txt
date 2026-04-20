@@ -7267,6 +7267,7 @@ BestQualityScale
 Between the attribute label and editor
 Bias
 Bias to Center
+Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 Bind Current Selection to This Bone
@@ -10045,6 +10046,7 @@ R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
+RIGHT
 ROTATION
 R\fpH
 R_T5Y

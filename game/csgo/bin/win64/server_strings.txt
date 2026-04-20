@@ -18573,6 +18573,7 @@ RIFLE1
 RIFLE2
 RIFLE3
 RIFLE4
+RIGHT
 RIGHTARM
 RIGHTLEG
 RIPEMD160
@@ -18815,6 +18816,7 @@ Removing relationship for lost entity\n
 RenderGameSystem
 RenderOrder
 ReorientThink
+Repeat
 Replaying from %s (%d) pov\n
 ReportEventW
 Reports all extant entities. Optional 2nd arg is a substring of a classname that the list will be filtered by.
@@ -20705,6 +20707,7 @@ Test_CreateEntity( %s ) failed.
 Test_CreateEntity: requires entity classname argument.
 Test_RandomPlayerPosition: no local player entity.
 Testing Area
+Text
 TextureScale
 TextureScroll
 Thaw
@@ -21170,6 +21173,7 @@ VF+c
 VGG@
 VIDEOTEXSTRING
 VIP_ESCAPE
+VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM Did not start!\n

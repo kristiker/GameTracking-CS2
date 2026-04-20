@@ -5473,6 +5473,7 @@ Test Message For Simple Text Attachments\n
 Test Mode Assert True
 Test message with no description present for image attachment\n
 TestCheckpoint: %s
+Text
 Text Data Corrupt
 Text Viewer
 TextureFormat

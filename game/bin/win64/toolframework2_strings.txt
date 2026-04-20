@@ -12348,6 +12348,7 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
+RIGHT
 RMouse
 RMouseDoubleClick
 ROTATION
@@ -12925,6 +12926,7 @@ Test image\n
 Test/example node - has no effect.
 TestNode
 Tetrahedron
+Text
 TextProgramaticallyChanged
 Texture Generator Preview
 Texture Map
