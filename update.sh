@@ -48,6 +48,14 @@ do
 		DUMPER_EXIT_CODE=$?
 	fi
 done <   <(find . -type f -name "shaders_vulkan_dir.vpk" -print0)
+
+while IFS= read -r -d '' file
+do
+	newfile=$(echo "$file" | sed -e 's/_vulkan_[0-9]\+\.vfx$/.slang/g')
+	if [[ "$file" != "$newfile" ]]; then
+		mv "$file" "$newfile"
+	fi
+done <   <(find . -type f -name "*_vulkan_*.vfx" -print0)
 set -e
 
 echo "::endgroup::"
