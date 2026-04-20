@@ -140,7 +140,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tMoitFinal : register(t30, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s18, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0 : register(s18, space1);
 	Texture2D<float4> g_tZeroth_Moment : register(t31, space1);
 	
 	static float4 gl_FragCoord;
@@ -159,9 +159,9 @@ PS
 	void MainPs_inner()
 	{
 	    float2 _13326 = (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy;
-	    float4 _14259 = g_tMoitFinal.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _13326, 0.0f);
+	    float4 _14259 = g_tMoitFinal.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, _13326, 0.0f);
 	    float _21603 = _14259.w + 9.9999997473787516355514526367188e-06f;
-	    float _15899 = 1.0f - exp(-g_tZeroth_Moment.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _13326, 0.0f).x);
+	    float _15899 = 1.0f - exp(-g_tZeroth_Moment.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, _13326, 0.0f).x);
 	    output_0 = float4(float4(_14259.xyz * (_15899 / _21603), _21603).xyz, (_15899 >= 0.99989998340606689453125f) ? 1.0f : _15899);
 	}
 	

@@ -111,7 +111,7 @@ PS
 	// SPIR-V source (820 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	Texture2D<float4> g_tColor : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_20 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 input_1;
@@ -130,7 +130,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = input_1.xyzw * g_tColor.Sample(Filter_20_AddressU_2_AddressV_2, (input_0.xy - 0.5f.xx).xy);
+	    output_0 = input_1.xyzw * g_tColor.Sample(AddressU_2_AddressV_2_Filter_20, (input_0.xy - 0.5f.xx).xy);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

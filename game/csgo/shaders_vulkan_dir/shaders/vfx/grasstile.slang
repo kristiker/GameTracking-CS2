@@ -163,7 +163,7 @@ VS
 	layout(set = 0) uniform _1164 PerViewConstantBufferCsgo_t;
 	
 	layout(set = 0, binding = 30) uniform texture2D g_tDensityArray;
-	layout(set = 0, binding = 14) uniform sampler Filter_0_AddressU_2_AddressV_2;
+	layout(set = 0, binding = 14) uniform sampler AddressU_2_AddressV_2_Filter_0;
 	layout(set = 0, binding = 31) uniform texture2D g_tHeightArray;
 	layout(set = 0, binding = 15) uniform sampler AddressU_2_AddressV_2_Filter_21;
 	layout(set = 0, binding = 32) uniform texture2D g_tSkewBrightness;
@@ -231,7 +231,7 @@ VS
 	    _22101.y = _7707.y;
 	    vec3 _23286 = vec3(256.0 * (_20623 - 0.5), 256.0 * (nInstanceIdx.y - 0.5), textureLod(sampler2D(g_tHeightArray, AddressU_2_AddressV_2_Filter_21), _10547, 0.0).x);
 	    vec4 _13292 = _10881 * 1000000.0;
-	    float _14802 = clamp(dot(textureLod(sampler2D(g_tDensityArray, Filter_0_AddressU_2_AddressV_2), _10547, 0.0).xyzw - _10881, _13292), 0.0, 1.0);
+	    float _14802 = clamp(dot(textureLod(sampler2D(g_tDensityArray, AddressU_2_AddressV_2_Filter_0), _10547, 0.0).xyzw - _10881, _13292), 0.0, 1.0);
 	    float _18203 = saturate(vPositionOs.y * 1000000.0);
 	    float _23404 = _23812.w;
 	    int _23994 = int(_23404);
@@ -315,7 +315,6 @@ PS
 	DynamicComboRule( Allow0( D_BAKED_LIGHTING_FROM_VERTEX_STREAM ) );
 	DynamicComboRule( Allow0( D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer PerLayerConstantBuffer_t < Attribute("PerLayerConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	cbuffer PerViewLightProbeVolumeConstantBuffer_t < Attribute("PerViewLightProbeVolumeConstantBuffer_t"); >;
@@ -367,7 +366,7 @@ PS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (34580 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (34604 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1428
 	{
@@ -394,7 +393,7 @@ PS
 	    _1428 _m0[4];
 	};
 	
-	struct _32
+	struct _2411
 	{
 	    _1428 _m0;
 	    _1428 _m1;
@@ -419,6 +418,7 @@ PS
 	    float4 _m20;
 	    float3 _m21;
 	    float _m22;
+	    _1428 _m23;
 	};
 	
 	static float4 _3;
@@ -432,7 +432,7 @@ PS
 	    float _Globals_1_m2 : packoffset(c6.y);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    int4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c1);
 	    int4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c2);
@@ -484,18 +484,18 @@ PS
 	ByteAddressBuffer g_CullBits : register(t30, space3);
 	ByteAddressBuffer g_BarnLights : register(t31, space3);
 	Texture2D<float4> g_tColor : register(t43, space1);
-	SamplerState Filter_85_MaxAniso_8_AddressU_2_AddressV_2_MipBias_0 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_85_MaxAniso_8_MipBias_0 : register(s14, space1);
 	Texture2D<float4> g_tGrassQuadSpecularArray : register(t44, space1);
-	SamplerState Filter_85_MaxAniso_8_AddressU_2_AddressV_2 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_85_MaxAniso_8 : register(s15, space1);
 	Texture2D<float4> g_tAmbientOcclusion : register(t55, space1);
-	SamplerState AllowGlobalMipBiasOverride_0_Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic : register(s21, space1);
-	SamplerComparisonState AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3 : register(s25, space1);
+	SamplerState AddressU_dynamic_AddressV_dynamic_AllowGlobalMipBiasOverride_0_Filter_255_MaxAniso_1 : register(s21, space1);
+	SamplerComparisonState AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149 : register(s25, space1);
 	Texture2D<float4> g_tShadowDepthBufferDepth : register(t36, space1);
 	Texture2D<float4> g_tParticleShadowBuffer : register(t53, space1);
-	SamplerState AddressU_2_AddressV_2_Filter_21_AllowGlobalMipBiasOverride_0 : register(s19, space1);
+	SamplerState AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21 : register(s19, space1);
 	Texture3D<float4> g_tLightCookieTexture : register(t34, space1);
-	SamplerState Filter_20_AddressU_3_AddressV_3_AddressW_3_BorderColor_0 : register(s24, space1);
-	SamplerState Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0 : register(s18, space1);
+	SamplerState AddressU_3_AddressV_3_AddressW_3_BorderColor_0_Filter_20 : register(s24, space1);
+	SamplerState AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21 : register(s18, space1);
 	TextureCube<float4> g_tFogCubeTexture : register(t42, space1);
 	
 	static float4 gl_FragCoord;
@@ -525,17 +525,17 @@ PS
 	{
 	    float4 _11408 = gl_FragCoord;
 	    _11408.w = 1.0f / _11408.w;
-	    float4 _19372 = g_tColor.Sample(Filter_85_MaxAniso_8_AddressU_2_AddressV_2_MipBias_0, input_2.xy);
+	    float4 _19372 = g_tColor.Sample(AddressU_2_AddressV_2_Filter_85_MaxAniso_8_MipBias_0, input_2.xy);
 	    float _18841 = _19372.w * input_4.w;
 	    float3 _15938 = float4(clamp(_19372.xyz * (dot(sqrt(input_3.xyz), float3(0.300000011920928955078125f, 0.589999973773956298828125f, 0.10999999940395355224609375f)) * 2.0f).xxx, 0.0f.xxx, 1.0f.xxx), _18841).xyz;
-	    float3 _10120 = lerp(_15938, (input_3.xyz * dot(_15938, float3(0.2989999949932098388671875f, 0.58700001239776611328125f, 0.114000000059604644775390625f))) / max(dot(input_3.xyz, float3(0.2989999949932098388671875f, 0.58700001239776611328125f, 0.114000000059604644775390625f)), 9.9999999747524270787835121154785e-07f).xxx, g_tGrassQuadSpecularArray.Sample(Filter_85_MaxAniso_8_AddressU_2_AddressV_2, input_2.xy).y.xxx);
+	    float3 _10120 = lerp(_15938, (input_3.xyz * dot(_15938, float3(0.2989999949932098388671875f, 0.58700001239776611328125f, 0.114000000059604644775390625f))) / max(dot(input_3.xyz, float3(0.2989999949932098388671875f, 0.58700001239776611328125f, 0.114000000059604644775390625f)), 9.9999999747524270787835121154785e-07f).xxx, g_tGrassQuadSpecularArray.Sample(AddressU_2_AddressV_2_Filter_85_MaxAniso_8, input_2.xy).y.xxx);
 	    float4 _17842;
 	    _17842.x = _10120.x;
 	    _17842.y = _10120.y;
 	    _17842.z = _10120.z;
 	    float3 _19104 = normalize(input_1.xyz);
 	    float3 _10753 = input_0 + PerViewConstantBufferCsgo_t_1_m12.xyz;
-	    float4 _19068 = g_tAmbientOcclusion.Sample(AllowGlobalMipBiasOverride_0_Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, input_2.xy);
+	    float4 _19068 = g_tAmbientOcclusion.Sample(AddressU_dynamic_AddressV_dynamic_AllowGlobalMipBiasOverride_0_Filter_255_MaxAniso_1, input_2.xy);
 	    float3 _24735 = _19104.xyz;
 	    float4 _23875 = float4(_24735, 1.0f);
 	    float _21709;
@@ -602,7 +602,7 @@ PS
 	                _8970 = PerViewLightingConstantBufferGpu_t_1_m3.y;
 	                _7046 = float2(_17299, _8970);
 	                _7735 = float2(_8969, _8970);
-	                float _15310 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + _18870).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + _7045).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + _7046).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + _7735).xy, _21452)).xyzw, 0.25f.xxxx);
+	                float _15310 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + _18870).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + _7045).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + _7046).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + _7735).xy, _21452)).xyzw, 0.25f.xxxx);
 	                bool _12885;
 	                if (_15310 == 0.0f)
 	                {
@@ -617,7 +617,7 @@ PS
 	                    _23727 = _15310;
 	                    break;
 	                }
-	                _23727 = ((_15310 * (_20581.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + float2(_17299, 0.0f)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + float2(_8969, 0.0f)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + float2(0.0f, _8970)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14975.xy + float2(0.0f, _15996)).xy, _21452)).xyzw, _22023.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, _14975.xy, _21452) * _22023.y);
+	                _23727 = ((_15310 * (_20581.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + float2(_17299, 0.0f)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + float2(_8969, 0.0f)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + float2(0.0f, _8970)).xy, _21452), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14975.xy + float2(0.0f, _15996)).xy, _21452)).xyzw, _22023.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, _14975.xy, _21452) * _22023.y);
 	                break;
 	            } while(false);
 	            float _12502;
@@ -636,7 +636,7 @@ PS
 	                    do
 	                    {
 	                        float _20322 = clamp(_19671.z + PerViewLightingConstantBufferGpu_t_1_m12, 0.0f, 1.0f);
-	                        float _15311 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + _18870).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + _7045).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + _7046).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + _7735).xy, _20322)).xyzw, 0.25f.xxxx);
+	                        float _15311 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + _18870).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + _7045).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + _7046).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + _7735).xy, _20322)).xyzw, 0.25f.xxxx);
 	                        bool _12886;
 	                        if (_15311 == 0.0f)
 	                        {
@@ -651,7 +651,7 @@ PS
 	                            _12501 = _15311;
 	                            break;
 	                        }
-	                        _12501 = ((_15311 * (_20581.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + float2(_17299, 0.0f)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + float2(_8969, 0.0f)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + float2(0.0f, _8970)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_20489.xy + float2(0.0f, _15996)).xy, _20322)).xyzw, _22023.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, _20489.xy, _20322) * _22023.y);
+	                        _12501 = ((_15311 * (_20581.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + float2(_17299, 0.0f)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + float2(_8969, 0.0f)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + float2(0.0f, _8970)).xy, _20322), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_20489.xy + float2(0.0f, _15996)).xy, _20322)).xyzw, _22023.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, _20489.xy, _20322) * _22023.y);
 	                        break;
 	                    } while(false);
 	                    _7934 = _12501;
@@ -676,7 +676,7 @@ PS
 	        float _12503;
 	        if (bool4(PerViewConstantBufferCsgo_t_1_m0.x != int4(0, 0, 0, 0).x, PerViewConstantBufferCsgo_t_1_m0.y != int4(0, 0, 0, 0).y, PerViewConstantBufferCsgo_t_1_m0.z != int4(0, 0, 0, 0).z, PerViewConstantBufferCsgo_t_1_m0.w != int4(0, 0, 0, 0).w).y)
 	        {
-	            _12503 = min(_12513, g_tParticleShadowBuffer.SampleLevel(AddressU_2_AddressV_2_Filter_21_AllowGlobalMipBiasOverride_0, (_11408.xy * PerViewConstantBuffer_t_1_m2.xy).xy, 0.0f).z);
+	            _12503 = min(_12513, g_tParticleShadowBuffer.SampleLevel(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21, (_11408.xy * PerViewConstantBuffer_t_1_m2.xy).xy, 0.0f).z);
 	        }
 	        else
 	        {
@@ -748,7 +748,7 @@ PS
 	                [unroll]
 	                for (int _2ident = 0; _2ident < 4; _2ident++)
 	                {
-	                    _25209._m0[_2ident] = asfloat(g_BarnLights.Load4(_2ident * 16 + _12608 * 416 + 0));
+	                    _25209._m0[_2ident] = asfloat(g_BarnLights.Load4(_2ident * 16 + _12608 * 480 + 0));
 	                }
 	                float4 _15817 = mul(float4(input_0.xyz, 1.0f), float4x4(float4(_25209._m0[0].x, _25209._m0[1].x, _25209._m0[2].x, _25209._m0[3].x), float4(_25209._m0[0].y, _25209._m0[1].y, _25209._m0[2].y, _25209._m0[3].y), float4(_25209._m0[0].z, _25209._m0[1].z, _25209._m0[2].z, _25209._m0[3].z), float4(_25209._m0[0].w, _25209._m0[1].w, _25209._m0[2].w, _25209._m0[3].w)));
 	                float3 _10521 = _15817.xyz / _15817.w.xxx;
@@ -778,7 +778,7 @@ PS
 	                    [unroll]
 	                    for (int _3ident = 0; _3ident < 3; _3ident++)
 	                    {
-	                        _8549._m0[_3ident] = asfloat(g_BarnLights.Load4(_3ident * 16 + _12608 * 416 + 272));
+	                        _8549._m0[_3ident] = asfloat(g_BarnLights.Load4(_3ident * 16 + _12608 * 480 + 272));
 	                    }
 	                    float3 _6368 = abs(mul(float4(input_0.xyz, 1.0f), float4x3(float3(_8549._m0[0].x, _8549._m0[1].x, _8549._m0[2].x), float3(_8549._m0[0].y, _8549._m0[1].y, _8549._m0[2].y), float3(_8549._m0[0].z, _8549._m0[1].z, _8549._m0[2].z), float3(_8549._m0[0].w, _8549._m0[1].w, _8549._m0[2].w))).xyz);
 	                    _12887 = !all(bool3(_6368.x <= 1.0f.xxx.x, _6368.y <= 1.0f.xxx.y, _6368.z <= 1.0f.xxx.z));
@@ -788,26 +788,26 @@ PS
 	                    _12505 = _13156;
 	                    break;
 	                }
-	                float _23571 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y;
-	                float _18492 = (2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z;
-	                float _14805 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x;
-	                float _9058 = _14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y;
-	                float _17330 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w;
-	                float _19825 = _17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z;
-	                float3 _16268 = float3(_9058 - _19825, (1.0f - (_14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x)) - _18492, (_23571 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) + (_17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x)) * asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).z;
+	                float _23571 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y;
+	                float _18492 = (2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z;
+	                float _14805 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x;
+	                float _9058 = _14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y;
+	                float _17330 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w;
+	                float _19825 = _17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z;
+	                float3 _16268 = float3(_9058 - _19825, (1.0f - (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x)) - _18492, (_23571 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) + (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x)) * asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).z;
 	                float _21316;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).z > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).z > 0.0f)
 	                {
-	                    _21316 = smoothstep(0.0f, 1.0f, _21776 * asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).z);
+	                    _21316 = smoothstep(0.0f, 1.0f, _21776 * asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).z);
 	                }
 	                else
 	                {
 	                    _21316 = 1.0f;
 	                }
 	                float _19667;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).w > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).w > 0.0f)
 	                {
-	                    _19667 = _21316 * smoothstep(0.0f, 1.0f, (1.0f - _21776) * asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).w);
+	                    _19667 = _21316 * smoothstep(0.0f, 1.0f, (1.0f - _21776) * asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).w);
 	                }
 	                else
 	                {
@@ -815,9 +815,9 @@ PS
 	                }
 	                float3 _11179;
 	                float _11633;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w != 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w != 0.0f)
 	                {
-	                    float3 _10017 = asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).xyz - input_0.xyz;
+	                    float3 _10017 = asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).xyz - input_0.xyz;
 	                    float _18345 = dot(_10017, _10017);
 	                    float _17647 = sqrt(_18345);
 	                    float3 _20958 = _10017 - _16268;
@@ -839,16 +839,16 @@ PS
 	                        break; // unreachable workaround
 	                    } while(false);
 	                    _11179 = _10017 / _17647.xxx;
-	                    _11633 = ((_19667 * (asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).y * dot(float3((1.0f - (_23571 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y)) - _18492, _9058 + _19825, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y)), normalize(_10210))), 0.0f, 1.0f);
+	                    _11633 = ((_19667 * (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).y * dot(float3((1.0f - (_23571 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)) - _18492, _9058 + _19825, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)), normalize(_10210))), 0.0f, 1.0f);
 	                }
 	                else
 	                {
-	                    _11179 = asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).xyz;
+	                    _11179 = asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).xyz;
 	                    _11633 = _19667;
 	                }
-	                float3 _17828 = (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).xyz * 1.0f).xyz * _11633;
+	                float3 _17828 = (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).xyz * 1.0f).xyz * _11633;
 	                bool _24419;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).z > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).z > 0.0f)
 	                {
 	                    _24419 = !_20059;
 	                }
@@ -857,24 +857,24 @@ PS
 	                    _24419 = false;
 	                }
 	                float3 _21548;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w == 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w == 0.0f)
 	                {
 	                    float _10342;
 	                    do
 	                    {
 	                        float2 _22154 = abs(_22905.xy);
-	                        if (asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z == 0.0f)
+	                        if (asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z == 0.0f)
 	                        {
-	                            _10342 = smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x, _22154.x) * smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y, _22154.y);
+	                            _10342 = smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x, _22154.x) * smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y, _22154.y);
 	                            break;
 	                        }
 	                        else
 	                        {
 	                            float _11473 = _22154.x;
-	                            float _15266 = 2.0f / asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z;
+	                            float _15266 = 2.0f / asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z;
 	                            float _15017 = _22154.y;
-	                            float _23041 = (-0.5f) * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z;
-	                            float _11981 = (asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y) * pow(max(pow(asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y * _11473, _15266) + pow(asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x * _15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
+	                            float _23041 = (-0.5f) * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z;
+	                            float _11981 = (asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y) * pow(max(pow(asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y * _11473, _15266) + pow(asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x * _15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
 	                            float _16524 = pow(max(pow(_11473, _15266) + pow(_15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
 	                            if (_11981 < _16524)
 	                            {
@@ -895,31 +895,31 @@ PS
 	                else
 	                {
 	                    float3 _12504;
-	                    if (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w < 0.0f)
+	                    if (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w < 0.0f)
 	                    {
-	                        float4 _17795 = float4(-asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).xyz, asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w);
+	                        float4 _17795 = float4(-asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).xyz, asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w);
 	                        float4 _19008 = _17795.xyzw * float4(-1.0f, -1.0f, -1.0f, 1.0f);
 	                        float3 _24989 = _19008.xyz;
 	                        float3 _23629 = float4((-_11179).xyz, 0.0f).xyz;
 	                        float _15156 = -dot(_23629, _24989);
 	                        float3 _20479 = float4((_23629 * _19008.w) + cross(_23629, _24989), _15156).xyz;
 	                        float3 _23593 = _17795.xyz;
-	                        float3 _12170 = ((_20479 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w) + (_23593 * _15156)) + cross(_23593, _20479);
-	                        float3 _14081 = float3(float2(atan2(_12170.y, -_12170.x) * 0.15915493667125701904296875f, acos(_12170.z) * 0.3183098733425140380859375f), -asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w);
-	                        float2 _20564 = (_14081.xy * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).xy;
+	                        float3 _12170 = ((_20479 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w) + (_23593 * _15156)) + cross(_23593, _20479);
+	                        float3 _14081 = float3(float2(atan2(_12170.y, -_12170.x) * 0.15915493667125701904296875f, acos(_12170.z) * 0.3183098733425140380859375f), -asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w);
+	                        float2 _20564 = (_14081.xy * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).xy;
 	                        float3 _20491 = _14081;
 	                        _20491.x = _20564.x;
 	                        _20491.y = _20564.y;
-	                        _12504 = _17828.xyz * g_tLightCookieTexture.SampleLevel(Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0, _20491.xyz, 0.0f).xyz;
+	                        _12504 = _17828.xyz * g_tLightCookieTexture.SampleLevel(AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21, _20491.xyz, 0.0f).xyz;
 	                    }
 	                    else
 	                    {
-	                        float3 _13791 = float3(mad(_22905.xy, float2(0.5f, -0.5f), 0.5f.xx), asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w);
-	                        float2 _20563 = (_13791.xy * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).xy;
+	                        float3 _13791 = float3(mad(_22905.xy, float2(0.5f, -0.5f), 0.5f.xx), asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w);
+	                        float2 _20563 = (_13791.xy * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).xy;
 	                        float3 _20490 = _13791;
 	                        _20490.x = _20563.x;
 	                        _20490.y = _20563.y;
-	                        _12504 = _17828.xyz * g_tLightCookieTexture.SampleLevel(Filter_20_AddressU_3_AddressV_3_AddressW_3_BorderColor_0, _20490.xyz, 0.0f).xyz;
+	                        _12504 = _17828.xyz * g_tLightCookieTexture.SampleLevel(AddressU_3_AddressV_3_AddressW_3_BorderColor_0_Filter_20, _20490.xyz, 0.0f).xyz;
 	                    }
 	                    _21548 = _12504;
 	                }
@@ -932,7 +932,7 @@ PS
 	                if (_24419)
 	                {
 	                    float3 _19629;
-	                    if ((g_BarnLights.Load(_12608 * 416 + 264) & 4u) != 0u)
+	                    if ((g_BarnLights.Load(_12608 * 480 + 264) & 4u) != 0u)
 	                    {
 	                        float2 _6281 = _22905.yx * float2(1.0f, -1.0f);
 	                        float3 _23714 = _21642;
@@ -948,8 +948,8 @@ PS
 	                    do
 	                    {
 	                        float _11455 = clamp(_19629.z + PerViewLightingConstantBufferGpu_t_1_m12, 0.0f, 1.0f);
-	                        float2 _14616 = float3(mad(_19629.xy, asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).zw, asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).xy), _19629.z).xy;
-	                        float _15312 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455)).xyzw, 0.25f.xxxx);
+	                        float2 _14616 = float3(mad(_19629.xy, asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).zw, asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).xy), _19629.z).xy;
+	                        float _15312 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455)).xyzw, 0.25f.xxxx);
 	                        bool _12888;
 	                        if (_15312 == 0.0f)
 	                        {
@@ -964,10 +964,10 @@ PS
 	                            _24972 = _15312;
 	                            break;
 	                        }
-	                        _24972 = ((_15312 * (PerViewLightingConstantBufferGpu_t_1_m0.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455)).xyzw, PerViewLightingConstantBufferGpu_t_1_m1.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3, _14616, _11455) * PerViewLightingConstantBufferGpu_t_1_m1.y);
+	                        _24972 = ((_15312 * (PerViewLightingConstantBufferGpu_t_1_m0.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455)).xyzw, PerViewLightingConstantBufferGpu_t_1_m1.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149, _14616, _11455) * PerViewLightingConstantBufferGpu_t_1_m1.y);
 	                        break;
 	                    } while(false);
-	                    float3 _19878 = _21548.xyz * lerp(1.0f, _24972, asfloat(g_BarnLights.Load(_12608 * 416 + 260)));
+	                    float3 _19878 = _21548.xyz * lerp(1.0f, _24972, asfloat(g_BarnLights.Load(_12608 * 480 + 260)));
 	                    float3 _16449 = _19878.xyz;
 	                    if (all(bool3(_16449.x == 0.0f.xxx.x, _16449.y == 0.0f.xxx.y, _16449.z == 0.0f.xxx.z)))
 	                    {
@@ -1047,7 +1047,7 @@ PS
 	            {
 	                float _14602 = clamp(pow(max(0.0f, (length(_21493) * PerViewConstantBufferCsgo_t_1_m7.y) + PerViewConstantBufferCsgo_t_1_m7.x), PerViewConstantBufferCsgo_t_1_m7.w), 0.0f, 1.0f) * clamp(pow(max(0.0f, (_10753.z * PerViewConstantBufferCsgo_t_1_m8.y) + PerViewConstantBufferCsgo_t_1_m8.x), PerViewConstantBufferCsgo_t_1_m8.z), 0.0f, 1.0f);
 	                float _8892 = clamp(_14602, 0.0f, 1.0f) * PerViewConstantBufferCsgo_t_1_m10.w;
-	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(AddressU_2_AddressV_2_Filter_21_AllowGlobalMipBiasOverride_0, normalize(mul(float4(_9057, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].x, PerViewConstantBufferCsgo_t_1_m9._m0[1].x, PerViewConstantBufferCsgo_t_1_m9._m0[2].x, PerViewConstantBufferCsgo_t_1_m9._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].y, PerViewConstantBufferCsgo_t_1_m9._m0[1].y, PerViewConstantBufferCsgo_t_1_m9._m0[2].y, PerViewConstantBufferCsgo_t_1_m9._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].z, PerViewConstantBufferCsgo_t_1_m9._m0[1].z, PerViewConstantBufferCsgo_t_1_m9._m0[2].z, PerViewConstantBufferCsgo_t_1_m9._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].w, PerViewConstantBufferCsgo_t_1_m9._m0[1].w, PerViewConstantBufferCsgo_t_1_m9._m0[2].w, PerViewConstantBufferCsgo_t_1_m9._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m8.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m7.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m11.x).xyz, _8892).xyz, _8892.xxx);
+	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21, normalize(mul(float4(_9057, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].x, PerViewConstantBufferCsgo_t_1_m9._m0[1].x, PerViewConstantBufferCsgo_t_1_m9._m0[2].x, PerViewConstantBufferCsgo_t_1_m9._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].y, PerViewConstantBufferCsgo_t_1_m9._m0[1].y, PerViewConstantBufferCsgo_t_1_m9._m0[2].y, PerViewConstantBufferCsgo_t_1_m9._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].z, PerViewConstantBufferCsgo_t_1_m9._m0[1].z, PerViewConstantBufferCsgo_t_1_m9._m0[2].z, PerViewConstantBufferCsgo_t_1_m9._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m9._m0[0].w, PerViewConstantBufferCsgo_t_1_m9._m0[1].w, PerViewConstantBufferCsgo_t_1_m9._m0[2].w, PerViewConstantBufferCsgo_t_1_m9._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m8.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m7.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m11.x).xyz, _8892).xyz, _8892.xxx);
 	                break;
 	            }
 	            _19341 = _23944.xyz;

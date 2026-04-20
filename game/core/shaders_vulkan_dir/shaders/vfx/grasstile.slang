@@ -147,13 +147,13 @@ VS
 	layout(set = 0) uniform _1635 PerViewConstantBuffer_t;
 	
 	layout(set = 0, binding = 35) uniform texture2D g_tDensityArray;
-	layout(set = 0, binding = 14) uniform sampler Filter_21_AddressU_2_AddressV_2;
+	layout(set = 0, binding = 14) uniform sampler AddressU_2_AddressV_2_Filter_21;
 	layout(set = 0, binding = 36) uniform texture2D g_tHeightArray;
-	layout(set = 0, binding = 15) uniform sampler Filter_21_AddressU_2_AddressV_2_1;
+	layout(set = 0, binding = 15) uniform sampler AddressU_2_AddressV_2_Filter_21_1;
 	layout(set = 0, binding = 37) uniform texture2D g_tSkewBrightness;
-	layout(set = 0, binding = 16) uniform sampler Filter_21_AddressU_2_AddressV_2_2;
+	layout(set = 0, binding = 16) uniform sampler AddressU_2_AddressV_2_Filter_21_2;
 	layout(set = 0, binding = 38) uniform texture2D g_tTintArray;
-	layout(set = 0, binding = 17) uniform sampler Filter_21_AddressU_2_AddressV_2_3;
+	layout(set = 0, binding = 17) uniform sampler AddressU_2_AddressV_2_Filter_21_3;
 	
 	layout(location = 0) in vec2 nInstanceIdx;
 	layout(location = 1) in vec4 vPositionOs;
@@ -171,15 +171,15 @@ VS
 	    vec4 _10881 = fract(vSide_Top_Right.xyzw + (saturate(vSide_Top_Right.xyzw * 1000000.0) * ((g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[0].w * 0.013698630034923553466796875) + (g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[1].w * 0.005181347019970417022705078125))));
 	    float _21853 = abs(nInstanceIdx.x);
 	    vec2 _10547 = (vUStart_VStart_UVScale_GrassQuadU.xy + (vec2(_21853, nInstanceIdx.y) * vUStart_VStart_UVScale_GrassQuadU.z)).xy;
-	    vec4 _10799 = textureLod(sampler2D(g_tHeightArray, Filter_21_AddressU_2_AddressV_2_1), _10547, 0.0);
+	    vec4 _10799 = textureLod(sampler2D(g_tHeightArray, AddressU_2_AddressV_2_Filter_21_1), _10547, 0.0);
 	    float _17919 = _10799.x;
-	    vec4 _12684 = textureLod(sampler2D(g_tSkewBrightness, Filter_21_AddressU_2_AddressV_2_2), _10547, 0.0);
+	    vec4 _12684 = textureLod(sampler2D(g_tSkewBrightness, AddressU_2_AddressV_2_Filter_21_2), _10547, 0.0);
 	    vec2 _7707 = (_12684.xy * 2.0) - vec2(1.0);
 	    vec3 _22101;
 	    _22101.x = _7707.x;
 	    _22101.y = _7707.y;
 	    vec4 _13292 = _10881 * 1000000.0;
-	    float _14802 = clamp(dot(textureLod(sampler2D(g_tDensityArray, Filter_21_AddressU_2_AddressV_2), _10547, 0.0).xyzw - _10881, _13292), 0.0, 1.0);
+	    float _14802 = clamp(dot(textureLod(sampler2D(g_tDensityArray, AddressU_2_AddressV_2_Filter_21), _10547, 0.0).xyzw - _10881, _13292), 0.0, 1.0);
 	    float _18203 = saturate(vPositionOs.y * 1000000.0);
 	    vec4 _24664 = (vec4(vec2(vPositionOs.x, _18203).xy, vPositionOs.zw) * 2.0) - vec4(1.0);
 	    vec3 _24823 = normalize(vec3(_24664.zw, 0.0));
@@ -220,7 +220,7 @@ VS
 	    output_0 = _15100;
 	    output_1 = mix(cross(vec3(0.0, 0.0, 1.0), _24823).xyz, (vec3(0.0, 0.0, 1.0) + _9428.xyz).xyz, vec3(0.800000011920928955078125));
 	    output_2 = vec2(_10633.x, 1.0 - _18203);
-	    output_3 = vec3(textureLod(sampler2D(g_tTintArray, Filter_21_AddressU_2_AddressV_2_3), _10547, 0.0).xyz);
+	    output_3 = vec3(textureLod(sampler2D(g_tTintArray, AddressU_2_AddressV_2_Filter_21_3), _10547, 0.0).xyz);
 	    output_4 = vec3(_12684.z, 1.0 - clamp((length((_13631 - PerViewConstantBuffer_t._m2).xyz) - _Globals_.g_vFadeParams.x) / _Globals_.g_vFadeParams.y, 0.0, 1.0), 0.0);
 	    _23552.y = -_23552.y;
 	    gl_Position = _23552;
@@ -251,19 +251,19 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2736 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b4, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b5, space1)
+	cbuffer SunLightShaderParamsCB : register(b4, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
 	};
 	
 	Texture2D<float4> g_tGrassQuadArray : register(t31, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2_MipBias_0 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_21_MipBias_0 : register(s15, space1);
 	
 	static float3 input_0;
 	static float2 input_1;
@@ -286,7 +286,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _19372 = g_tGrassQuadArray.Sample(Filter_21_AddressU_2_AddressV_2_MipBias_0, input_1.xy);
+	    float4 _19372 = g_tGrassQuadArray.Sample(AddressU_2_AddressV_2_Filter_21_MipBias_0, input_1.xy);
 	    float _14493 = _19372.w * input_3.y;
 	    float3 _14744 = normalize(input_0.xyz).xyz;
 	    float3 _23378 = clamp(_14744, 0.0f.xxx, 1.0f.xxx);

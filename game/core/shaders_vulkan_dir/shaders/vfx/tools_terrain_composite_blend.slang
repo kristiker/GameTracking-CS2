@@ -102,9 +102,9 @@ PS
 	};
 	
 	Texture2D<float4> g_tColorA : register(t30, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0 : register(s14, space1);
 	Texture2D<float4> g_tColorB : register(t31, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2_1 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0_1 : register(s15, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -121,7 +121,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = float4(lerp(g_tColorA.Sample(Filter_0_AddressU_2_AddressV_2, input_0.xy).xyz, g_tColorB.Sample(Filter_0_AddressU_2_AddressV_2_1, input_0.xy).xyz, _Globals_1_g_BlendAmount.xxx), 1.0f);
+	    output_0 = float4(lerp(g_tColorA.Sample(AddressU_2_AddressV_2_Filter_0, input_0.xy).xyz, g_tColorB.Sample(AddressU_2_AddressV_2_Filter_0_1, input_0.xy).xyz, _Globals_1_g_BlendAmount.xxx), 1.0f);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

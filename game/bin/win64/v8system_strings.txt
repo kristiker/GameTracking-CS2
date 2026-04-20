@@ -41,14 +41,13 @@
 ?V_NewDefaultPlatform@platform@v8@@YAPEAVPlatform@2@H@Z
 ?\v?AddNearHeapLimitCallback@Isolate@v8@@QEAAXP6A_KPEAX_K1@Z0@Z
 Bad KV3 data for resource '%s': %s\n
-C:\buildworker\csgo_rel_win64\build\_build_\v8system\_vpc_v8system\default\win64\_msvc_\Retail\v8system.pdb
-C:\buildworker\csgo_rel_win64\build\src\v8system\v8system.cpp
+C:\buildworker\cs2_beta_win64\build\_build_\v8system\_vpc_v8system\default\win64\_msvc_\Retail\v8system.pdb
+C:\buildworker\cs2_beta_win64\build\src\v8system\v8system.cpp
 Default size of stack region v8 is allowed to use (in kBytes)
 Disable runtime allocation of executable memory for V8.
 Dump output of v8::Isolate::GetHeapStatistics.
 Fatal V8 Error: %s - %s
 Hard limit for the v8 heap size (in mBytes)
-Ph|f
 RESOURCE_TYPE_JAVASCRIPT
 RESOURCE_TYPE_TYPESCRIPT
 V8 Near Heap Limit: cur=%llu, init=%llu, max=%llu

@@ -150,7 +150,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tColor : register(t30, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -167,7 +167,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = float4(g_tColor.Sample(Filter_0_AddressU_2_AddressV_2, input_0.xy).xyz * _Globals_1_g_flColorFactor.xxx, _Globals_1_g_flAlphaFactor);
+	    output_0 = float4(g_tColor.Sample(AddressU_2_AddressV_2_Filter_0, input_0.xy).xyz * _Globals_1_g_flColorFactor.xxx, _Globals_1_g_flAlphaFactor);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

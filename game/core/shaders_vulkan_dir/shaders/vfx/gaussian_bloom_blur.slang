@@ -112,7 +112,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tSource : register(t30, space1);
-	SamplerState AddressU_3_AddressV_3_Filter_21_BorderColor_0 : register(s14, space1);
+	SamplerState AddressU_3_AddressV_3_BorderColor_0_Filter_21 : register(s14, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -129,7 +129,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = float4(clamp(clamp(g_tSource.SampleLevel(AddressU_3_AddressV_3_Filter_21_BorderColor_0, ((gl_FragCoord.xy * 2.0f) * _Globals_1_g_vTexelSize.xy).xy, 0.0f).xyzw, 0.0f.xxxx, 65504.0f.xxxx), 0.0f.xxxx, 65504.0f.xxxx).xyz, 1.0f);
+	    output_0 = float4(clamp(clamp(g_tSource.SampleLevel(AddressU_3_AddressV_3_BorderColor_0_Filter_21, ((gl_FragCoord.xy * 2.0f) * _Globals_1_g_vTexelSize.xy).xy, 0.0f).xyzw, 0.0f.xxxx, 65504.0f.xxxx), 0.0f.xxxx, 65504.0f.xxxx).xyz, 1.0f);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

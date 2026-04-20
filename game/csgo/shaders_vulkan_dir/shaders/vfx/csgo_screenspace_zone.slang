@@ -125,9 +125,9 @@ PS
 	};
 	
 	Texture2D<float4> g_tSceneDepth : register(t33, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2 : register(s17, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0 : register(s17, space1);
 	Texture2D<float4> g_tCsgoDZPRT : register(t31, space1);
-	SamplerState Filter_20_AddressU_0_AddressV_0 : register(s14, space1);
+	SamplerState AddressU_0_AddressV_0_Filter_20 : register(s14, space1);
 	Texture2D<float4> g_tColor1 : register(t30, space1);
 	Texture2D<float4> g_tFrameBuffer : register(t32, space1);
 	
@@ -146,7 +146,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _19068 = g_tSceneDepth.Sample(Filter_0_AddressU_2_AddressV_2, input_0.xy);
+	    float4 _19068 = g_tSceneDepth.Sample(AddressU_2_AddressV_2_Filter_0, input_0.xy);
 	    float _12211 = clamp((_19068.x - PerViewConstantBuffer_t_1_m0) / (PerViewConstantBuffer_t_1_m1 - PerViewConstantBuffer_t_1_m0), 0.0f, 1.0f);
 	    if ((0.99989998340606689453125f - _12211) < 0.0f)
 	    {
@@ -159,7 +159,7 @@ PS
 	    float2 _22686 = (_14979 + _Globals_1_g_Const5.xy) * _Globals_1_g_Const5.zw;
 	    float2 _21559 = float2(_22686.x + 0.0009765625f, _2);
 	    _21559.y = 1.0009765625f - _22686.y;
-	    float4 _19069 = g_tCsgoDZPRT.Sample(Filter_20_AddressU_0_AddressV_0, _21559.xy);
+	    float4 _19069 = g_tCsgoDZPRT.Sample(AddressU_0_AddressV_0_Filter_20, _21559.xy);
 	    float _17477 = _19069.x;
 	    bool _10513 = _Globals_1_g_Const3.w > 0.0f;
 	    float _10970;
@@ -181,7 +181,7 @@ PS
 	    }
 	    float _11737 = _12890.z;
 	    float _15977 = smoothstep(0.01568627543747425079345703125f, 0.19607843458652496337890625f, _15797 + (sin(((_11737 * 0.001000000047497451305389404296875f) + _Globals_1_g_Const0.w) * 5.0f) * 0.008000000379979610443115234375f));
-	    float _12473 = (g_tColor1.Sample(Filter_20_AddressU_0_AddressV_0, ((_14979 * _Globals_1_g_Const5.zw) * 12.0f).xy).y + g_tColor1.Sample(Filter_20_AddressU_0_AddressV_0, ((_12890.xz * _Globals_1_g_Const5.zw) * 8.0f).xy).y) + g_tColor1.Sample(Filter_20_AddressU_0_AddressV_0, ((_12890.yz * _Globals_1_g_Const5.zw) * 10.0f).xy).y;
+	    float _12473 = (g_tColor1.Sample(AddressU_0_AddressV_0_Filter_20, ((_14979 * _Globals_1_g_Const5.zw) * 12.0f).xy).y + g_tColor1.Sample(AddressU_0_AddressV_0_Filter_20, ((_12890.xz * _Globals_1_g_Const5.zw) * 8.0f).xy).y) + g_tColor1.Sample(AddressU_0_AddressV_0_Filter_20, ((_12890.yz * _Globals_1_g_Const5.zw) * 10.0f).xy).y;
 	    float _5579 = _12473 * 3.1415927410125732421875f;
 	    float _22760 = lerp(clamp((sin(_12473 * 12.56637096405029296875f) * 0.5f) + 0.5f, 0.0f, 1.0f), clamp((sin(_5579) * 0.5f) + 0.5f, 0.0f, 1.0f), _15977);
 	    bool _12885;
@@ -210,7 +210,7 @@ PS
 	    }
 	    float _17460 = step(0.07999999821186065673828125f, _17802);
 	    float _22112 = smoothstep(0.0f, 0.07999999821186065673828125f, _17802);
-	    float3 _20871 = g_tFrameBuffer.Sample(Filter_20_AddressU_0_AddressV_0, input_0.xy).xyz;
+	    float3 _20871 = g_tFrameBuffer.Sample(AddressU_0_AddressV_0_Filter_20, input_0.xy).xyz;
 	    float _23825 = dot(float3(0.300000011920928955078125f, 0.589999973773956298828125f, 0.10999999940395355224609375f), _20871);
 	    float _3187 = (0.449999988079071044921875f * _23825) - (fmod(_23825, 0.20000000298023223876953125f) * 0.20000000298023223876953125f);
 	    float3 _9366 = lerp(lerp(_3187 * 0.100000001490116119384765625f, _3187 * smoothstep(0.100000001490116119384765625f, 0.699999988079071044921875f, _17802), _17460).xxx, _3187.xxx, smoothstep(1500.0f, 5000.0f, _16095).xxx);

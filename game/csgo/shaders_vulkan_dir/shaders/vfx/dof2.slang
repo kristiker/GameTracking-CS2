@@ -103,7 +103,7 @@ PS
 	    float4 _m0[256];
 	};
 	
-	cbuffer Dof2CBParams_t : register(b2, space1)
+	cbuffer Dof2CBParams_t : register(b1, space1)
 	{
 	    float Dof2CBParams_t_1_m0 : packoffset(c1.y);
 	    _2998 Dof2CBParams_t_1_m1 : packoffset(c3);
@@ -111,7 +111,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tInputColor_CoC : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_20 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -128,12 +128,12 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _20360 = g_tInputColor_CoC.Sample(Filter_20_AddressU_2_AddressV_2, input_0.xy);
+	    float4 _20360 = g_tInputColor_CoC.Sample(AddressU_2_AddressV_2_Filter_20, input_0.xy);
 	    float _3670 = _20360.w * 2.0f;
 	    float _13136;
 	    float3 _16324;
 	    _13136 = 1.0f;
-	    _16324 = g_tInputColor_CoC.Sample(Filter_20_AddressU_2_AddressV_2, input_0.xy).xyz;
+	    _16324 = g_tInputColor_CoC.Sample(AddressU_2_AddressV_2_Filter_20, input_0.xy).xyz;
 	    int _4293;
 	    float _5778;
 	    float3 _5949;
@@ -145,8 +145,8 @@ PS
 	            break;
 	        }
 	        float2 _20779 = (input_0.xy + Dof2CBParams_t_1_m1._m0[_17017].xy).xy;
-	        float4 _3401 = g_tInputColor_CoC.Sample(Filter_20_AddressU_2_AddressV_2, _20779);
-	        float4 _21367 = g_tInputColor_CoC.Sample(Filter_20_AddressU_2_AddressV_2, _20779);
+	        float4 _3401 = g_tInputColor_CoC.Sample(AddressU_2_AddressV_2_Filter_20, _20779);
+	        float4 _21367 = g_tInputColor_CoC.Sample(AddressU_2_AddressV_2_Filter_20, _20779);
 	        float _19148 = _21367.w;
 	        float _21709;
 	        if (_19148 > _3670)

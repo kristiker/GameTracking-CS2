@@ -14,7 +14,6 @@
   path: %s\n
   source: %s\n
 ####$$$$%%%%&&&&''''(((())))****++++
-#FnJ
 %.18f
 0000111122223333444455556666777788889999::::;;;;<<<<====>>>>
 1.15.4
@@ -30,7 +29,7 @@ BURN
 B\vp\nP
 Bold
 Book
-C:\buildworker\csgo_rel_win64\build\_build_\thirdparty\cairo\_vpc_cairo\default\win64\_msvc_\Retail\cairo.pdb
+C:\buildworker\cs2_beta_win64\build\_build_\thirdparty\cairo\_vpc_cairo\default\win64\_msvc_\Retail\cairo.pdb
 CAIRO_MIME_TYPE_JBIG2_GLOBAL_ID used but no CAIRO_MIME_TYPE_JBIG2_GLOBAL data provided
 CLEAR
 Condensed
@@ -75,7 +74,6 @@ OVERLAY
 Oblique
 PIXMAN_DISABLE
 Pixman bug: unknown image type\n
-RSDS=X1
 Roman
 SATURATE
 SCREEN
@@ -506,6 +504,7 @@ paint: count %d [no-op %d], elapsed %f [%f%%]\n
 pixel-aligned
 pixman: Disabled %s implementation\n
 polygon
+q!WD
 radial
 raster
 rectliinear

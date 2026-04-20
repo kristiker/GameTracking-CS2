@@ -28996,7 +28996,6 @@ GeneralFont
 GenerateMipMaps
 GentleCare
 Geometry
-GetDC
 GetDIBits
 GetIconInfo
 GetObjectW
@@ -30623,7 +30622,6 @@ ReflectSpread
 Refresh
 Reject
 RejectRole
-ReleaseDC
 Reload
 RenderBuffer: UsedWithSwapChainOnly is meaningless in combination with Color
 RenderHint

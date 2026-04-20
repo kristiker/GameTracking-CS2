@@ -293,7 +293,7 @@ PS
 	    float _Globals_1_g_flNormalMapStrength : packoffset(c0.y);
 	};
 	
-	cbuffer ReflectionMapDescriptor_t : register(b5, space1)
+	cbuffer ReflectionMapDescriptor_t : register(b4, space1)
 	{
 	    _226 ReflectionMapDescriptor_t_1_m0 : packoffset(c0);
 	    float4 ReflectionMapDescriptor_t_1_m1 : packoffset(c4);
@@ -303,7 +303,7 @@ PS
 	Texture2D<float4> g_tNormal : register(t32, space1);
 	SamplerState DefaultSamplerState_0 : register(s16, space1);
 	Texture2D<float4> g_tReflection : register(t30, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_21 : register(s14, space1);
 	
 	static float3 input_0;
 	static float4 input_1;
@@ -344,7 +344,7 @@ PS
 	    float3 _6606 = normalize((((float3(input_1.xyz).xyz * _23712.x).xyz + ((cross(normalize(input_0.xyz).xyz, input_1.xyz) * input_1.w).xyz * _23712.y)).xyz + (input_0.xyz * _23712.z)).xyz).xyz;
 	    float4 _19975 = mul(float4x4(float4(ReflectionMapDescriptor_t_1_m0._m0[0].x, ReflectionMapDescriptor_t_1_m0._m0[1].x, ReflectionMapDescriptor_t_1_m0._m0[2].x, ReflectionMapDescriptor_t_1_m0._m0[3].x), float4(ReflectionMapDescriptor_t_1_m0._m0[0].y, ReflectionMapDescriptor_t_1_m0._m0[1].y, ReflectionMapDescriptor_t_1_m0._m0[2].y, ReflectionMapDescriptor_t_1_m0._m0[3].y), float4(ReflectionMapDescriptor_t_1_m0._m0[0].z, ReflectionMapDescriptor_t_1_m0._m0[1].z, ReflectionMapDescriptor_t_1_m0._m0[2].z, ReflectionMapDescriptor_t_1_m0._m0[3].z), float4(ReflectionMapDescriptor_t_1_m0._m0[0].w, ReflectionMapDescriptor_t_1_m0._m0[1].w, ReflectionMapDescriptor_t_1_m0._m0[2].w, ReflectionMapDescriptor_t_1_m0._m0[3].w)), float4((input_4.xyz + ((_6606 - (_6606 * dot(ReflectionMapDescriptor_t_1_m1.xyz, _6606))) * _Globals_1_g_flNormalMapStrength)).xyz, 1.0f));
 	    float2 _22180 = _19975.xy * (1.0f / _19975.w);
-	    float4 _19391 = g_tReflection.Sample(Filter_21_AddressU_2_AddressV_2, float2((clamp((_22180.x - (-1.0f)) * 0.5f, 0.0f, 1.0f) * (ReflectionMapDescriptor_t_1_m2.z - ReflectionMapDescriptor_t_1_m2.x)) + ReflectionMapDescriptor_t_1_m2.x, (clamp((_22180.y - 1.0f) * (-0.5f), 0.0f, 1.0f) * (ReflectionMapDescriptor_t_1_m2.w - ReflectionMapDescriptor_t_1_m2.y)) + ReflectionMapDescriptor_t_1_m2.y).xy);
+	    float4 _19391 = g_tReflection.Sample(AddressU_2_AddressV_2_Filter_21, float2((clamp((_22180.x - (-1.0f)) * 0.5f, 0.0f, 1.0f) * (ReflectionMapDescriptor_t_1_m2.z - ReflectionMapDescriptor_t_1_m2.x)) + ReflectionMapDescriptor_t_1_m2.x, (clamp((_22180.y - 1.0f) * (-0.5f), 0.0f, 1.0f) * (ReflectionMapDescriptor_t_1_m2.w - ReflectionMapDescriptor_t_1_m2.y)) + ReflectionMapDescriptor_t_1_m2.y).xy);
 	    float4 _18900;
 	    _18900.x = _19391.x;
 	    _18900.y = _19391.y;

@@ -68,7 +68,6 @@ VS
 	DynamicCombo( D_SCREEN_SPACE, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
@@ -382,7 +381,7 @@ PS
 	    int _Globals_1_g_bFogEnabled : packoffset(c0.z);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c23);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c24);
@@ -402,9 +401,9 @@ PS
 	};
 	
 	Texture2D<float4> g_tColor : register(t53, space1);
-	SamplerState Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic : register(s20, space1);
+	SamplerState AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1 : register(s20, space1);
 	TextureCube<float4> g_tFogCubeTexture : register(t42, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0 : register(s17, space1);
+	SamplerState AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21 : register(s17, space1);
 	
 	static float4 input_0;
 	static float4 input_1;
@@ -425,7 +424,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _23820 = g_tColor.Sample(Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, input_0.xy);
+	    float4 _23820 = g_tColor.Sample(AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1, input_0.xy);
 	    float4 _15654 = _23820 * input_1;
 	    float4 _6805;
 	    if (_Globals_1_g_bFogEnabled != 0)
@@ -477,7 +476,7 @@ PS
 	            {
 	                float _14602 = clamp(pow(max(0.0f, (length(_21493) * PerViewConstantBufferCsgo_t_1_m4.y) + PerViewConstantBufferCsgo_t_1_m4.x), PerViewConstantBufferCsgo_t_1_m4.w), 0.0f, 1.0f) * clamp(pow(max(0.0f, (_5578.z * PerViewConstantBufferCsgo_t_1_m5.y) + PerViewConstantBufferCsgo_t_1_m5.x), PerViewConstantBufferCsgo_t_1_m5.z), 0.0f, 1.0f);
 	                float _8892 = clamp(_14602, 0.0f, 1.0f) * PerViewConstantBufferCsgo_t_1_m7.w;
-	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, normalize(mul(float4(_9057, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].x, PerViewConstantBufferCsgo_t_1_m6._m0[1].x, PerViewConstantBufferCsgo_t_1_m6._m0[2].x, PerViewConstantBufferCsgo_t_1_m6._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].y, PerViewConstantBufferCsgo_t_1_m6._m0[1].y, PerViewConstantBufferCsgo_t_1_m6._m0[2].y, PerViewConstantBufferCsgo_t_1_m6._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].z, PerViewConstantBufferCsgo_t_1_m6._m0[1].z, PerViewConstantBufferCsgo_t_1_m6._m0[2].z, PerViewConstantBufferCsgo_t_1_m6._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].w, PerViewConstantBufferCsgo_t_1_m6._m0[1].w, PerViewConstantBufferCsgo_t_1_m6._m0[2].w, PerViewConstantBufferCsgo_t_1_m6._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _8892).xyz, _8892.xxx);
+	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21, normalize(mul(float4(_9057, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].x, PerViewConstantBufferCsgo_t_1_m6._m0[1].x, PerViewConstantBufferCsgo_t_1_m6._m0[2].x, PerViewConstantBufferCsgo_t_1_m6._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].y, PerViewConstantBufferCsgo_t_1_m6._m0[1].y, PerViewConstantBufferCsgo_t_1_m6._m0[2].y, PerViewConstantBufferCsgo_t_1_m6._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].z, PerViewConstantBufferCsgo_t_1_m6._m0[1].z, PerViewConstantBufferCsgo_t_1_m6._m0[2].z, PerViewConstantBufferCsgo_t_1_m6._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].w, PerViewConstantBufferCsgo_t_1_m6._m0[1].w, PerViewConstantBufferCsgo_t_1_m6._m0[2].w, PerViewConstantBufferCsgo_t_1_m6._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _8892).xyz, _8892.xxx);
 	                break;
 	            }
 	            _19341 = _23944.xyz;

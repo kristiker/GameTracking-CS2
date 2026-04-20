@@ -68,7 +68,6 @@ VS
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	DynamicComboRule( Allow0( D_CS_VERTEX_ANIMATION ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
@@ -258,7 +257,7 @@ PS
 	    float _Globals_1_g_flAlphaTestReference : packoffset(c0.z);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    int4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c23);
@@ -276,7 +275,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tColor : register(t43, space1);
-	SamplerState Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic : register(s20, space1);
+	SamplerState AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1 : register(s20, space1);
 	
 	static float4 input_0;
 	static float4 input_1;
@@ -297,7 +296,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _23820 = g_tColor.Sample(Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, input_0.xy);
+	    float4 _23820 = g_tColor.Sample(AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1, input_0.xy);
 	    float4 _12962 = _23820 * input_1;
 	    float _13716 = _12962.w;
 	    if ((_13716 - _Globals_1_g_flAlphaTestReference) < 0.0f)

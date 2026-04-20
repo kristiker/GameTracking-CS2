@@ -97,7 +97,7 @@ VS
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space0)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space0)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c35);
 	};
@@ -265,7 +265,7 @@ PS
 	    float4 _m0[4];
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c23);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c24);
@@ -290,7 +290,7 @@ PS
 	};
 	
 	TextureCube<float4> g_tFogCubeTexture : register(t42, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0 : register(s17, space1);
+	SamplerState AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21 : register(s17, space1);
 	
 	static float3 input_0;
 	static float4 output_0;
@@ -357,7 +357,7 @@ PS
 	            {
 	                float _14602 = clamp(pow(max(0.0f, (length(_21493) * PerViewConstantBufferCsgo_t_1_m4.y) + PerViewConstantBufferCsgo_t_1_m4.x), PerViewConstantBufferCsgo_t_1_m4.w), 0.0f, 1.0f) * clamp(pow(max(0.0f, (_10061.z * PerViewConstantBufferCsgo_t_1_m5.y) + PerViewConstantBufferCsgo_t_1_m5.x), PerViewConstantBufferCsgo_t_1_m5.z), 0.0f, 1.0f);
 	                float _8892 = clamp(_14602, 0.0f, 1.0f) * PerViewConstantBufferCsgo_t_1_m7.w;
-	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, normalize(mul(float4(_10784, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].x, PerViewConstantBufferCsgo_t_1_m6._m0[1].x, PerViewConstantBufferCsgo_t_1_m6._m0[2].x, PerViewConstantBufferCsgo_t_1_m6._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].y, PerViewConstantBufferCsgo_t_1_m6._m0[1].y, PerViewConstantBufferCsgo_t_1_m6._m0[2].y, PerViewConstantBufferCsgo_t_1_m6._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].z, PerViewConstantBufferCsgo_t_1_m6._m0[1].z, PerViewConstantBufferCsgo_t_1_m6._m0[2].z, PerViewConstantBufferCsgo_t_1_m6._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].w, PerViewConstantBufferCsgo_t_1_m6._m0[1].w, PerViewConstantBufferCsgo_t_1_m6._m0[2].w, PerViewConstantBufferCsgo_t_1_m6._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _8892).xyz, _8892.xxx);
+	                _19341 = lerp(_23944.xyz, float4((g_tFogCubeTexture.SampleLevel(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21, normalize(mul(float4(_10784, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].x, PerViewConstantBufferCsgo_t_1_m6._m0[1].x, PerViewConstantBufferCsgo_t_1_m6._m0[2].x, PerViewConstantBufferCsgo_t_1_m6._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].y, PerViewConstantBufferCsgo_t_1_m6._m0[1].y, PerViewConstantBufferCsgo_t_1_m6._m0[2].y, PerViewConstantBufferCsgo_t_1_m6._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].z, PerViewConstantBufferCsgo_t_1_m6._m0[1].z, PerViewConstantBufferCsgo_t_1_m6._m0[2].z, PerViewConstantBufferCsgo_t_1_m6._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].w, PerViewConstantBufferCsgo_t_1_m6._m0[1].w, PerViewConstantBufferCsgo_t_1_m6._m0[2].w, PerViewConstantBufferCsgo_t_1_m6._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _8892).xyz, _8892.xxx);
 	                break;
 	            }
 	            _19341 = _23944.xyz;

@@ -124,7 +124,7 @@ PS
 	    float4 _Globals_1_g_vDepthBufferSize : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space1)
+	cbuffer SunLightShaderParamsCB : register(b2, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c2);
 	    float4 SunLightShaderParamsCB_1_m1 : packoffset(c3);
@@ -135,7 +135,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tGBufferDepth : register(t32, space1);
-	SamplerComparisonState Filter_149_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerComparisonState AddressU_2_AddressV_2_Filter_149 : register(s14, space1);
 	Texture2D<float4> g_tShadowDepthMapAtlas : register(t30, space1);
 	
 	static float4 gl_FragCoord;
@@ -165,7 +165,7 @@ PS
 	        if (dot(clamp(_22743.xy, 0.0f.xx, 1.0f.xx) - _22743.xy, 1.0f.xx) == 0.0f)
 	        {
 	            float2 _13721 = ((_22743.xy * SunLightShaderParamsCB_1_m4._m0[0].zw) + SunLightShaderParamsCB_1_m4._m0[0].xy) + float2(SunLightShaderParamsCB_1_m0.zw);
-	            _12504 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13721, _22743.z, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13721, _22743.z, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13721, _22743.z, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13721, _22743.z, int2(0, 0)).xyzw, 0.0625f.xxxx);
+	            _12504 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13721, _22743.z, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13721, _22743.z, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13721, _22743.z, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13721, _22743.z, int2(0, 0)).xyzw, 0.0625f.xxxx);
 	        }
 	        else
 	        {
@@ -214,7 +214,7 @@ PS
 	                float _7849 = 1.0f - (_6348.x * _6348.y);
 	                float2 _21744 = float2(SunLightShaderParamsCB_1_m0.zw);
 	                float2 _13720 = float3((_11806.xy * SunLightShaderParamsCB_1_m4._m0[_9382].zw) + SunLightShaderParamsCB_1_m4._m0[_9382].xy, _15223).xy + _21744;
-	                float _13726 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13720, _15223, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13720, _15223, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13720, _15223, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _13720, _15223, int2(0, 0)).xyzw, 0.0625f.xxxx);
+	                float _13726 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13720, _15223, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13720, _15223, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13720, _15223, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _13720, _15223, int2(0, 0)).xyzw, 0.0625f.xxxx);
 	                float _12501;
 	                if (_7849 > 0.0f)
 	                {
@@ -228,7 +228,7 @@ PS
 	                        _20488.x = _20561.x;
 	                        _20488.y = _20561.y;
 	                        float2 _11858 = _20488.xy + _21744;
-	                        _8523 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _11858, _23706.z, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _11858, _23706.z, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _11858, _23706.z, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(Filter_149_AddressU_2_AddressV_2, _11858, _23706.z, int2(0, 0)).xyzw, 0.0625f.xxxx);
+	                        _8523 = ((dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _11858, _23706.z, int2(-2, -2)).xyzw, 0.0625f.xxxx) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _11858, _23706.z, int2(0, -2)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _11858, _23706.z, int2(-2, 0)).xyzw, 0.0625f.xxxx)) + dot(g_tShadowDepthMapAtlas.GatherCmp(AddressU_2_AddressV_2_Filter_149, _11858, _23706.z, int2(0, 0)).xyzw, 0.0625f.xxxx);
 	                    }
 	                    else
 	                    {

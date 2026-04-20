@@ -30,7 +30,7 @@
 A CPU that supports the %s processor feature is required.
 BE\vR
 BSecureAllowed
-C:\buildworker\csgo_rel_win64\build\_build_\source2launcher\_vpc_source2launcher_csgo\default\win64\_msvc_\Retail\cs2.pdb
+C:\buildworker\cs2_beta_win64\build\_build_\source2launcher\_vpc_source2launcher_csgo\default\win64\_msvc_\Retail\cs2.pdb
 CertCloseStore
 CertFindCertificateInStore
 CertFreeCertificateContext
@@ -76,7 +76,6 @@ MVj*
 NtOpenFile
 PeekMessageW
 RADD
-RSDS~
 SSE4.2
 SXS:
 Source2Launcher=1

@@ -95,7 +95,7 @@ VS
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space0)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space0)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c35);
 	};
@@ -301,7 +301,7 @@ PS
 	layout(set = 1) uniform _1008 PerViewConstantBuffer_t;
 	
 	layout(set = 1, binding = 42) uniform textureCube g_tFogCubeTexture;
-	layout(set = 1, binding = 17) uniform sampler Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 17) uniform sampler AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21;
 	
 	layout(location = 0) in vec3 input_0;
 	layout(location = 0) out vec4 output_0;
@@ -330,7 +330,7 @@ PS
 	        float _14602 = clamp(pow(max(0.0, (length(_3895.xyz) * PerViewConstantBufferCsgo_t._m4.y) + PerViewConstantBufferCsgo_t._m4.x), PerViewConstantBufferCsgo_t._m4.w), 0.0, 1.0) * clamp(pow(max(0.0, (_5578.z * PerViewConstantBufferCsgo_t._m5.y) + PerViewConstantBufferCsgo_t._m5.x), PerViewConstantBufferCsgo_t._m5.z), 0.0, 1.0);
 	        float _13668 = saturate(_14602) * PerViewConstantBufferCsgo_t._m7.w;
 	        float _23286 = 1.0 - _13668;
-	        _6805 = vec4(mix(vec4((textureLod(samplerCube(g_tFogCubeTexture, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), normalize((mat4(vec4(PerViewConstantBufferCsgo_t._m6._m0[0].x, PerViewConstantBufferCsgo_t._m6._m0[1].x, PerViewConstantBufferCsgo_t._m6._m0[2].x, PerViewConstantBufferCsgo_t._m6._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].y, PerViewConstantBufferCsgo_t._m6._m0[1].y, PerViewConstantBufferCsgo_t._m6._m0[2].y, PerViewConstantBufferCsgo_t._m6._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].z, PerViewConstantBufferCsgo_t._m6._m0[1].z, PerViewConstantBufferCsgo_t._m6._m0[2].z, PerViewConstantBufferCsgo_t._m6._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].w, PerViewConstantBufferCsgo_t._m6._m0[1].w, PerViewConstantBufferCsgo_t._m6._m0[2].w, PerViewConstantBufferCsgo_t._m6._m0[3].w)) * vec4(_3895, 0.0)).xyz).xyz, PerViewConstantBufferCsgo_t._m5.w * clamp(1.0 - (_14602 * PerViewConstantBufferCsgo_t._m4.z), 0.0, 1.0)) * PerViewConstantBufferCsgo_t._m8.x).xyz, _13668).xyz, _22475.xyz, vec3(_23286)), _22475.w * _23286);
+	        _6805 = vec4(mix(vec4((textureLod(samplerCube(g_tFogCubeTexture, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), normalize((mat4(vec4(PerViewConstantBufferCsgo_t._m6._m0[0].x, PerViewConstantBufferCsgo_t._m6._m0[1].x, PerViewConstantBufferCsgo_t._m6._m0[2].x, PerViewConstantBufferCsgo_t._m6._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].y, PerViewConstantBufferCsgo_t._m6._m0[1].y, PerViewConstantBufferCsgo_t._m6._m0[2].y, PerViewConstantBufferCsgo_t._m6._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].z, PerViewConstantBufferCsgo_t._m6._m0[1].z, PerViewConstantBufferCsgo_t._m6._m0[2].z, PerViewConstantBufferCsgo_t._m6._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m6._m0[0].w, PerViewConstantBufferCsgo_t._m6._m0[1].w, PerViewConstantBufferCsgo_t._m6._m0[2].w, PerViewConstantBufferCsgo_t._m6._m0[3].w)) * vec4(_3895, 0.0)).xyz).xyz, PerViewConstantBufferCsgo_t._m5.w * clamp(1.0 - (_14602 * PerViewConstantBufferCsgo_t._m4.z), 0.0, 1.0)) * PerViewConstantBufferCsgo_t._m8.x).xyz, _13668).xyz, _22475.xyz, vec3(_23286)), _22475.w * _23286);
 	    }
 	    else
 	    {

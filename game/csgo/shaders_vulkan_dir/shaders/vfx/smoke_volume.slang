@@ -261,7 +261,7 @@ PS
 	layout(set = 1, binding = 58) uniform texture2D g_tDepthNoCharacters;
 	layout(set = 1, binding = 57) uniform texture2D g_tMaskTexture;
 	layout(set = 1, binding = 53) uniform texture3D g_tSmokeVolumeTexA_Atlas;
-	layout(set = 1, binding = 17) uniform sampler Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 17) uniform sampler AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21;
 	layout(set = 1, binding = 54) uniform texture3D g_tSmokeVolumeLPV_Atlas;
 	
 	layout(location = 0) in vec3 input_0;
@@ -546,7 +546,7 @@ PS
 	                        vec3 _21495 = saturate(_14658);
 	                        uint _14092 = uint(SmokeConstantBuffer_t._m3._m0[_21927].z);
 	                        _21495.x = ((34.0 * float(_14092)) + (_21495.x * 32.0)) * 0.0018450184725224971771240234375;
-	                        vec4 _11487 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), _21495.xyz, 0.0);
+	                        vec4 _11487 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), _21495.xyz, 0.0);
 	                        vec2 _7714 = mix(_11487.xz, _11487.yw, vec2(SmokeConstantBuffer_t._m3._m0[_21927].y));
 	                        float _20593 = _7714.x;
 	                        float _6734 = _7714.y;
@@ -567,7 +567,7 @@ PS
 	                        float _6665 = clamp(mix(_18056.w, -0.0500000007450580596923828125, _13618), 0.0, 1.0);
 	                        if (_6665 > 0.00999999977648258209228515625)
 	                        {
-	                            vec4 _20413 = textureLod(sampler3D(g_tSmokeVolumeLPV_Atlas, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), _21495.xyz, 0.0);
+	                            vec4 _20413 = textureLod(sampler3D(g_tSmokeVolumeLPV_Atlas, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), _21495.xyz, 0.0);
 	                            float _15720 = clamp(clamp((_6665 - 0.00999999977648258209228515625) * 1.01010096073150634765625, 0.0, 1.0) * max(0.5, clamp((abs(sin((_14658.x * 18.840000152587890625) + (SmokeConstantBuffer_t._m14 * 0.699999988079071044921875))) + abs(cos((_14658.y * 31.40000152587890625) + (SmokeConstantBuffer_t._m14 * 0.5)))) * 0.5, 0.0, 1.0)), 0.0, 1.0) * clamp((SmokeConstantBuffer_t._m5._m0[_21927].x * 2.0) - 0.5, 0.0, 1.0);
 	                            float _22281 = clamp(_15720 + ((1.0 - clamp(distance(PerViewConstantBuffer_t._m3, _25170) * 0.100000001490116119384765625, 0.0, 1.0)) * _15720), 0.0, 1.0);
 	                            float _13147;

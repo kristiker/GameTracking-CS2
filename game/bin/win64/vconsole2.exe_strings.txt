@@ -33,6 +33,7 @@
  ** Entrypoint For Method '%s'
  *:!focus { margin: 1px; padding: 1x; border: 2px solid rgb( 0, 0, 0 ); }
  + %lld bytes
+ 3GK_
  <-- Arg '%s'
  <-- Retval '%s'
  ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
@@ -71,6 +72,7 @@
  uncorrected errors
 !"?updateEditorGeometry@QItemDelegate@@UEBAXPEAVQWidget@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 !"Xco
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?trigger@QAction@@QEAAXXZ
 !?triggerAction@QAbstractSlider@@QEAAXW4SliderAction@1@@Z
 !?triggered@QAction@@QEAAX_N@Z
@@ -83,6 +85,13 @@
 !root
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
 " connected\n
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:36:57-07:00" xmp:MetadataDate="2023-05-02T14:36:57-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" xmpMM:DocumentID="adobe:docid:photoshop:4a1dab67-1829-dd47-9ecb-fd44469a1804" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:30-07:00" xmp:MetadataDate="2023-05-02T14:37:30-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" xmpMM:DocumentID="adobe:docid:photoshop:508d1f02-c5d0-164c-aa95-4cdc013b3b9d" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:55-07:00" xmp:MetadataDate="2023-05-02T14:37:55-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" xmpMM:DocumentID="adobe:docid:photoshop:cd96ee09-f23a-6147-aa4e-e9b7a3ee136e" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmp:CreatorTool="Adobe Photoshop 24.2 (Windows)" xmp:CreateDate="2023-05-16T15:33:16-07:00" xmp:ModifyDate="2023-05-16T17:33:22-07:00" xmp:MetadataDate="2023-05-16T17:33:22-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:41ebadb0-9c4d-3443-8a8e-c584acaba6b3" xmpMM:DocumentID="adobe:docid:photoshop:1409980f-538c-004f-a30d-33b9a3bca48c" xmpMM:OriginalDocumentID="xmp.did:e663ab67-fa09-b947-842d-161d2bb54bb0"> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:e663ab67-fa09-b947-842d-161d2bb54bb0" stEvt:when="2023-05-16T15:33:16-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:41ebadb0-9c4d-3443-8a8e-c584acaba6b3" stEvt:when="2023-05-16T17:33:22-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2014-07-22T17:28:16-07:00" xmp:MetadataDate="2023-05-16T15:33:00-07:00" xmp:ModifyDate="2023-05-16T15:33:00-07:00" dc:format="image/png" xmpMM:InstanceID="xmp.iid:70dca6ba-8156-f847-b72a-3f89ec0d1357" xmpMM:DocumentID="adobe:docid:photoshop:741433e6-d0f8-be4b-a8e3-c8a483b90b95" xmpMM:OriginalDocumentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4" photoshop:ColorMode="3" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="16" exif:PixelYDimension="16"> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:7C75E0A1FF11E411850AA13E28C147C4" stEvt:when="2014-07-22T17:28:16-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:7F75E0A1FF11E411850AA13E28C147C4" stEvt:when="2014-07-22T17:36:44-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:a49dbea6-ee0f-e540-b098-ca3d8ea9d8bb" stEvt:when="2023-05-16T15:33:00-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:70dca6ba-8156-f847-b72a-3f89ec0d1357" stEvt:when="2023-05-16T15:33:00-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:a49dbea6-ee0f-e540-b098-ca3d8ea9d8bb" stRef:documentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4" stRef:originalDocumentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4"/> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0062C125FDECE3118380C132D5657760</rdf:li> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:0F3A4C43EDE1E3118A4DD0FB6B6DA7B8</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:46AF812C2911E411AA4FA16065678800</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:68FAB29484DCE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:6A945CAB2A55E2118A87DE6F7E37EF82</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:84B599CBCBE5E3118A4DD0FB6B6DA7B8</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8EAEF2FA07206811871FC2842A0EC0DA</rdf:li> <rdf:li>xmp.did:9396FA9BACF1E311B93E88A43E96ECB4</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BE7455C56C06E211AB9AFFA8D688EE9B</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:D00FFCC6ADEDE311924BCEB213EBAC59</rdf:li> <rdf:li>xmp.did:DCE84491BCFCE31181A6DA8B89FC9D3F</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.c0204b2, 2023/02/09-06:26:14        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T16:38:14-07:00" xmp:MetadataDate="2023-05-02T16:38:14-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:9ac6a27e-1178-e441-a69d-482965dae103" xmpMM:DocumentID="adobe:docid:photoshop:f21d44d2-802f-da4a-b197-ea6fb332a30e" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="20" exif:PixelYDimension="20"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:9bb9bfa6-13b8-b24e-8f8f-9673c93c2712" stEvt:when="2023-05-02T16:38:14-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:9ac6a27e-1178-e441-a69d-482965dae103" stEvt:when="2023-05-02T16:38:14-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:9bb9bfa6-13b8-b24e-8f8f-9673c93c2712" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>@W
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.c0204b2, 2023/02/09-06:26:14        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T16:56:31-07:00" xmp:MetadataDate="2023-05-02T16:56:31-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:29b91465-e533-0044-867c-7864f68b898d" xmpMM:DocumentID="adobe:docid:photoshop:3f24f070-e01a-c34c-be23-cdf87dd94db3" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="20" exif:PixelYDimension="20"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:2b609727-5c36-d74c-a334-3a62b46479df" stEvt:when="2023-05-02T16:56:31-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:29b91465-e533-0044-867c-7864f68b898d" stEvt:when="2023-05-02T16:56:31-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:2b609727-5c36-d74c-a334-3a62b46479df" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
 "%s": Bad mode
 "%s": Information lost writing value (%g) as (unsigned) RATIONAL
 "?updateEditorData@QAbstractItemView@@MEAAXXZ
@@ -159,8 +168,9 @@
 #9gT#
 #?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
 #?winId@QWidget@@QEBA_KXZ
+#?window@QWidget@@QEBAPEAV1@XZ
 #CfU7
-#EFr
+#EJp
 #FFFF00
 #JAn
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
@@ -168,6 +178,7 @@
 #\r?hide@QWidget@@QEAAXXZ
 #bnS
 #gx5\v
+#syy2
 #zOJ
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $#T2Q
@@ -198,6 +209,8 @@ $t5\tEi\fo
 %[?setRange@QIntValidator@@UEAAXHH@Z
 %\?setUnderline@QFont@@QEAAX_N@Z
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+%c%c%c%c%c%c
+%c%c%c%c%c%c%c%c
 %d CallInfos:\n
 %d Cells:\n
 %d Chunks:\n
@@ -209,6 +222,7 @@ $t5\tEi\fo
 %d register(s) %d byte(s)\n
 %d trace results\n
 %daT
+%dg3
 %lu: Row out of range, max %lu
 %lu: Sample out of range, max %lu
 %s %s decoding is not implemented
@@ -287,6 +301,7 @@ $t5\tEi\fo
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
 &Devices
 &Help
+&IDAT8
 &Main
 &Tools
 &Viewers
@@ -305,6 +320,7 @@ $t5\tEi\fo
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
 (7dt!
 (Custom Colors Disabled)
+(ECC
 (Filter)
 (None Available)\n
 (Primary)
@@ -313,7 +329,9 @@ $t5\tEi\fo
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (bLLDc
+(d.9QN
 (i En
+(iCC
 (p8m
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )HBp
@@ -348,12 +366,14 @@ $t5\tEi\fo
 ,"?updateGeometries@QTableView@@MEAAXXZ
 ,4R\nm
 ,91GJ:R,
+,U0YNB
 ,xts
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
 -----------------------------------\n
 ------------------------\n
+-5dI
 -> Success (%d attempts)\n
 -Q"Ej
 -UUSW
@@ -363,6 +383,8 @@ $t5\tEi\fo
 ...Continue Test Message For Simple Image Attachment With Found File.\n
 ...Continue Test Message For Simple Image Attachments With Found File.
 .9oV
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -560,6 +582,7 @@ $t5\tEi\fo
 .?AVCAttachmentData@@
 .?AVCBaseDynamicWidgetFactory@@
 .?AVCBasePulseGraphInstance@@
+.?AVCBaseToolsModelInstance@@
 .?AVCBaseVDataFileManager@@
 .?AVCBindTargetDescriptorBase@@
 .?AVCBindTargetProxy@@
@@ -628,8 +651,10 @@ $t5\tEi\fo
 .?AVCPulseCell_WaitForCursorsWithTag@@
 .?AVCPulseCell_WaitForCursorsWithTagBase@@
 .?AVCPulseCell_WaitForObservable@@
+.?AVCPulseCursorBaseObservableScope@@
 .?AVCPulseExecCursor@@
 .?AVCPulseGraphDef@@
+.?AVCPulseGraphLoadContext@@
 .?AVCQAddLogViewerDialog@@
 .?AVCQApplication@@
 .?AVCQAttachmentGeoViewer@@
@@ -711,7 +736,6 @@ $t5\tEi\fo
 .?AVCQtImageCache@@
 .?AVCRenderOptionsPopupUI@@
 .?AVCSceneObject@@
-.?AVCSceneSkyBoxLightQuery@@
 .?AVCSchemaRegistration_pulse_runtime_lib@@
 .?AVCSchemaRegistration_toolscene@@
 .?AVCSchemaRegistration_vconsole2@@
@@ -725,11 +749,14 @@ $t5\tEi\fo
 .?AVCStackTranslationHelper_Universal@@
 .?AVCStackTranslationHelper_VSymbolModule@@
 .?AVCStackTranslationHelper_VirtualMachine@@
+.?AVCStandardEditorModelInstance@@
 .?AVCTextAttachment@@
 .?AVCTonemappingPopupUI@@
 .?AVCToolAxisObjectDesc@@
 .?AVCToolGridObjectDesc@@
 .?AVCToolHud@@
+.?AVCToolModelInstance_ConfigNode@@
+.?AVCToolModelInstance_MaterialAttributeTagListener@@
 .?AVCToolScene@@
 .?AVCToolSceneAxis@@
 .?AVCToolSceneAxisObject@@
@@ -761,6 +788,8 @@ $t5\tEi\fo
 .?AVCommandItemDelegate@@
 .?AVIADBDeviceConnectionListener@@
 .?AVIADBDeviceLogCatListener@@
+.?AVIAnimTagListener@@
+.?AVIAnimationHelperAnimGraphChangeLister@@
 .?AVIAppleMobileDeviceConnectionListener@@
 .?AVIAppleMobileDeviceSyslogListener@@
 .?AVIAssetFileListener@@
@@ -775,6 +804,8 @@ $t5\tEi\fo
 .?AVIHitTestable@@
 .?AVIMobileDeviceConnectionListener@@
 .?AVIMobileDeviceLogListener@@
+.?AVIModelConfigPreviewHost@@
+.?AVIModelInstanceRenderContext@@
 .?AVIModuleMappingListener@@
 .?AVIParticleEHandleHelper@@
 .?AVIParticleEffect@@
@@ -782,6 +813,8 @@ $t5\tEi\fo
 .?AVIParticlesLibHost@@
 .?AVIPulseExecLog@@
 .?AVIPulseGraphDef@@
+.?AVIPulseGraphLoadErrorReporter@@
+.?AVIPulseHost_BaseObservable@@
 .?AVIPulseHost_Cursor@@
 .?AVIPulseHost_Unknown@@
 .?AVIPulseHost_YieldingCursor@@
@@ -854,6 +887,7 @@ $t5\tEi\fo
 .?AVQProxyStyle@@
 .?AVQPushButton@@
 .?AVQRadioButton@@
+.?AVQRegularExpressionValidator@@
 .?AVQScrollArea@@
 .?AVQScrollBar@@
 .?AVQShortcut@@
@@ -924,37 +958,75 @@ $t5\tEi\fo
 /s\tIg
 0.0.0.0
 0012host:track-devices
-03F@
+015@
+01G@
+027@
+02G@
 03j3
-04F@
-064@
+04G@
+05G@
+05H@
+067@
+095@
 099i 
-09F@
-0>y$0
+0B7@
 0BCDEFGHIJKLMNOPQRSTUVWXYZ1BCDEFGHIJKLMNOPQRSTUVWXYZ2BCDEFGHIJKLMNOPQRSTUVWXYZ3BCDEFGHIJKLMNOPQRSTUVWXYZ4BCDEFGHIJKLMNOPQRSTUVWXYZ\n
-0F4@
+0C7@
+0E6@
+0G6@
 0GG@
-0O6@
+0IDAT8
+0LG@
+0NG@
+0O7@
 0Ou"@
-0P6@
-0T6@
-0U6@
+0P7@
+0PG@
+0R7@
+0SG@
+0U7@
+0VG@
+0WG@
+0WH@
+0Y6@
+0Z6@
+0ZH@
 0a)Y
-0bG@
-0c6@
-0cG@
-0j5@
-0l6@
-0m6@
+0a7@
+0aG@
+0b2@
+0c4@
+0d2@
+0e2@
+0f2@
+0f4@
+0g2@
+0i2@
+0j2@
+0k7@
+0m7@
+0o6@
+0o7@
+0p6@
+0q6@
+0r6@
+0s6@
+0t2@
+0u6@
+0u7@
+0v5@
+0w6@
+0w7@
 0x%1
 0x%llx
 0x%p = %s '%s'
+0y5@
 1"?updateGeometry@QWidget@@QEAAXXZ
 1&im*
+10:35:38
 127.0.0.0
 127.0.0.1:%d
-13:41:16
-13:41:41
+13:27:58
 16];h
 16yd
 172.16.0.0
@@ -1089,6 +1161,7 @@ $t5\tEi\fo
 1OnSceneCameraChanged()
 1OnSearchTextChanged()
 1OnSearchTextEdited()
+1OnSetColorInternal(FatColor_t)
 1OnShowAllChannels()
 1OnShowAsText( bool )
 1OnShowChannelAttachment()
@@ -1119,7 +1192,6 @@ $t5\tEi\fo
 1OnTabMoved( int, int )
 1OnTempShowAllChannels()
 1OnTempShowAllHiddenChannels()
-1OnTextChanged( int )
 1OnTextColor()
 1OnTimeout()
 1OnTimerTimeout()
@@ -1130,6 +1202,7 @@ $t5\tEi\fo
 1OnToggleShowBoneNames( bool )
 1OnToggleSkybox( bool )
 1OnToggleSmoothCamera( bool )
+1OnToggleSpaceWalkCamera( bool )
 1OnToggleStats()
 1OnToggleWireframe( bool )
 1OnTonemapModeButtonPressed()
@@ -1165,7 +1238,6 @@ $t5\tEi\fo
 1SaveAsAction()
 1SelectFirstItemAfterFilter()
 1SetAlphaEditFromSlider(int)
-1SetColorInternal(FatColor_t)
 1TakeRenderDocCapture()
 1ToggleSettingsPopup()
 1ToggleWireframeSelected()
@@ -1176,12 +1248,12 @@ $t5\tEi\fo
 1[?setRedF@QColor@@QEAAXN@Z
 1\n?doItemsLayout@QHeaderView@@UEAAXXZ
 1\r?hideEvent@QTabBar@@MEAAXPEAVQHideEvent@@@Z
-1\tV_isinfd
 1accept()
 1close()
 1ddd
 1deleteLater()
 1iOq
+1iTXtXML:com.adobe.xmp
 1map()
 1nZx
 1reject()
@@ -1224,7 +1296,6 @@ $t5\tEi\fo
 2\nmg
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpt
 2aboutToShow()
 2accepted()
 2actionTriggered( int )
@@ -1277,7 +1348,6 @@ $t5\tEi\fo
 2valueChanged( int )
 2valueChanged(int)
 3*9Y
-3-tS
 32222222
 332E
 333333
@@ -1290,13 +1360,16 @@ $t5\tEi\fo
 3\v?event@QApplication@@MEAA_NPEAVQEvent@@@Z
 3wn;7:
 4)Br
+49-8
+497@
 4>G1_
 4EnP6AI
-4O6@
 4V+2 W
+4[?setRegularExpression@QRegularExpressionValidator@@QEAAXAEBVQRegularExpression@@@Z
 4[YF
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
+4b4@
 5 Line gap\n
 5.15.2
 58OnB!
@@ -1311,7 +1384,6 @@ $t5\tEi\fo
 5yFV\f
 63TEIb
 6F_U*
-6S$0
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\f?focusOutEvent@QPlainTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 6\nm@[EA
@@ -1322,7 +1394,7 @@ $t5\tEi\fo
 7"\nc3l
 7&F|If
 7?F|pX
-7N\tmI+
+7D4L
 7Q<g
 7RL7o
 7T2,
@@ -1330,29 +1402,50 @@ $t5\tEi\fo
 7^#OC\vO^r
 7i^1
 7o4&
+7u{7"
 8"3hrf
 8&Kx
-85F@
-89F@
+81G@
+825@
+82G@
+855@
+877@
+895@
 8:9a
-8EF@
-8IF@
-8J;i
-8R6@
-8S6@
+8D7@
+8F7@
+8I6@
+8L7@
+8NG@
+8PG@
+8R5@
+8R7)
+8S7@
+8V6@
 8WWWs
+8X6@
+8XH@
+8XU%
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8h5@
-8i6@
-8j6@
-8l5@
+8a5@
+8c2@
+8d4@
+8g2@
+8k7@
+8l2@
 8liS
 8o6@
 8p6@
-8r6@
+8q7@
+8t6@
+8u5@
+8v6@
+8x5@
+8x6@
 8y6@
+8z6@
 9*x2$
 969p
 98On@
@@ -1385,16 +1478,17 @@ $t5\tEi\fo
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 :\n?doSetTextCursor@QPlainTextEdit@@MEAAXAEBVQTextCursor@@@Z
 :\v?canRead@QImageReader@@QEBA_NXZ
-:a`oh
 :gqh-
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 ;bLT
 ;kUA
 ;uEJ=
 ;wDNE
 <$GAME_OR_CORE>
 <54c
+<?xpacket begin="
 <AHB
 <NONE>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
@@ -1410,12 +1504,12 @@ $t5\tEi\fo
 <p>[<b>%d</b>] <big>%s</big></p>
 <small><p>%s</p></small>
 == PulseGraphDef ==\n
-=Activity %s has %d sequences with a total weight of %d!\n
 =HA5
 =IDAT(
 =M3B
 =hSa
 =lUAnh%
+=m_bUseShadowFastPath
 >Far
 >RIvn
 >Sxb
@@ -1532,6 +1626,8 @@ $t5\tEi\fo
 ??0QRectF@@QEAA@AEBVQRect@@@Z
 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z
 ??0QRegExp@@QEAA@XZ
+??0QRegularExpression@@QEAA@AEBVQString@@V?$QFlags@W4PatternOption@QRegularExpression@@@@@Z
+??0QRegularExpressionValidator@@QEAA@AEBVQRegularExpression@@PEAVQObject@@@Z
 ??0QScrollArea@@QEAA@PEAVQWidget@@@Z
 ??0QScrollBar@@QEAA@PEAVQWidget@@@Z
 ??0QScrollBar@@QEAA@W4Orientation@Qt@@PEAVQWidget@@@Z
@@ -1660,6 +1756,8 @@ $t5\tEi\fo
 ??1QRadioButton@@UEAA@XZ
 ??1QRegExp@@QEAA@XZ
 ??1QRegion@@QEAA@XZ
+??1QRegularExpression@@QEAA@XZ
+??1QRegularExpressionValidator@@UEAA@XZ
 ??1QScrollArea@@UEAA@XZ
 ??1QScrollBar@@UEAA@XZ
 ??1QSettings@@UEAA@XZ
@@ -1744,7 +1842,6 @@ $t5\tEi\fo
 ?QStringList_join@QtPrivate@@YA?AVQString@@PEBVQStringList@@PEBVQChar@@H@Z
 ?Tmx;
 ?Unable to read file %s\n
-?Xnwf
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?\v?event@QFontComboBox@@MEAA_NPEAVQEvent@@@Z
 ?about@QMessageBox@@SAXPEAVQWidget@@AEBVQString@@1@Z
@@ -2054,6 +2151,7 @@ $t5\tEi\fo
 ?isIndexHidden@QListView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTableView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTreeView@@MEBA_NAEBVQModelIndex@@@Z
+?isModified@QLineEdit@@QEBA_NXZ
 ?isNull@QVariant@@QEBA_NXZ
 ?isResettable@QMetaProperty@@QEBA_NXZ
 ?isRowHidden@QTableView@@QEBA_NH@Z
@@ -3050,6 +3148,7 @@ $t5\tEi\fo
 ?takeAt@QGridLayout@@UEAAPEAVQLayoutItem@@H@Z
 ?takeAt@QStackedLayout@@UEAAPEAVQLayoutItem@@H@Z
 ?testAttribute_helper@QWidget@@AEBA_NW4WidgetAttribute@Qt@@@Z
+?texcoord
 ?text@QAbstractButton@@QEBA?AVQString@@XZ
 ?text@QAction@@QEBA?AVQString@@XZ
 ?text@QLabel@@QEBA?AVQString@@XZ
@@ -3058,6 +3157,7 @@ $t5\tEi\fo
 ?text@QProgressBar@@UEBA?AVQString@@XZ
 ?text@QTableWidgetItem@@QEBA?AVQString@@XZ
 ?text@QTreeWidgetItem@@QEBA?AVQString@@H@Z
+?textChanged@QLineEdit@@QEAAXAEBVQString@@@Z
 ?textCursor@QPlainTextEdit@@QEBA?AVQTextCursor@@XZ
 ?textCursor@QTextEdit@@QEBA?AVQTextCursor@@XZ
 ?textEdited@QLineEdit@@QEAAXAEBVQString@@@Z
@@ -3079,6 +3179,7 @@ $t5\tEi\fo
 ?toString@QVariant@@QEBA?AVQString@@XZ
 ?toUInt@QVariant@@QEBAIPEA_N@Z
 ?toUShort@QString@@QEBAGPEA_NH@Z
+?toUpper@QString@@QEHAA?AV1@XZ
 ?toUtf8@QString@@QEGBA?AVQByteArray@@XZ
 ?toUtf8@QString@@QEHAA?AVQByteArray@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
@@ -3095,13 +3196,16 @@ $t5\tEi\fo
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @Integer overflow in %s
+@Physics
 @UI4
 @[7HU
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
 @\tFFQb
+@\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
-@eWq
+@fff>fff>fff>fff>
 @iJT
+@spawn
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A9\vD
@@ -3137,7 +3241,6 @@ AMDeviceStopSession
 AMDeviceValidatePairing
 ASSERT\nColor
 ATp\n
-A[Uk
 A\n?document@QTextEdit@@QEBAPEAVQTextDocument@@XZ
 About VConsole2
 About...
@@ -3148,10 +3251,10 @@ Absolute value (float)
 Absolute value (int)
 Accept
 AcceptColorInternal
-Activate
 Active
 Active Window Widget
 ActiveArea
+Activity %s has %d sequences with a total weight of %d!\n
 Add Device
 Add Log Viewer
 Add R%d <- R%d + R%d
@@ -3164,11 +3267,13 @@ Addr
 Address
 Adobe ImageReadyq
 AdobeDeflate
+All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon.
 Alpha decoder initialization failed.
 Alpha:
 Alternate
 Alternate Path: %s\n
 AlternateBase
+Always
 AnalogBalance
 And R%d <- R%d && R%d
 Android Device Logcat tab link => "
@@ -3180,6 +3285,7 @@ Apple Mobile Syslog
 Apple Mobile device syslog tab link => "
 AppleDeviceInterface
 Apply filter to log line only, excluding the channel header.
+Apr 14 2026
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
 Arc Sin
@@ -3193,6 +3299,7 @@ Arial
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -3205,13 +3312,12 @@ AsShotICCProfile
 AsShotNeutral
 AsShotPreProfileMatrix
 AsShotWhiteXY
-Assert
 Assert Messages Color
 Assert True
 Asserts/Errors Only
 Async Fire C%d:I%d
 At Whitespace
-AtlasToVolumeTextureConversion(3089): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attachment Text - Attachment Text - Attachment Text
 Attempting to register the command %s for context %s multiple times\n
 AuC=
@@ -3252,6 +3358,7 @@ Bad value for hAlign in AttachPos!
 Bad value for vAlign in AlignedPos!
 Bad value for vAlign in AttachPos!
 Bad verticalPolicy "%s"
+Bad vmdl
 BadFaxLines
 Base
 Base-10 logarithm
@@ -3287,19 +3394,22 @@ ByFQ
 B|ee
 C7&x
 C7G`
-C:\buildworker\csgo_rel_win64\build\_build_\utils\vconsole2\_vpc_vconsole2\default\win64\_msvc_\Retail\vconsole2.pdb
-C:\buildworker\csgo_rel_win64\build\src\common\stackhelpers\stackhelpers_vsymbolmodule_translation.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\adb.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\applemobiledevice.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\mobiledeviceinterface.cpp
-C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
-C:\buildworker\csgo_rel_win64\build\src\toolrenderutils\toolmatsysutils.cpp
-C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
-C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_materialpreview.cpp
-C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
-C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
+C:\buildworker\cs2_beta_win64\build\_build_\utils\vconsole2\_vpc_vconsole2\default\win64\_msvc_\Retail\vconsole2.pdb
+C:\buildworker\cs2_beta_win64\build\src\bitmap\floatbitmap.cpp
+C:\buildworker\cs2_beta_win64\build\src\common\stackhelpers\stackhelpers_vsymbolmodule_translation.cpp
+C:\buildworker\cs2_beta_win64\build\src\mobiledeviceinterface\adb.cpp
+C:\buildworker\cs2_beta_win64\build\src\mobiledeviceinterface\applemobiledevice.cpp
+C:\buildworker\cs2_beta_win64\build\src\mobiledeviceinterface\mobiledeviceinterface.cpp
+C:\buildworker\cs2_beta_win64\build\src\particleslib\particlemgr.cpp
+C:\buildworker\cs2_beta_win64\build\src\public\tier0\utlblockvector.h
+C:\buildworker\cs2_beta_win64\build\src\toolrenderutils\toolmatsysutils.cpp
+C:\buildworker\cs2_beta_win64\build\src\toolrenderutils\toolstandardmodels.cpp
+C:\buildworker\cs2_beta_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
+C:\buildworker\cs2_beta_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
+C:\buildworker\cs2_beta_win64\build\src\tools\toolscene\toolscene_sky.cpp
+C:\buildworker\cs2_beta_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 C@HY
+C@ag
 CADBInterface::PumpEvents() logcat fiber exited for [%s]\n
 CAppleMobileDeviceInterface::InternalStartSyslogService() could not retrieve socket for service com.apple.syslog_relay on device [%s]\n
 CAppleMobileDeviceInterface::InternalStartSyslogService() failed to start service com.apple.syslog_relay on device [%s]\n
@@ -3338,6 +3448,7 @@ CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
 CMobileDeviceInterface::ReverseForwardNetworkPort() is not available for Apple devices\n
+CModelPreviewAttachedModel
 CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
@@ -3345,11 +3456,12 @@ COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 COZw
 CParticleCollectionBindingInstance::HACK_UnusedBinding
-CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1140
+CParticleMgr::SimulateParticles(), C:\buildworker\cs2_beta_win64\build\src\particleslib\particlemgr.cpp:1186
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -3361,6 +3473,7 @@ CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
@@ -3386,7 +3499,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseMathlib::AbsFloat
@@ -3436,6 +3548,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -3453,6 +3566,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -3593,6 +3707,7 @@ CToolRenderContext::PopTransform - matrix stack underflow
 CToolRenderContext::PushRenderMode - exceeded stack depth\n
 CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
 CToolRenderContext::PushTransform - matrix stack underflow
+CToolScene::Update(1406): 
 CToolSceneAxis
 CToolSceneCamera
 CToolSceneGrid
@@ -3614,7 +3729,9 @@ CUtlBlockVector<struct StoredTriangleVertexPositions_t,int,class CMemAllocAlloca
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<struct MonitorFileInfo_t,class CDefFastCaselessStringIgnoreSlashesLess>::Insert
 CUtlHashtable<CGeoViewerObjectId*>
+CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CNewParticleEffect *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
+CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
@@ -3635,14 +3752,14 @@ CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,struct Command_t *,class C
 CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,class CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlSortVector<struct LogChannelConfig_t *,class CChannelConfigLess,class CUtlVector<struct LogChannelConfig_t *,int,class CUtlVectorMemory_Growable<struct LogChannelConfig_t *,int,0> > >::FindLessOrEqual
 CUtlSortVector<struct LogChannelConfig_t *,class CChannelConfigLess,class CUtlVector<struct LogChannelConfig_t *,int,class CUtlVectorMemory_Growable<struct LogChannelConfig_t *,int,0> > >::Insert
+CUtlSortVector<unsigned int,class CUtlSortVectorDefaultLess<unsigned int>,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVectorFixedGrowable
 CVCQSplitter
@@ -3789,6 +3906,7 @@ Cosine of angle. Input in radians, output in radians
 Could not decode alpha data.
 Could not load color map %s: %s\n
 Could not setup Material System for GeoView\n
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 Courier
 Courier New
 CpC xj
@@ -3816,6 +3934,7 @@ D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D f(M9h
 D#sC
 D3nPJ
+D95@
 DBM&(
 DETAILED\nColor
 DISABLED
@@ -3824,7 +3943,6 @@ DNGBackwardVersion
 DNGPrivateData
 DNGVersion
 DWARF_SYMBOL_PATH
-D\tV_log2f
 D^0m
 D_BORDER
 D_NO_ZTEST
@@ -3916,6 +4034,7 @@ E9TD
 E<G&Iw
 ED\Sd"
 EHVcp
+EN\4
 ERROR! LoadFromJPG( %s ) failed!\n
 ERROR! LoadFromPNG( %s ) failed!\n
 ERROR! LoadFromWebP( %s ) failed!\n
@@ -3940,7 +4059,6 @@ EXRReadFile() - G channel not found!\n
 EXRReadFile() - R channel not found!\n
 EXRReadFile() - cannot read image data!\n
 E\r?endsWith@QByteArray@@QEBA_ND@Z
-E\tV_logd
 EarlyRetireParticleSystems
 EditingCancelled
 EditingFinished
@@ -3984,8 +4102,8 @@ ExtraSamples
 F"a7
 F'6Q
 F5}H
-FAB\nA
 FBDG
+FCToolSceneLightRig
 FIDAT8
 FJBL
 FPS: %.2f (%6.3f ms +/-%6.3f)
@@ -3999,6 +4117,7 @@ Failed To Connect After %1 Attempts.\n
 Failed to allocate an instance of a class
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
+Failed to compute bone transform %d for attachment '%s'
 Failed to compute channel layout.\n
 Failed to convert value '%s' to enum/flags '%s' (expecting eg. '%s')
 Failed to create widget %s
@@ -4033,14 +4152,18 @@ Filter:
 Final Port: %1
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 Find:
+Fired immediately when this node begins for chaining purposes.
+Fired when the observable boolean is false, and killed when true.
+Fired when the observable boolean is true, and killed when false.
 Fixed
 Flash hidden channel activity in log viewer tab
 FlatSelection
 Float To Game Time
 FloatBitMap_t: Error loading %s\n
-FloatBitMap_t::LoadFromFile(3281): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
-FloatBitMap_t::LoadFromTGA(2230): Error loading %s\n
+FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
@@ -4074,6 +4197,7 @@ FreeOffsets
 G channel not found!\n
 GL h
 GPSIFDOffset
+GRM"]M
 GVB&g9
 GZTI
 G[?setRgb@QColor@@QEAAXHHHH@Z
@@ -4123,31 +4247,46 @@ Group3Options
 Group4Options
 GvZ<3
 H!0kZj
-H96@
+H15@
+H1G@
+H27@
+H2G@
+H3G@
+H45@
+H9@C
 HAC K  Unused Binding
 HCto
-HI(B
+HI7@
+HJ7@
 HKEY_CURRENT_USER\Software\Valve\GeoView
-HP6@
-HT1@
+HM7@
+HMAC
+HNG@
+HPG@
+HR7@
+HT7@
 HV &G
 HV.J
+HWH@
 HY6@
+HZH@
 H\fBp
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
 HalftoneHints
-Hc6@
+HbH@
+Hc4@
+HcG@
+Hd2@
 Header Color
 Header Color...
 HeaderCheckStateChanged
 HeaderSectionBackground
 HeaderSectionLine
-HelperLoadFbmByFileExtension(3061): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
 HeroViewer
+Hex:
 HgBNv
-Hh5@
-Hi6@
 Hidden Channels
 HiddenIds
 Hide
@@ -4161,22 +4300,33 @@ Highlight Color...
 Highlight Line Matches
 HighlightColor
 HighlightedText
-Hj6@
-Hl6@
-Hm4@
+Hj7@
+Hj~7!
+Hl2@
 Hmx\
+Ho6@
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
 HostComputer
 HoverItemChanged
-Hr6@
-Hu(B
+Hp6@
+Ht6@
+Hu5@
+Hv5@
+Hv6@
+Hw5@
+Hw7@
+Hx6@
+Hx7@
+Hy5@
 Hy6@
+Hy?C
+HyAC
 Hz6@
-HzIz
 H}Go-
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
+I"AC
 IBindTarget
 IBindableCameraScene
 IBrs
@@ -4186,10 +4336,10 @@ IConVarDetailsCallback
 IDAT
 IDAT(
 IDAT8
-IDAT8O
 IDAT<
 IDATx
 IEND
+IEgwNXt
 IHelpChangeListener
 IHitTestable
 II+4
@@ -4197,6 +4347,7 @@ IKV3TransferInterface_ResourceSave
 IMobileDeviceConnectionListener
 IMobileDeviceLogListener
 IP: Unknown
+IPulseGraphLoadErrorReporter
 IPulseReloadListener
 ISO JBIG
 IS_EFFECTS_LAYER
@@ -4300,23 +4451,21 @@ JA\rT@ibn
 JE[ul
 JPEG
 JQ\fy
+JRCmm
 JSKsw
 J\f?font@QApplication@@SA?AVQFont@@XZ
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
-J\tV_modfd
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 Jcqj<
 Je@4
 Jump to Instr I%d
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K"O*i
+K+Da
 K/UPK
 K8w~\v
 KCL+
-KH(1@
-KIDAT8
 KTHE
-KV3 save transfer failed: %s
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
 K`FV
@@ -4328,11 +4477,10 @@ KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
 Koez
 Kt6b}$
 K}QVi1c
-L?C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
+L95@
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -4352,6 +4500,7 @@ L\r?hitButton@QToolButton@@MEBA_NAEBVQPoint@@@Z
 L\t?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
 L_?toImage@QPixmap@@QEBA?AVQImage@@XZ
 LabelPos_t
+Lb4@
 Leap to Chunk C%d
 Left Mouse (Point)
 Length (magnitude) of Vector
@@ -4390,7 +4539,6 @@ LoadEXRImageFromMemory failed! Error message: %s\n
 LoadEXRImageFromMemory() failed! Error message: %s\n
 LoadFromInMemoryEXR( %s ) failed.\n
 LoadKV3Object error: %s\n
-LoadKV3ObjectInPlace error: %s\n
 Loading SubTool: '%s', Interface: %s\n
 Local VConsole Commands:\n
 Localhost
@@ -4499,6 +4647,7 @@ MobileDeviceInterface
 Mod R%d <- R%d %% R%d
 Module Path: %s\n
 Monitor Directory: %s\n
+Monitor Observable
 More Detailed Debug
 Mouse4
 Mouse4DoubleClick
@@ -4561,6 +4710,7 @@ No Qt widget associated with the active window! (How did you execute this comman
 No Qt widget currently had focus! (How did you execute this command?)
 No Widget Under Mouse
 No Widget Under Mouse @(%1,%2)
+No bone or attachment named '%s'
 No conversion from KV3 to variant type %d (%s)
 No devices. You must add a device.
 No signal '%s'
@@ -4618,6 +4768,7 @@ O\YZ
 O\fyW
 O\r?hitTestComplexControl@QCommonStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
 Oa?width@QImage@@QEBAHXZ
+Observable
 Old-style JPEG
 Old-style LZW codes, convert file
 OldSubfileType
@@ -4712,6 +4863,7 @@ OnFrameVisibleFromAboveCentered
 OnGeoViewer
 OnGotoMarker
 OnGroupBoxClicked
+OnHexChanged
 OnHiddenDataBlinkTimeout
 OnHideMatchesOnlyToggled
 OnHighlightColor
@@ -4760,6 +4912,7 @@ OnSaveSelection
 OnSceneCameraChanged
 OnSearchTextChanged
 OnSearchTextEdited
+OnSetColorInternal
 OnShowAllChannels
 OnShowAsText
 OnShowChannelAttachment
@@ -4800,6 +4953,7 @@ OnToggleShadows
 OnToggleShowBoneNames
 OnToggleSkybox
 OnToggleSmoothCamera
+OnToggleSpaceWalkCamera
 OnToggleStats
 OnToggleWireframe
 OnTonemapModeButtonPressed
@@ -4834,7 +4988,6 @@ Open In New Log Viewer
 OpenLogViewerProperties
 OpenMutexA
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Options...
 Options:
@@ -4852,28 +5005,50 @@ OverlayProjectionDirection
 Overwrite With Current
 P"?updateSection@QHeaderView@@IEAAXH@Z
 P05y
-P1F@
-P74@
-P76@
+P17@
+P1G@
+P25@
+P2G@
+P3G@
+P4H@
+P55@
+P5G@
+P67@
+P6G@
+P77@
+P87@
+P97@
 P=B A
 P?isValid@QColor@@QEBA_NXZ
 P?isValidColor@QColor@@SA_NAEBVQString@@@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P?keyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+PAG@
+PBG@
+PC7@
+PD5@
+PI7@
 PIDAT8
+PJD<
+PJE=9'
 PJIa"\v
-PO6@
+PN7@
+PNG@
+PO7@
 POISONED 
-PQ6@
-PR6@
+PP7@
+PQ]D?
 PRP\vI
-PS6@
-PT6@
-PU6@
+PU7@
+PUG@
 PURH
+PV6@
 PW6@
-PX6@
+PXH@
+PY7@
+PYG@
+PZG@
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\vFE
 PackBits
@@ -4895,18 +5070,26 @@ Paste
 Paste (Overwrite)
 PasteColor
 PatternType
-Pe6@
+Pb2@
+Pb5@
+PbG@
+Pc2@
+PcG@
+Pd4@
+Pe2@
 PerVertexLighting
-Pf6@
+Pf2@
+Pf4@
+PfH@
 PgDn
 PgUp
+Ph2@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
 Photoshop
-Physics
 Physics Debug Draw
-Pi5@
+Pi2@
 Pick
 Pick Global Background
 PickCancelled
@@ -4915,17 +5098,17 @@ PitchCameraDown
 PitchCameraUp
 PivotPaint
 PixarLog
-Pj5@
-Pk6@
-Pl4@
-Pl5@
+Pk7@
 PlaceholderText
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Please close and restart VConsole to update!
+PnH@
 Po6@
 Policy
 Port: (Default = %1)
+Pp6@
+Pq6@
 Pr6@
 Predictor
 PredictorEncodeTile
@@ -4949,12 +5132,15 @@ Properties
 Properties...
 Property '%s.%s' not writable
 Protocol: %d\n
+Pt2@
 PtZP
+Pu6@
+Pu7@
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PwG@
+Pw6@
+Px5@
 PyNn2FAh
-PzG@
 Q1y\tkL
 Q?logicalDotsPerInch@QScreen@@QEBANXZ
 Q?logicalDpiY@QPaintDevice@@QEBAHXZ
@@ -5004,7 +5190,6 @@ QVector<double>
 QWidget
 QWidget*
 QWindowIcon
-Q\tV_powd
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Ql/n
 Qmef
@@ -5022,6 +5207,7 @@ R Sqrt
 R channel not found!\n
 R*bo
 R+hM
+R?metaObject@QRegularExpressionValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metric@QPixmap@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
 R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
@@ -5032,22 +5218,20 @@ RCON
 RCON server connection address: %s\n
 RCON: 
 RGBA\t%1\t%2\t%3\t%4
-RH^0#
 RJk`
 RMouse
 RMouseDoubleClick
 RO^k
-RSDSo
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
 R\rBe
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpt
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
+Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Raui
 RawDataUniqueID
@@ -5106,6 +5290,7 @@ Retrying Connection...\n
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -5262,7 +5447,6 @@ SetBackStyleSlot
 SetBackgroundEnabledDBG
 SetBlackboardReference BR%d (%s) <- R%d 
 SetColor
-SetColorInternal
 SetCurrentPopupUI
 SetCursorPos
 SetDragEnd
@@ -5361,6 +5545,7 @@ Software
 Space
 Space implies AND between case insensitive tokens. All tokens must be present to pass filter.
 Space implies OR between case insensitive tokens. Any token can be present to pass filter.
+SpaceWalk Camera
 Spline
 Split Angle
 Split Color
@@ -5402,11 +5587,11 @@ StoNits
 Stop Timer
 Stop any active timers - the completed outflow will still fire
 StopSendingCameraTo
+String Length
 Strings Are Equal Case Sensitive
 StripByteCounts
 StripOffsets
 Stylesheet
-Sub Graph
 Sub R%d <- R%d - R%d
 SubIFD
 SubTools
@@ -5420,12 +5605,12 @@ Sync may be disrupted! Restart from alternate location DISABLED (%1)
 Syncing in progress! Auto Restart pending...
 Syntax error with array notation or invalid splitscreen slot in '%1'.\n
 SystemParametersInfoA
-T87@
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 T?primaryScreen@QGuiApplication@@SAPEAVQScreen@@XZ
+TBZU
 TBbUI
 TGA (*.tga)
 TIFFAppendToStrip
@@ -5454,6 +5639,7 @@ TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 TXT (*.txt)
 TXT (*.txt);;All files (*.*)
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T\tV_log2f
 TabBarBackgroundNotSelected
 TabStyle_t
 TabTextInactive
@@ -5466,6 +5652,7 @@ TakeRenderDocCapture
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 TargetPrinter
+Tb4@
 Temporarily Show All
 Temporarily Show All Channels
 Test Message For Simple Image Attachments With Missing File.\n
@@ -5537,6 +5724,7 @@ Tools_Unlit_Overlay1
 Tools_Unlit_Overlay2
 Tools_Unlit_Overlay3
 Tools_Unlit_PostTranslucent
+Tools_Unlit_PreOverlay
 Tools_Unlit_Translucent
 Tools_Unlit_TranslucentNOZ
 Tools_Unlit_Wireframe
@@ -5546,20 +5734,23 @@ TransferFunction
 Truncated header.
 TrySendVNotify - SendKV3 failed\n
 U5B$z
-U5gE
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QDoubleValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
+U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 UIMatRTTexture.vtex
 UITextureOnModel
 UL_x\n
 USBMuxConnectByPort
 UUQD
+UYOSQ
 UZ?setMask@QPixmap@@QEAAXAEBVQBitmap@@@Z
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
+U\tV_logd
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Ue[0
 Un/>DD
@@ -5577,7 +5768,9 @@ Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
 Unknown protocol.
+UnknownType
 UnlitPostPass
+Unlock camera and allow perspective to roll upside down
 Unrecognized action class '%s'
 Unrecognized error.
 Unrecognized property '%s.%s'
@@ -5696,6 +5889,7 @@ W\v?event@QProxyStyle@@MEAA_NPEAVQEvent@@@Z
 W]Gg
 W^fw
 Wait Complete
+Wait Until
 Warning (problem that doesn't prevent forward progress)
 Warning Messages Color
 Wb2>
@@ -5703,6 +5897,7 @@ Wfss
 Wh)a
 When False
 When True
+While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled.
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -5720,7 +5915,17 @@ Writable
 Write error at scanline %lu
 W~1Z
 X to the Y power
+X05@
+X15@
+X1G@
+X27@
+X2G@
+X35@
+X3G@
+X65@
+X85@
 X8\r,z
+X95@
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -5737,35 +5942,52 @@ X?setCompositionMode@QPainter@@QEAAXW4CompositionMode@1@@Z
 X?setCoordinateMode@QGradient@@QEAAXW4CoordinateMode@1@@Z
 X?setDashOffset@QPen@@QEAAXN@Z
 X?setDashPattern@QPen@@QEAAXAEBV?$QVector@N@@@Z
+XB7@
+XBG@
+XC5@
 XClipPathUnits
+XD7@
+XG7@
 XJpQ
 XM3w
 XMLPacket
 XN?hasChildren@QStandardItemModel@@UEBA_NAEBVQModelIndex@@@Z
 XNML
+XP6@
 XPosition
 XResolution
-XT6@
+XVH@
+XW%\vC
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
+XYH@
 XYY~
 XYZ, Luv
+XZ6@
 X[[CY
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
+Xb4@
 Xbox VDP is not supported on this platform.
-Xc6@
-Xd6@
-Xe6@
-Xh5@
+XcG@
+Xd2@
+Xg2@
 XhD?\
-Xi6@
-Xm5@
-Xm6@
+Xj2@
+Xl2@
 Xm8;
-XmG@
-Xn5@
-Xr6@
+Xo6@
+Xp6@
+Xp7@
+Xq@C
+Xs6@
+Xs7@
+Xu5@
+Xx6@
+Xy5@
+Xy6@
 Xz6@
+Xz7@
+X}zl
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setDecimals@QDoubleValidator@@QEAAXH@Z
@@ -5786,7 +6008,6 @@ YW?rgb@QColor@@QEBAIXZ
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
-YbOo
 YdV%#
 Yga!
 Yield, Resume=%s
@@ -5813,6 +6034,7 @@ ZKSWlO
 ZS5c
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 Z\r?horizontalHeaderItem@QTableWidget@@QEBAPEAVQTableWidgetItem@@H@Z
+Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ZoomAllCamerasIn
 ZoomAllCamerasOut
@@ -5829,6 +6051,7 @@ Z~!|L8\v1H
 [%1 Data]
 [***INVALID INSTRUCTION %d (%s)***]\n
 [7iA
+[7w9,6
 [?setPointSizeF@QFont@@QEAAXN@Z
 [?setPos@QCursor@@SAXHH@Z
 [?setStops@QGradient@@QEAAXAEBV?$QVector@U?$QPair@NVQColor@@@@@@@Z
@@ -5856,7 +6079,6 @@ Z~!|L8\v1H
 [\v?event@QScrollArea@@MEAA_NPEAVQEvent@@@Z
 [command] : List commands/usage
 [p'pz3
-[qev
 \67B
 \?setWidth@QPen@@QEAAXH@Z
 \SteamApps\
@@ -5912,11 +6134,11 @@ Z~!|L8\v1H
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\t?beginReadArray@QSettings@@QEAAHAEBVQString@@@Z
-\f\tV_expd
 \fj0F
 \fz0$vZ 
 \n------------------------------\n
 \n0DI
+\n3 RZh
 \n5ii
 \n?bits@QImage@@QEAAPEAEXZ
 \n?blue@QColor@@QEBAHXZ
@@ -5967,6 +6189,7 @@ Z~!|L8\v1H
 \n?dropMimeData@QTableWidget@@MEAA_NHHPEBVQMimeData@@W4DropAction@Qt@@@Z
 \n?dropMimeData@QTreeWidget@@MEAA_NPEAVQTreeWidgetItem@@HPEBVQMimeData@@W4DropAction@Qt@@@Z
 \n?edit@QAbstractItemView@@MEAA_NAEBVQModelIndex@@W4EditTrigger@1@PEAVQEvent@@@Z
+\n?editingFinished@QLineEdit@@QEAAXXZ
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
 \n?editorEvent@QItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \nCannot Rename Device "%1" to "%2"\n
@@ -6000,6 +6223,7 @@ Z~!|L8\v1H
 \nYou have data or important state in the "%1" Tool.\n\nAbandon and continue closing?\n
 \n\f?data@QStringListModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
+\n\tV_atanf
 \p4u
 \r?dark@QPalette@@QEBAAEBVQBrush@@XZ
 \r?darker@QColor@@QEBA?AV1@H@Z
@@ -6063,12 +6287,21 @@ Z~!|L8\v1H
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 \tIDAT8
+\tMsn\f
 \tNew Line Indented 1 Tab...
+\tT?parent@QWindow@@QEBAPEAV1@XZ
 \tTwZ
+\tV_acosd
+\tV_asind
+\tV_atan2d
 \tV_cosd
+\tV_exp2f
+\tV_expd
+\tV_tand
 \t[?setPosition@QTextCursor@@QEAAXHW4MoveMode@1@@Z
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\tL\ti\tn\tk\t  A  \n
+\t\tV_atand
 \t\v?brushOrigin@QPainter@@QEBA?AVQPoint@@XZ
 \t_V_StringAfterPrefixCaseSensitive
 \tg_flConfigMaxCoord
@@ -6099,12 +6332,11 @@ Z~!|L8\v1H
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v@mF]UTU
-\vE3k
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\v\tV_exp2f
 \vgJK
 ]3RPT
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]Q?light@QPalette@@QEBAAEBVQBrush@@XZ
 ]X?setBackgroundMode@QPainter@@QEAAXW4BGMode@Qt@@@Z
 ]\r?horizontalOffset@QListView@@MEBAHXZ
@@ -6112,23 +6344,26 @@ Z~!|L8\v1H
 ]blt$O
 ]gq4>b
 ]z\tj8
+^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})
+^#?([0-9A-Fa-f]{8}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{3})$
 ^?text@QClipboard@@QEBA?AVQString@@W4Mode@1@@Z
 ^?text@QKeyEvent@@QEBA?AVQString@@XZ
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
 ^L7B
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
+^R46
 ^T?pixmap@QIcon@@QEBA?AVQPixmap@@AEBVQSize@@W4Mode@1@W4State@1@@Z
 ^W?wQ
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 ^aza
-_HSQ
+^h/5O
+^xHm
 _PuzD
 _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
-_\tV_sind
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __CursorQueue__
 __FireCursorsParent__
@@ -6155,11 +6390,14 @@ _wjb
 `2a4
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+`?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?valueF@QColor@@QEBANXZ
+`IBC
 `Q?lightnessF@QColor@@QEBANXZ
 `T?pixmap@QIcon@@QEBA?AVQPixmap@@HW4Mode@1@W4State@1@@Z
 `W?rgba@QColor@@QEBAIXZ
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
+`qBC
 `qok
 a { text-decoration: underline; color: %1; }
 a:fulltype
@@ -6169,6 +6407,7 @@ a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
 aV03F\t
+a\tV_powd
 actions
 activatedText
 activeDevice
@@ -6176,7 +6415,6 @@ activeDeviceType
 activeLogViewer
 active_frame
 adb.exe
-aeh6hF
 align
 allowed_api_features
 allowed_requirements
@@ -6203,6 +6441,7 @@ bSet
 bShowDialog
 bV0Ve
 bValue
+bWasAnObservableComputation
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 background
 backgroundColor
@@ -6269,7 +6508,8 @@ commandline
 compressedtangentframe
 compression
 connectAtStartup
-connections
+const char *__cdecl Reflection::Internal::GetFuncName<class IMaterialAttributeAnimTag>(void)
+const char *__cdecl Reflection::Internal::GetFuncName<float>(void)
 const char*
 content/
 contentsMargins
@@ -6287,7 +6527,6 @@ d6J0
 d6ai
 d7(N
 dO{H
-dP6@
 dZr:
 d\f?convertToFormat_helper@QImage@@IEBA?AV1@W4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 d\f?deleteLater@QObject@@QEAAXXZ
@@ -6323,7 +6562,6 @@ disableVisualEffects
 displayWindow
 dlBNvz!/u{1?cmR^
 doItemsLayout
-doW/
 dock
 docked_widget
 domain_scope
@@ -6347,6 +6585,7 @@ er'6
 etW.A
 execution_history
 extrasMinimized
+f5Y}
 fTul
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
@@ -6375,6 +6614,8 @@ flFloat
 flFrac
 flInputA
 flInputB
+flMaxRadius
+flMinRadius
 flOutputA
 flOutputB
 flPercentage
@@ -6415,13 +6656,13 @@ found '%s'\n
 found module '%s' already loaded at 0x%llx\n
 found module '%s', not already loaded at 0x%llx, updating\n
 found pointer in module '%s'\n
-fq[0
 frac
 frameColor
 fwgw
 gAMA
 gDGC
 gJ1T
+gYvg>o
 g\r?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
 g\v?event@QTabBar@@MEAA_NPEAVQEvent@@@Z
@@ -6486,36 +6727,49 @@ green
 grid
 group_title
 h*CU
+h0G@
+h17@
+h25@
+h2G@
+h3G@
 h4*3
+h47@
+h55@
+h75@
+h97@
 h<7s
-h<mp
-hDF@
-hF4@
-hKF@
-hP4@
+hJ7@
+hK7@
+hL7@
+hM7@
 hP6@
+hP7@
+hPG@
+hQ7@
 hQXk0F
-hS6@
 hSnX
+hUH@
+hXH@
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 handleDelta
+hb4@
 hbox
-hc6@
+hcG@
 hcenter
-he6@
-hf6@
-hi6@
+hd2@
+hg2@
+hi2@
 hideFromTaskSwitching
 highlightColor
 highlightLineSearchResults
 highlightText
+hj7@
 hjO>
-hk6@
-hl5@
-hl6@
-hm5@
+hl2@
+hm7@
+ho6@
 horizontal differencing 
 horizontalPolicy
 horizontalStretch
@@ -6523,12 +6777,20 @@ horizontal_header
 horizontal_header_labels
 host-serial:%s:forward:tcp:%d;tcp:%d
 host:transport:%s
+hp6@
+hs6@
 https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+hw5@
+hw7@
+hx6@
+hy6@
 hy\teQ
+hz6@
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
+i=TZ
 iN_Uh
-iPUT
 iS.z
+iTXtXML:com.adobe.xmp
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
 i\r?enumerator@QMetaProperty@@QEBA?AVQMetaEnum@@XZ
@@ -6565,7 +6827,6 @@ l-%Zk
 lELp
 lJoH
 lR?metaObject@QIntValidator@@UEBAPEBUQMetaObject@@XZ
-lX6@
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 labelPos
@@ -6595,11 +6856,13 @@ loud
 lowprecisionuv
 lowprecisionuv1
 lp={S
+ly5@
 m4UPh
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m_AdditionalDependencies
+m_Always
 m_Bindings
 m_CommandString
 m_Context
@@ -6610,7 +6873,6 @@ m_Items
 m_LibraryPath
 m_MaterialSystemDependencies
 m_MenuString
-m_Results
 m_StatusBarTipString
 m_Stops
 m_SubToolIconPath
@@ -6635,22 +6897,19 @@ m_bRemoveWhenOutOfScope
 m_bRequiresAppConnection
 m_bRequiresToolConnection
 m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
 m_externalMethodTargetGraph
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hDef
+m_nBlackboardIndex
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
-m_nResult
 m_nStackDepthWhenAdded
-m_nSubjectID
 m_nYieldToken
 mailto:steam@valvesoftware.com
 mailto:steam@valvesoftware.com\n
 mapped
-materials/dev/gray_50.vmat
 materials/dev/tools_2d_generic.vmat
 materials/tools/fill_vertex_color.vmat
 materials/tools/grid.vmat
@@ -6676,7 +6935,6 @@ materials/tools/light_probe.vmat
 materials/tools/selection_overlay.vmat
 materials/tools/selection_overlay_nocull.vmat
 materials/tools/show_hitboxes.vmat
-materials/tools/ui_material_preview_on_model.vmat
 materials/tools/vertex_color_solid.vmat
 materials/tools/vertex_color_translucent.vmat
 materials/tools/wireframe_vertex_color.vmat
@@ -6689,8 +6947,11 @@ menus
 minValue
 mki^
 modelIndex
+models/editor/axis_helper_thick.vmdl
+models/editor/camera.vmdl
 monitor_pid
 must be either LogLUV or LogL
+mz_nR2e
 m|z+wP
 n$Kx
 n,9h=g
@@ -6738,8 +6999,10 @@ o$FFb
 o>6qai
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 observable_listeners
+observable_scope
 observer_cursors
 offsetDelta
 openurl
@@ -6752,75 +7015,105 @@ outputcolor
 oy1\v
 p"?value@QSpinBox@@QEBAHXZ
 p"vb
-p2F@
-p64@
-p8F@
+p0G@
+p0N@
+p15@
+p2G@
+p37@
+p3G@
+p57@
+p65@
+p6G@
+p75@
+p7G@
+p85@
 p8d8
+p96@
+p97@
+p>,iO~L
+pB6@
 pCheckpointName
 pCurrentFocusWidget
 pD3o
-pDF@
+pD7@
 pDescription
 pDevice
+pE6@
+pE7@
+pF6@
 pFilter
 pFromWidget
-pKF@
-pKG@
+pG6@
+pH6@
+pI7@
+pJ7@
+pJG@
 pLightRigButton
 pLogViewer
+pMG@
 pModule->%s( 0x%llX )\n
-pO6@
+pN7@
+pO7@
 pObject
-pP6@
 pPrevFocusWidget
-pQ6@
-pQG@
-pR6@
-pS6@
-pT6@
+pQ5@
+pR7@
+pTG@
 pTagName
 pToWidget
 pToolButton
 pToolsVisModeButton
 pTraceResult
-pU6@
+pU7@
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
+pVH@
+pW7@
 pWidget
-pZG@
+pX7@
+pXG@
+pYH@
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
 parent
 parent_cursor_id
+pb2@
+pc2@
+pcG@
+pe2@
 pet_preview_gravity
 pet_preview_underwater
-pf6@
-ph5@
+pf2@
+pf4@
 pi\nH%
 pickedColor
 pixelAspectRatio
-pj5@
-pj6@
-pk4@
-pk5@
-pkG@
-pm6@
+pj2@
+pk7@
+po6@
 pointer not found in module list\n
 polymorphic_arg
 port_name
 posxyz
-pq4@
+pp6@
+pq6@
 pr6@
 previous_value
 propattr_flatten_into_parent_row
 pseudo-
+pt6@
+pu5@
+pu6@
+puG@
 pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
-px6@
-pxG@
-py6@
+pv5@
+pv6@
+pw6@
+px5@
 q12_
+q1AVpx
 q3\f5e{
 qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
@@ -6847,6 +7140,7 @@ r_stereo_mode_crossed
 r_stereo_mode_parallel
 rad2deg
 rag=
+random_position
 readbackcolor
 registers
 remap
@@ -6859,7 +7153,6 @@ renderScalableAO
 requested_cancel
 resourcesystem
 resourcesystem.dll
-result_set
 reverse:forward:norebind:tcp:%d;tcp:%d
 rigIdx
 right
@@ -6872,7 +7165,6 @@ s9kjg
 sNNg,
 sO?insertRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 sQ3z
-sRGB
 s_hColoredVertexLayout
 saturate
 scanline
@@ -6940,6 +7232,7 @@ start-server
 stats_display %d\n
 stats_display set to %d\n
 stickyRCONDeviceTabs
+strValue
 stretch
 strip
 strips
@@ -6949,9 +7242,9 @@ suppress_menu
 system_state
 t*iv`
 t2ak
+tB6@
 tEXtSoftware
 tH)a]
-tP6@
 tU3njZkq
 t\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@AEBVQMetaMethod@@01W4ConnectionType@Qt@@@Z
 t\nhM
@@ -6966,6 +7259,7 @@ tabs
 tagValue
 tangent
 tangentu_signv
+tb4@
 td0JQ
 tentative
 texcoord
@@ -6985,6 +7279,8 @@ tonemapping
 toolSpecificUI
 toolbarArea
 toolhud_enable
+tools.light_volume_boundary
+tools.reference_notrace
 tools/colors/shared_colors.txt
 tools/images/pulse_editor/cursor_kill.png
 tools/images/pulse_editor/kill_cursor_with_tag.png
@@ -7005,8 +7301,8 @@ t|AO
 u>DE*
 uE O
 uSf)
+uT82
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
-uWt:
 uXcY
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
@@ -7103,6 +7399,7 @@ vvqpt
 vws;Q2\fd1)%
 w"######################################################
 w(GTf
+w393
 w=$LB
 w@6r
 wNEXtlF_h
@@ -7111,6 +7408,7 @@ w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 waiting_group
 warn
 white
+wjk.g
 wrapping
 wvsCa_]
 ww#SN>
@@ -7119,31 +7417,54 @@ www.steampowered.com\n
 wy)D
 wyS]
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
+x05@
+x0G@
 x0Ysqx
-x7F@
-x96@
-xCF@
+x17@
+x27@
+x2G@
+x35@
+x75@
+xA7@
+xB6@
 xEIh
+xF7@
+xG7@
+xGG@
 xIDAT(
-xKF@
+xJG@
 xOIIQd
 xP6@
-xT6@
-xW4@
+xU7@
+xV6@
+xW6@
+xWH@
 xX6@
+xZ6@
+xZH@
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
-xd6@
+xc4@
+xcG@
+xd4@
 xdt,T
-xi5@
-xi6@
+xh2@
+xi2@
 xi\t%x
+xl2@
 xm#uc
-xm5@
-xn6@
+xo6@
+xp6@
 xpd\
+xs6@
+xs7@
+xt2@
+xu7@
 xwv/
+xx6@
 xxz-<Z]
+xy5@
+xy6@
 xz6@
 y8Ry
 yTTh%
@@ -7157,14 +7478,16 @@ yfiZG
 ygQB
 yield_token
 ym&e1%
+yuV+\v
 yv\vP
 y|1A
+y~9z
 z/xh
 zBos
 zH._8SZ
+zIC2@
 z\f?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-z\tV_tand
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zf1ZK
@@ -7176,8 +7499,10 @@ z}AR
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 {a~8f
+{zLG
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 |2RB@h\r
+|FiUn
 |UJz@
 |V?reason@QFocusEvent@@QEBA?AW4FocusReason@Qt@@XZ
 |`?underline@QFont@@QEBA_NXZ

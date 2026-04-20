@@ -92,7 +92,7 @@ VS
 	    float _Globals_1_m10 : packoffset(c32.z);
 	};
 	
-	cbuffer SpritecardVertexControls_t : register(b5, space0)
+	cbuffer SpritecardVertexControls_t : register(b4, space0)
 	{
 	    float4 SpritecardVertexControls_t_1_m0 : packoffset(c0);
 	    float4 SpritecardVertexControls_t_1_m1 : packoffset(c1);
@@ -102,18 +102,18 @@ VS
 	    uint3 SpritecardVertexControls_t_1_m5 : packoffset(c16);
 	};
 	
-	cbuffer SpriteCardPixelControls_t : register(b4, space0)
+	cbuffer SpriteCardPixelControls_t : register(b3, space0)
 	{
 	    float4 SpriteCardPixelControls_t_1_m0 : packoffset(c3);
 	    uint2 SpriteCardPixelControls_t_1_m1 : packoffset(c19);
 	};
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space0)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b1, space0)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space0)
+	cbuffer SunLightShaderParamsCB : register(b2, space0)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
@@ -1728,7 +1728,7 @@ PS
 	static const float2 _2136[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
 	static const float3 _797[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
 	
-	cbuffer SpriteCardPixelControls_t : register(b4, space1)
+	cbuffer SpriteCardPixelControls_t : register(b3, space1)
 	{
 	    float4 SpriteCardPixelControls_t_1_m0 : packoffset(c0);
 	    float4 SpriteCardPixelControls_t_1_m1 : packoffset(c1);
@@ -1741,7 +1741,7 @@ PS
 	    uint2 SpriteCardPixelControls_t_1_m8 : packoffset(c19);
 	};
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b1, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
@@ -1757,14 +1757,14 @@ PS
 	    float _Globals_1_m6 : packoffset(c32.z);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space1)
+	cbuffer SunLightShaderParamsCB : register(b2, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
 	};
 	
 	SamplerState Filter_21_MaxAniso_1 : register(s15, space1);
-	SamplerState Filter_21_MaxAniso_1_AddressU_2_AddressV_2 : register(s17, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_21_MaxAniso_1 : register(s17, space1);
 	Texture2D<float4> g_tBaseTexture : register(t32, space1);
 	
 	static float4 input_0;
@@ -1799,7 +1799,7 @@ PS
 	    float4 _21709;
 	    if (_20632 == 1)
 	    {
-	        _21709 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _15476.xy);
+	        _21709 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _15476.xy);
 	    }
 	    else
 	    {
@@ -1835,7 +1835,7 @@ PS
 	                    _13058 = float(_20632) == 1.0f;
 	                    if (_13058)
 	                    {
-	                        _12905 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _17630.xy);
+	                        _12905 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _17630.xy);
 	                        break;
 	                    }
 	                    _12905 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _17630.xy);
@@ -1846,7 +1846,7 @@ PS
 	                {
 	                    if (_13058)
 	                    {
-	                        _19630 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _11008.xy);
+	                        _19630 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _11008.xy);
 	                        break;
 	                    }
 	                    _19630 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _11008.xy);
@@ -1886,7 +1886,7 @@ PS
 	                {
 	                    if (float(_20632) == 1.0f)
 	                    {
-	                        _12502 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _24723.xy);
+	                        _12502 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _24723.xy);
 	                        break;
 	                    }
 	                    _12502 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _24723.xy);
@@ -1910,7 +1910,7 @@ PS
 	                    _13056 = float(_20632) == 1.0f;
 	                    if (_13056)
 	                    {
-	                        _12904 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _17629.xy);
+	                        _12904 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _17629.xy);
 	                        break;
 	                    }
 	                    _12904 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _17629.xy);
@@ -1921,7 +1921,7 @@ PS
 	                {
 	                    if (_13056)
 	                    {
-	                        _19629 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _11007.xy);
+	                        _19629 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _11007.xy);
 	                        break;
 	                    }
 	                    _19629 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _11007.xy);
@@ -1955,7 +1955,7 @@ PS
 	                {
 	                    if (_13056)
 	                    {
-	                        _12501 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _20342.xy);
+	                        _12501 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _20342.xy);
 	                        break;
 	                    }
 	                    _12501 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _20342.xy);
@@ -2006,7 +2006,7 @@ PS
 	                {
 	                    if (float(_20632) == 1.0f)
 	                    {
-	                        _20940 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1_AddressU_2_AddressV_2, _18974.xy);
+	                        _20940 = g_tBaseTexture.Sample(AddressU_2_AddressV_2_Filter_21_MaxAniso_1, _18974.xy);
 	                        break;
 	                    }
 	                    _20940 = g_tBaseTexture.Sample(Filter_21_MaxAniso_1, _18974.xy);

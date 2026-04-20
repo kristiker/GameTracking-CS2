@@ -137,7 +137,7 @@ PS
 	layout(set = 1) uniform _2307 PerViewConstantBuffer_t;
 	
 	layout(set = 1, binding = 31) uniform texture2D g_tGBufferLinearDepth;
-	layout(set = 1, binding = 15) uniform sampler Filter_0_AddressU_2_AddressV_2;
+	layout(set = 1, binding = 15) uniform sampler AddressU_2_AddressV_2_Filter_0;
 	layout(set = 1, binding = 30) uniform texture2D g_tRandom;
 	layout(set = 1, binding = 14) uniform sampler Filter_0;
 	
@@ -149,15 +149,15 @@ PS
 	    vec2 _23080 = vec2(0.5, -0.5) * _Globals_.g_vRelativeViewport.zw;
 	    vec2 _20508 = (vec2(0.5) * _Globals_.g_vRelativeViewport.zw) + _Globals_.g_vRelativeViewport.xy;
 	    vec2 _20779 = (gl_FragCoord.xy * _Globals_.g_vInvRenderTargetDim.xy).xy;
-	    vec4 _10799 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), _20779, 0.0, ivec2(0));
+	    vec4 _10799 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), _20779, 0.0, ivec2(0));
 	    float _3362 = _10799.x;
 	    vec3 _7153 = (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz) * _3362)).xyz;
 	    vec3 _23396 = dFdx(input_0.xyz);
 	    vec3 _10636 = dFdy(input_0.xyz);
-	    vec3 _10169 = _7153 - (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz - _10636) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), _20779, 0.0, ivec2(0, -1)).x));
-	    vec3 _7345 = (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz + _10636) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), _20779, 0.0, ivec2(0, 1)).x)) - _7153;
-	    vec3 _7119 = (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz + _23396) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), _20779, 0.0, ivec2(1, 0)).x)) - _7153;
-	    vec3 _13777 = _7153 - (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz - _23396) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), _20779, 0.0, ivec2(-1, 0)).x));
+	    vec3 _10169 = _7153 - (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz - _10636) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), _20779, 0.0, ivec2(0, -1)).x));
+	    vec3 _7345 = (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz + _10636) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), _20779, 0.0, ivec2(0, 1)).x)) - _7153;
+	    vec3 _7119 = (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz + _23396) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), _20779, 0.0, ivec2(1, 0)).x)) - _7153;
+	    vec3 _13777 = _7153 - (PerViewConstantBuffer_t._m2 + (normalize(input_0.xyz - _23396) * textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), _20779, 0.0, ivec2(-1, 0)).x));
 	    vec4 _20877 = texture(sampler2D(g_tRandom, Filter_0), (gl_FragCoord.xy * _Globals_.g_vRandSampleScale.xy).xy);
 	    vec3 _15145 = normalize(((_20877.xyz * 2.0) - vec3(1.0)).xyz);
 	    vec3 _24081 = (-normalize(cross(mix(_7119, _13777, bvec3(length(_13777) < length(_7119))), mix(_10169, _7345, bvec3(length(_7345) < length(_10169)))))).xyz;
@@ -188,7 +188,7 @@ PS
 	        vec3 _21589 = _12200.xyz;
 	        vec3 _16060 = _19629.xyz + _21589;
 	        vec4 _24259 = (vec4(_16060.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	        vec4 _3402 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, Filter_0_AddressU_2_AddressV_2), clamp(((_23080.xy * (_24259.xy / vec2(_24259.w)).xy) + _20508.xy).xy, _Globals_.g_vRelativeViewport.xy, _Globals_.g_vRelativeViewport.zw).xy, 0.0, ivec2(0));
+	        vec4 _3402 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_2_AddressV_2_Filter_0), clamp(((_23080.xy * (_24259.xy / vec2(_24259.w)).xy) + _20508.xy).xy, _Globals_.g_vRelativeViewport.xy, _Globals_.g_vRelativeViewport.zw).xy, 0.0, ivec2(0));
 	        float _5202 = _3402.x;
 	        vec3 _17519 = _16060.xyz - PerViewConstantBuffer_t._m2.xyz;
 	        float _15544 = length(_17519.xyz);

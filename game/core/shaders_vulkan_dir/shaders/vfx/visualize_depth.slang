@@ -103,7 +103,7 @@ PS
 	// SPIR-V source (1348 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	Texture2D<float4> g_tDepthTexture : register(t30, space1);
-	SamplerComparisonState Filter_149_AddressU_2_AddressV_2 : register(s15, space1);
+	SamplerComparisonState AddressU_2_AddressV_2_Filter_149 : register(s15, space1);
 	
 	static float4 input_0;
 	static float4 output_0;
@@ -133,7 +133,7 @@ PS
 	        {
 	            break;
 	        }
-	        float3 _20312 = _13155.xyz + (0.015625f * g_tDepthTexture.SampleCmpLevelZero(Filter_149_AddressU_2_AddressV_2, input_1.xy, float(_16208) * 0.015625f)).xxx;
+	        float3 _20312 = _13155.xyz + (0.015625f * g_tDepthTexture.SampleCmpLevelZero(AddressU_2_AddressV_2_Filter_149, input_1.xy, float(_16208) * 0.015625f)).xxx;
 	        float4 _20488 = _13155;
 	        _20488.x = _20312.x;
 	        _20488.y = _20312.y;

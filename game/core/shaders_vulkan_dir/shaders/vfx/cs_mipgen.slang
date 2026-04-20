@@ -49,7 +49,7 @@ CS
 	};
 	
 	Texture2D<float4> g_tSrcMip : register(t30, space0);
-	SamplerState Filter_20_AddressU_2_AddressV_2 : register(s14, space0);
+	SamplerState AddressU_2_AddressV_2_Filter_20 : register(s14, space0);
 	RWTexture2D<float4> _3764 : register(u158, space0);
 	RWTexture2D<float4> _3765 : register(u159, space0);
 	RWTexture2D<float4> _3766 : register(u160, space0);
@@ -73,7 +73,7 @@ CS
 	    do
 	    {
 	        uint _3962 = uint(_Globals_1_m1);
-	        float4 _3401 = g_tSrcMip.SampleLevel(Filter_20_AddressU_2_AddressV_2, (_Globals_1_m2 * (float2(gl_GlobalInvocationID.xy) + 0.5f.xx)).xy, float(uint(_Globals_1_m0)));
+	        float4 _3401 = g_tSrcMip.SampleLevel(AddressU_2_AddressV_2_Filter_20, (_Globals_1_m2 * (float2(gl_GlobalInvocationID.xy) + 0.5f.xx)).xy, float(uint(_Globals_1_m0)));
 	        _3764[gl_GlobalInvocationID.xy] = _3401;
 	        if (_3962 == 1u)
 	        {

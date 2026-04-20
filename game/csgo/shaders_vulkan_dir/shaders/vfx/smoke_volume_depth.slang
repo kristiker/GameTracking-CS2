@@ -183,7 +183,7 @@ PS
 	layout(set = 1) uniform _995 PerViewConstantBufferCsgo_t;
 	
 	layout(set = 1, binding = 43) uniform texture3D g_tSmokeVolumeTexA_Atlas;
-	layout(set = 1, binding = 18) uniform sampler Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 18) uniform sampler AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21;
 	layout(set = 1, binding = 30) uniform texture2D g_tBlueNoise;
 	
 	layout(location = 0) in vec3 input_0;
@@ -277,7 +277,7 @@ PS
 	                    }
 	                    float _23661 = 34.0 * float(_14719);
 	                    _23497.x = (_23661 + (_23497.x * 32.0)) * 0.0018450184725224971771240234375;
-	                    vec4 _11487 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), _23497.xyz, 0.0);
+	                    vec4 _11487 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), _23497.xyz, 0.0);
 	                    vec2 _20693 = vec2(SmokeConstantBuffer_t._m3._m0[_17017].y);
 	                    vec2 _7714 = mix(_11487.xz, _11487.yw, _20693);
 	                    float _16428 = max(_7714.x, _7714.y);
@@ -305,7 +305,7 @@ PS
 	                                break;
 	                            }
 	                            _8236.x = (_23661 + (_8236.x * 32.0)) * 0.0018450184725224971771240234375;
-	                            vec4 _11488 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), _8236.xyz, 0.0);
+	                            vec4 _11488 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), _8236.xyz, 0.0);
 	                            vec2 _6350 = mix(_11488.xz, _11488.yw, _20693);
 	                            vec3 _14830 = _18040 + ((vec3(0.300000011920928955078125, -0.4000000059604644775390625, -0.5) * PerViewConstantBuffer_t._m1) * 1.440000057220458984375);
 	                            _9828 = _13138 + ((max(_6350.x, _6350.y) * 2.0) * clamp(abs(((sin(_14830.x * 1.2200000286102294921875) * 0.88999998569488525390625) + (sin(_14830.y * 1.16999995708465576171875) * 0.430000007152557373046875)) + (sin(_14830.z * 3.0) * 0.20000000298023223876953125)), 0.0, 1.0));

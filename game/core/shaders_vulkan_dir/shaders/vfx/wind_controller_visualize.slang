@@ -88,7 +88,7 @@ VS
 	layout(set = 0) uniform _1732 PerViewConstantBuffer_t;
 	
 	layout(set = 0, binding = 30) uniform texture3D g_tWind;
-	layout(set = 0, binding = 14) uniform sampler Filter_20_AddressU_2_AddressV_2_AddressW_2;
+	layout(set = 0, binding = 14) uniform sampler AddressU_2_AddressV_2_AddressW_2_Filter_20;
 	
 	layout(location = 0) out vec2 output_0;
 	layout(location = 1) out vec3 output_1;
@@ -100,7 +100,7 @@ VS
 	    uint _16090 = uint(_Globals_.g_nSampleCount);
 	    float _20009 = float(_Globals_.g_nSampleCount);
 	    vec2 _4498 = vec2((float(int(_21425 % _16090)) + 0.5) / _20009, (float(int(_21425 / _16090)) + 0.5) / _20009);
-	    vec4 _3401 = textureLod(sampler3D(g_tWind, Filter_20_AddressU_2_AddressV_2_AddressW_2), vec3(_4498, 0.5), 0.0);
+	    vec4 _3401 = textureLod(sampler3D(g_tWind, AddressU_2_AddressV_2_AddressW_2_Filter_20), vec3(_4498, 0.5), 0.0);
 	    vec3 _24854 = vec3(mix(-WindControllerConstantBuffer_t._m0._m0._m0[_Globals_.g_nClipmap].xy, WindControllerConstantBuffer_t._m0._m0._m0[_Globals_.g_nClipmap].xy, _4498), 0.0);
 	    bool _12885;
 	    if (_Globals_.g_nClipmap > 0)

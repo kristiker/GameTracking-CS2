@@ -153,7 +153,7 @@ PS
 	};
 	
 	Texture3D<float4> g_tVolume : register(t30, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_21 : register(s14, space1);
 	
 	static float3 input_0;
 	static float4 output_0;
@@ -188,7 +188,7 @@ PS
 	            _20237 = _13136;
 	            break;
 	        }
-	        _25163 = _13136.xyz + g_tVolume.SampleLevel(Filter_21_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _16324.xyz, 0.0f).xyz;
+	        _25163 = _13136.xyz + g_tVolume.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_21, _16324.xyz, 0.0f).xyz;
 	        _4203 = _16324 + (_8082 * 0.0199999995529651641845703125f);
 	        bool _12885;
 	        if (_4203.x < 0.0f)

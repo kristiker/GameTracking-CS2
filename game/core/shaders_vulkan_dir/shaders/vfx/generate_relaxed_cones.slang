@@ -49,7 +49,7 @@ CS
 	
 	RWTexture2D<uint> _5369 : register(u158, space0);
 	Texture2D<float4> g_tHeightmap : register(t30, space0);
-	SamplerState Filter_0_AddressU_0_AddressV_0 : register(s14, space0);
+	SamplerState AddressU_0_AddressV_0_Filter_0 : register(s14, space0);
 	SamplerState AddressU_0_AddressV_0_Filter_20 : register(s15, space0);
 	
 	static uint3 gl_WorkGroupID;
@@ -84,7 +84,7 @@ CS
 	            break;
 	        }
 	        float2 _16123 = (float2(_9524) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
-	        float4 _11160 = g_tHeightmap.SampleLevel(Filter_0_AddressU_0_AddressV_0, _16123, 0.0f);
+	        float4 _11160 = g_tHeightmap.SampleLevel(AddressU_0_AddressV_0_Filter_0, _16123, 0.0f);
 	        float _17197 = _11160.x;
 	        uint2 _13520 = _16208.xx;
 	        float _17362 = -length(float2(int2(2, 2) << int2(_13520)) * _Globals_1_g_vImageDimensions.zw);
@@ -122,7 +122,7 @@ CS
 	                    break;
 	                }
 	                float2 _6348 = (float2((_9524 & int2(-4, -4)) + ((_9763 + int2(2, 2)) << int2(_13520))) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
-	                float _15526 = _17197 - g_tHeightmap.SampleLevel(Filter_0_AddressU_0_AddressV_0, _6348, float(_16208 + 2u)).x;
+	                float _15526 = _17197 - g_tHeightmap.SampleLevel(AddressU_0_AddressV_0_Filter_0, _6348, float(_16208 + 2u)).x;
 	                float _23727;
 	                if (_15526 <= 0.0f)
 	                {
@@ -197,7 +197,7 @@ CS
 	                            break;
 	                        }
 	                        float2 _23069 = (float2(_15209) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
-	                        float _19207 = g_tHeightmap.SampleLevel(Filter_0_AddressU_0_AddressV_0, _16123, 0.0f).x - g_tHeightmap.SampleLevel(Filter_0_AddressU_0_AddressV_0, _23069, float(_16208)).x;
+	                        float _19207 = g_tHeightmap.SampleLevel(AddressU_0_AddressV_0_Filter_0, _16123, 0.0f).x - g_tHeightmap.SampleLevel(AddressU_0_AddressV_0_Filter_0, _23069, float(_16208)).x;
 	                        float _23728;
 	                        if (_19207 <= 0.0f)
 	                        {
@@ -209,7 +209,7 @@ CS
 	                        }
 	                        if (_23728 < _13159)
 	                        {
-	                            float4 _12167 = g_tHeightmap.SampleLevel(Filter_0_AddressU_0_AddressV_0, _23069, 0.0f);
+	                            float4 _12167 = g_tHeightmap.SampleLevel(AddressU_0_AddressV_0_Filter_0, _23069, 0.0f);
 	                            float _7002 = _12167.x;
 	                            float2 _14547 = (normalize(_23069 - _16123) * _Globals_1_g_vImageDimensions.zw) * 0.25f;
 	                            bool _12885;

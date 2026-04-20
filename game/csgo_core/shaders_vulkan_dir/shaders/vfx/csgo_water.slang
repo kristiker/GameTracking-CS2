@@ -67,7 +67,6 @@ VS
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	DynamicComboRule( Allow0( D_CS_VERTEX_ANIMATION ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
@@ -323,6 +322,7 @@ PS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_PROBE, D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
+	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	cbuffer PerViewLightProbeVolumeConstantBuffer_t < Attribute("PerViewLightProbeVolumeConstantBuffer_t"); >;
@@ -515,7 +515,7 @@ PS
 	    uint _m0[];
 	} g_CullBits_1;
 	
-	layout(set = 1, binding = 18) uniform sampler Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 18) uniform sampler AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21;
 	layout(set = 1, binding = 55) uniform texture2D g_tNormal;
 	layout(set = 1, binding = 27) uniform sampler DefaultSamplerState_0;
 	layout(set = 1, binding = 57) uniform texture2D g_tSceneDepth;
@@ -608,8 +608,8 @@ PS
 	    float _10444 = clamp((((_22160 - _Globals_.g_flRefractionClipPlaneAdjust) - (PerViewConstantBuffer_t._m6.xyz + (_12686 * (1.0 / (((clamp((texture(sampler2D(g_tSceneDepth, AddressU_2_AddressV_2_Filter_0), _9942).x - PerViewConstantBuffer_t._m4) / (PerViewConstantBuffer_t._m5 - PerViewConstantBuffer_t._m4), 0.0, 1.0) * PerViewConstantBuffer_t._m0.z) + PerViewConstantBuffer_t._m0.w) * dot(PerViewConstantBuffer_t._m7.xyz, _12686))))).z) * _11945) - ((-_Globals_.g_flWaterStart) * _11945), 0.0, 1.0);
 	    vec3 _17138 = normalize(_10137.xyz - PerViewConstantBuffer_t._m6.xyz);
 	    vec2 _7654 = _9942 - (_15878.xy * (_Globals_.g_flRefractionAmount * _10444));
-	    vec3 _4046 = texture(sampler2D(g_tRefractionMap, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), mix(_7654, _21449, bvec2(texture(sampler2D(g_tSceneDepth, AddressU_2_AddressV_2_Filter_0), _7654.xy).x < _11408.z)).xy).xyz;
-	    vec3 _24093 = mix(mix(_4046, _4046 * _Globals_.g_vRefractionTint.xyz, vec3(saturate(3.5 * _10444))), _Globals_.g_vWaterFogColor, vec3(_10444)).xyz + ((textureLod(samplerCubeArray(g_tFallbackCubemap, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), vec4(normalize(mix(_15878, reflect(_17138.xyz, _15878.xyz).xyz, vec3(0.02231119014322757720947265625))), 0.0), PerViewLightingConstantBufferGpu_t._m3.y * 0.994987428188323974609375).xyz * saturate(2.0 * _10444)).xyz * (_Globals_.g_flReflectance * clamp((_10444 - 0.0500000007450580596923828125) * 20.0, 0.0, 1.0)));
+	    vec3 _4046 = texture(sampler2D(g_tRefractionMap, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), mix(_7654, _21449, bvec2(texture(sampler2D(g_tSceneDepth, AddressU_2_AddressV_2_Filter_0), _7654.xy).x < _11408.z)).xy).xyz;
+	    vec3 _24093 = mix(mix(_4046, _4046 * _Globals_.g_vRefractionTint.xyz, vec3(saturate(3.5 * _10444))), _Globals_.g_vWaterFogColor, vec3(_10444)).xyz + ((textureLod(samplerCubeArray(g_tFallbackCubemap, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), vec4(normalize(mix(_15878, reflect(_17138.xyz, _15878.xyz).xyz, vec3(0.02231119014322757720947265625))), 0.0), PerViewLightingConstantBufferGpu_t._m3.y * 0.994987428188323974609375).xyz * saturate(2.0 * _10444)).xyz * (_Globals_.g_flReflectance * clamp((_10444 - 0.0500000007450580596923828125) * 20.0, 0.0, 1.0)));
 	    vec4 _20488;
 	    _20488.x = _24093.x;
 	    _20488.y = _24093.y;
@@ -669,7 +669,7 @@ PS
 	            {
 	                float _14602 = clamp(pow(max(0.0, (length(_21493) * PerViewConstantBufferCsgo_t._m6.y) + PerViewConstantBufferCsgo_t._m6.x), PerViewConstantBufferCsgo_t._m6.w), 0.0, 1.0) * clamp(pow(max(0.0, (_22160 * PerViewConstantBufferCsgo_t._m7.y) + PerViewConstantBufferCsgo_t._m7.x), PerViewConstantBufferCsgo_t._m7.z), 0.0, 1.0);
 	                float _8892 = saturate(_14602) * PerViewConstantBufferCsgo_t._m9.w;
-	                _19341 = mix(_23944.xyz, vec4((textureLod(samplerCube(g_tFogCubeTexture, Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0), normalize((mat4(vec4(PerViewConstantBufferCsgo_t._m8._m0[0].x, PerViewConstantBufferCsgo_t._m8._m0[1].x, PerViewConstantBufferCsgo_t._m8._m0[2].x, PerViewConstantBufferCsgo_t._m8._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].y, PerViewConstantBufferCsgo_t._m8._m0[1].y, PerViewConstantBufferCsgo_t._m8._m0[2].y, PerViewConstantBufferCsgo_t._m8._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].z, PerViewConstantBufferCsgo_t._m8._m0[1].z, PerViewConstantBufferCsgo_t._m8._m0[2].z, PerViewConstantBufferCsgo_t._m8._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].w, PerViewConstantBufferCsgo_t._m8._m0[1].w, PerViewConstantBufferCsgo_t._m8._m0[2].w, PerViewConstantBufferCsgo_t._m8._m0[3].w)) * vec4(_9057, 0.0)).xyz).xyz, PerViewConstantBufferCsgo_t._m7.w * clamp(1.0 - (_14602 * PerViewConstantBufferCsgo_t._m6.z), 0.0, 1.0)) * PerViewConstantBufferCsgo_t._m10.x).xyz, _8892).xyz, vec3(_8892));
+	                _19341 = mix(_23944.xyz, vec4((textureLod(samplerCube(g_tFogCubeTexture, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), normalize((mat4(vec4(PerViewConstantBufferCsgo_t._m8._m0[0].x, PerViewConstantBufferCsgo_t._m8._m0[1].x, PerViewConstantBufferCsgo_t._m8._m0[2].x, PerViewConstantBufferCsgo_t._m8._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].y, PerViewConstantBufferCsgo_t._m8._m0[1].y, PerViewConstantBufferCsgo_t._m8._m0[2].y, PerViewConstantBufferCsgo_t._m8._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].z, PerViewConstantBufferCsgo_t._m8._m0[1].z, PerViewConstantBufferCsgo_t._m8._m0[2].z, PerViewConstantBufferCsgo_t._m8._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m8._m0[0].w, PerViewConstantBufferCsgo_t._m8._m0[1].w, PerViewConstantBufferCsgo_t._m8._m0[2].w, PerViewConstantBufferCsgo_t._m8._m0[3].w)) * vec4(_9057, 0.0)).xyz).xyz, PerViewConstantBufferCsgo_t._m7.w * clamp(1.0 - (_14602 * PerViewConstantBufferCsgo_t._m6.z), 0.0, 1.0)) * PerViewConstantBufferCsgo_t._m10.x).xyz, _8892).xyz, vec3(_8892));
 	                break;
 	            }
 	            _19341 = _23944.xyz;

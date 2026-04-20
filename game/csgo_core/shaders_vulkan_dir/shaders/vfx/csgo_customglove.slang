@@ -960,7 +960,7 @@ PS
 	layout(set = 1, binding = 46) uniform texture2D g_tGrunge3;
 	layout(set = 1, binding = 50) uniform texture2D g_tGrunge4;
 	layout(set = 1, binding = 32) uniform texture2D g_tNoise;
-	layout(set = 1, binding = 15) uniform sampler Filter_85_MaxAniso_8_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 15) uniform sampler AllowGlobalMipBiasOverride_0_Filter_85_MaxAniso_8;
 	layout(set = 1, binding = 31) uniform texture2D g_tNormal;
 	layout(set = 1, binding = 34) uniform texture2D g_tDetailNormal1;
 	layout(set = 1, binding = 40) uniform texture2D g_tDetailNormal2;
@@ -971,7 +971,7 @@ PS
 	layout(set = 1, binding = 45) uniform texture2D g_tDamageNormal3;
 	layout(set = 1, binding = 49) uniform texture2D g_tDamageNormal4;
 	layout(set = 1, binding = 38) uniform texture2D g_tPattern;
-	layout(set = 1, binding = 14) uniform sampler Filter_0_AddressU_0_AddressV_0_AddressW_0;
+	layout(set = 1, binding = 14) uniform sampler AddressU_0_AddressV_0_AddressW_0_Filter_0;
 	
 	layout(location = 0) in vec4 input_0;
 	layout(location = 0) out vec4 output_0;
@@ -1043,8 +1043,8 @@ PS
 	    vec4 _19739 = mix(mix(mix(_19338.xyzw, _19339.xyzw, _21173), _19340.xyzw, _14170), _18453.xyzw, _14150);
 	    vec3 _12690 = _19739.xyz;
 	    float _17907 = dot(_12690, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
-	    vec4 _22452 = texture(sampler2D(g_tNoise, Filter_85_MaxAniso_8_AllowGlobalMipBiasOverride_0), (_13810 * 2.0).xy);
-	    vec4 _19372 = texture(sampler2D(g_tNormal, Filter_85_MaxAniso_8_AllowGlobalMipBiasOverride_0), input_0.xy);
+	    vec4 _22452 = texture(sampler2D(g_tNoise, AllowGlobalMipBiasOverride_0_Filter_85_MaxAniso_8), (_13810 * 2.0).xy);
+	    vec4 _19372 = texture(sampler2D(g_tNormal, AllowGlobalMipBiasOverride_0_Filter_85_MaxAniso_8), input_0.xy);
 	    float _16000 = _19372.x;
 	    float _19720 = _19372.y;
 	    float _16783 = (_16000 + _19720) - 1.00392162799835205078125;
@@ -1078,7 +1078,7 @@ PS
 	        {
 	            break;
 	        }
-	        vec4 _22564 = texture(sampler2D(g_tLayerMask, Filter_0_AddressU_0_AddressV_0_AddressW_0), (_13810 + ((_1185[_13039].xy * 0.0009765625) * _Globals_.g_fColorMaskBlur)).xy);
+	        vec4 _22564 = texture(sampler2D(g_tLayerMask, AddressU_0_AddressV_0_AddressW_0_Filter_0), (_13810 + ((_1185[_13039].xy * 0.0009765625) * _Globals_.g_fColorMaskBlur)).xy);
 	        float _8268 = _22564.w;
 	        int _23989;
 	        int _13040 = 0;

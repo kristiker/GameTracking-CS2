@@ -111,7 +111,7 @@ PS
 	    float3 _Globals_1_m0 : packoffset(c26);
 	};
 	
-	SamplerState Filter_21_AddressU_0_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_0_AddressV_2_Filter_21 : register(s14, space1);
 	Texture2D<float4> g_tSkyRadiance : register(t30, space1);
 	
 	static float3 input_0;
@@ -134,7 +134,7 @@ PS
 	    float3 _19258 = normalize(reflect(input_1.xyz - _Globals_1_m0.xyz, normalize(input_0)));
 	    float _7511 = acos(_19258.z) * 0.3183098733425140380859375f;
 	    float2 _16582 = _19258.xy;
-	    output_0 = g_tSkyRadiance.SampleGrad(Filter_21_AddressU_0_AddressV_2, float2(atan2(_19258.y, _19258.x) * 0.15915493667125701904296875f, _7511), float2(length(ddx(_16582)) * 0.15915493667125701904296875f, ddx(_7511)), float2(length(ddy(_16582)) * 0.15915493667125701904296875f, ddy(_7511)));
+	    output_0 = g_tSkyRadiance.SampleGrad(AddressU_0_AddressV_2_Filter_21, float2(atan2(_19258.y, _19258.x) * 0.15915493667125701904296875f, _7511), float2(length(ddx(_16582)) * 0.15915493667125701904296875f, ddx(_7511)), float2(length(ddy(_16582)) * 0.15915493667125701904296875f, ddy(_7511)));
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

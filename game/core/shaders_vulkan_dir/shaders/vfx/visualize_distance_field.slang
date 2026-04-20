@@ -95,7 +95,7 @@ PS
 	};
 	
 	Texture2DArray<float4> g_tVisualizeDistanceField_unexpectedTypeId470_1107 : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_20 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -112,7 +112,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _3401 = g_tVisualizeDistanceField_unexpectedTypeId470_1107.Sample(Filter_20_AddressU_2_AddressV_2, float3(input_0 * _Globals_1_g_vViewportRatio, 0.0f));
+	    float4 _3401 = g_tVisualizeDistanceField_unexpectedTypeId470_1107.Sample(AddressU_2_AddressV_2_Filter_20, float3(input_0 * _Globals_1_g_vViewportRatio, 0.0f));
 	    float _17666 = _3401.x;
 	    output_0 = float4(_17666, _17666, _17666, (_17666 > 0.0500000007450580596923828125f) ? 0.5f : 0.0f);
 	}

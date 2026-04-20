@@ -122,7 +122,7 @@ PS
 	layout(set = 1) uniform _985 PerViewConstantBuffer_t;
 	
 	layout(set = 1, binding = 30) uniform texture2D g_tInput;
-	layout(set = 1, binding = 14) uniform sampler Filter_20_AddressU_2_AddressV_2;
+	layout(set = 1, binding = 14) uniform sampler AddressU_2_AddressV_2_Filter_20;
 	layout(set = 1, binding = 31) uniform texture2D g_tQuarterResEffectsColor;
 	
 	layout(location = 0) out vec4 output_0;
@@ -130,7 +130,7 @@ PS
 	void main()
 	{
 	    vec2 _22165 = (gl_FragCoord.xy * (_Globals_.g_vInvTexDim.xy * 4.0)).xy;
-	    vec4 _20428 = (((textureLodOffset(sampler2D(g_tInput, Filter_20_AddressU_2_AddressV_2), _22165, 0.0, ivec2(-1)) + textureLodOffset(sampler2D(g_tInput, Filter_20_AddressU_2_AddressV_2), _22165, 0.0, ivec2(-1, 1))) + textureLodOffset(sampler2D(g_tInput, Filter_20_AddressU_2_AddressV_2), _22165, 0.0, ivec2(1))) + textureLodOffset(sampler2D(g_tInput, Filter_20_AddressU_2_AddressV_2), _22165, 0.0, ivec2(1, -1))) * 0.25;
+	    vec4 _20428 = (((textureLodOffset(sampler2D(g_tInput, AddressU_2_AddressV_2_Filter_20), _22165, 0.0, ivec2(-1)) + textureLodOffset(sampler2D(g_tInput, AddressU_2_AddressV_2_Filter_20), _22165, 0.0, ivec2(-1, 1))) + textureLodOffset(sampler2D(g_tInput, AddressU_2_AddressV_2_Filter_20), _22165, 0.0, ivec2(1))) + textureLodOffset(sampler2D(g_tInput, AddressU_2_AddressV_2_Filter_20), _22165, 0.0, ivec2(1, -1))) * 0.25;
 	    vec3 _15742 = ((_20428 * clamp(((PerViewConstantBuffer_t._m0 * dot(_20428.xyz, vec3(0.300000011920928955078125, 0.589999973773956298828125, 0.10999999940395355224609375))) * _Globals_.g_vThresholdParams.y) + _Globals_.g_vThresholdParams.x, 0.0, 1.0)) * _Globals_.g_flBloomScale).xyz + texelFetch(g_tQuarterResEffectsColor, ivec3(ivec2(gl_FragCoord.xy), 0).xy, 0).xyz;
 	    vec4 _20488;
 	    _20488.x = _15742.x;

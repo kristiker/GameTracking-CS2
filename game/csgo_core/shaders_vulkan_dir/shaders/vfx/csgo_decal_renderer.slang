@@ -195,7 +195,7 @@ PS
 	Texture2D<float4> g_tPreviousRT : register(t30, space1);
 	SamplerState AddressU_2_AddressV_2 : register(s21, space1);
 	Texture2D<float4> g_tDecals : register(t31, space1);
-	SamplerState Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0 : register(s17, space1);
+	SamplerState AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21 : register(s17, space1);
 	
 	static float4 input_0;
 	static float3 input_1;
@@ -217,7 +217,7 @@ PS
 	void MainPs_inner()
 	{
 	    float4 _22794 = g_tPreviousRT.Sample(AddressU_2_AddressV_2, input_0.zw);
-	    float4 _3401 = g_tDecals.Sample(Filter_21_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, clamp(input_1.xy, 0.0f.xx, 1.0f.xx).xy);
+	    float4 _3401 = g_tDecals.Sample(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21, clamp(input_1.xy, 0.0f.xx, 1.0f.xx).xy);
 	    output_0 = float4(_22794.xy, max(_22794.z, _3401.x * input_2), _22794.w + (_3401.y * input_2));
 	}
 	

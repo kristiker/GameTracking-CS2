@@ -51,7 +51,7 @@ CS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (23996 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (24020 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -112,7 +112,7 @@ CS
 	    vec4 _m0[4];
 	};
 	
-	struct _253
+	struct _1889
 	{
 	    _1037 _m0;
 	    _1037 _m1;
@@ -137,6 +137,7 @@ CS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    _1037 _m23;
 	};
 	
 	vec4 _3;
@@ -185,7 +186,7 @@ CS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _253 _m0[];
+	    _1889 _m0[];
 	} g_BarnLights_1;
 	
 	struct _1011
@@ -196,13 +197,13 @@ CS
 	layout(set = 0) uniform _1011 PerViewConstantBufferCsgo_t;
 	
 	layout(set = 0, binding = 42) uniform texture3D g_tLPV_Irradiance;
-	layout(set = 0, binding = 15) uniform sampler Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0;
+	layout(set = 0, binding = 15) uniform sampler AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20;
 	layout(set = 0, binding = 48) uniform texture3D g_tLPV_Shadows;
 	layout(set = 0, binding = 158) uniform writeonly image3D _4931;
 	layout(set = 0, binding = 34) uniform texture3D g_tLightCookieTexture;
-	layout(set = 0, binding = 22) uniform sampler Filter_20_AddressU_3_AddressV_3_AddressW_3_BorderColor_0;
-	layout(set = 0, binding = 16) uniform sampler AllowGlobalMipBiasOverride_0_Filter_21_AddressU_0_AddressV_0;
-	layout(set = 0, binding = 23) uniform samplerShadow AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3;
+	layout(set = 0, binding = 22) uniform sampler AddressU_3_AddressV_3_AddressW_3_BorderColor_0_Filter_20;
+	layout(set = 0, binding = 16) uniform sampler AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21;
+	layout(set = 0, binding = 23) uniform samplerShadow AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149;
 	layout(set = 0, binding = 36) uniform texture2D g_tShadowDepthBufferDepth;
 	
 	void main()
@@ -344,7 +345,7 @@ CS
 	        vec3 _17330 = _9087.xyz;
 	        vec3 _16057 = mix(vec3(0.0, 0.16666667163372039794921875, 0.3333333432674407958984375), vec3(0.5, 0.666666686534881591796875, 0.833333313465118408203125), step(_17330, vec3(0.0)).xyz);
 	        vec3 _16868 = _17330 * _17330;
-	        vec3 _21122 = (((textureLod(sampler3D(g_tLPV_Irradiance, Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0), _21530.xyz + vec3(0.0, 0.0, _16057.x), 0.0).xyz * _16868.x) + (textureLod(sampler3D(g_tLPV_Irradiance, Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0), _21530.xyz + vec3(0.0, 0.0, _16057.y), 0.0).xyz * _16868.y)) + (textureLod(sampler3D(g_tLPV_Irradiance, Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0), _21530.xyz + vec3(0.0, 0.0, _16057.z), 0.0).xyz * _16868.z)).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m3.xyz;
+	        vec3 _21122 = (((textureLod(sampler3D(g_tLPV_Irradiance, AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20), _21530.xyz + vec3(0.0, 0.0, _16057.x), 0.0).xyz * _16868.x) + (textureLod(sampler3D(g_tLPV_Irradiance, AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20), _21530.xyz + vec3(0.0, 0.0, _16057.y), 0.0).xyz * _16868.y)) + (textureLod(sampler3D(g_tLPV_Irradiance, AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20), _21530.xyz + vec3(0.0, 0.0, _16057.z), 0.0).xyz * _16868.z)).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m3.xyz;
 	        vec4 _23714;
 	        _23714.x = _21122.x;
 	        _23714.y = _21122.y;
@@ -519,7 +520,7 @@ CS
 	                        vec3 _20489 = _14081;
 	                        _20489.x = _20562.x;
 	                        _20489.y = _20562.y;
-	                        _12501 = _17828.xyz * textureLod(sampler3D(g_tLightCookieTexture, AllowGlobalMipBiasOverride_0_Filter_21_AddressU_0_AddressV_0), _20489.xyz, 0.0).xyz;
+	                        _12501 = _17828.xyz * textureLod(sampler3D(g_tLightCookieTexture, AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21), _20489.xyz, 0.0).xyz;
 	                    }
 	                    else
 	                    {
@@ -528,7 +529,7 @@ CS
 	                        vec3 _20488 = _13791;
 	                        _20488.x = _20561.x;
 	                        _20488.y = _20561.y;
-	                        _12501 = _17828.xyz * textureLod(sampler3D(g_tLightCookieTexture, Filter_20_AddressU_3_AddressV_3_AddressW_3_BorderColor_0), _20488.xyz, 0.0).xyz;
+	                        _12501 = _17828.xyz * textureLod(sampler3D(g_tLightCookieTexture, AddressU_3_AddressV_3_AddressW_3_BorderColor_0_Filter_20), _20488.xyz, 0.0).xyz;
 	                    }
 	                    _21548 = _12501;
 	                }
@@ -558,7 +559,7 @@ CS
 	                    {
 	                        float _11455 = saturate(_19629.z + PerViewLightingConstantBufferGpu_t._m5);
 	                        vec2 _14614 = vec3(fma(_19629.xy, g_BarnLights_1._m0[_14247]._m8.zw, g_BarnLights_1._m0[_14247]._m8.xy), _19629.z).xy;
-	                        float _15310 = dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0)).xyzw, vec4(0.25));
+	                        float _15310 = dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0)).xyzw, vec4(0.25));
 	                        bool _12887;
 	                        if (_15310 == 0.0)
 	                        {
@@ -573,7 +574,7 @@ CS
 	                            _24972 = _15310;
 	                            break;
 	                        }
-	                        _24972 = ((_15310 * (PerViewLightingConstantBufferGpu_t._m0.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, 0.0)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, 0.0)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(0.0, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3((_14614 + vec2(0.0, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0)).xyzw, PerViewLightingConstantBufferGpu_t._m1.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_Filter_149_ComparisonFunc_3), vec3(_14614, _11455), 0.0) * PerViewLightingConstantBufferGpu_t._m1.y);
+	                        _24972 = ((_15310 * (PerViewLightingConstantBufferGpu_t._m0.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.z, 0.0)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(PerViewLightingConstantBufferGpu_t._m2.y, 0.0)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(0.0, PerViewLightingConstantBufferGpu_t._m3.y)).xy, _11455), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3((_14614 + vec2(0.0, PerViewLightingConstantBufferGpu_t._m3.z)).xy, _11455), 0.0)).xyzw, PerViewLightingConstantBufferGpu_t._m1.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, AddressU_2_AddressV_2_ComparisonFunc_3_Filter_149), vec3(_14614, _11455), 0.0) * PerViewLightingConstantBufferGpu_t._m1.y);
 	                        break;
 	                    } while(false);
 	                    vec3 _19878 = _21548.xyz * mix(1.0, _24972, g_BarnLights_1._m0[_14247]._m12);
@@ -597,7 +598,7 @@ CS
 	            _16208 = _4283;
 	            continue;
 	        }
-	        imageStore(_4931, ivec3(uvec3(ivec3(ivec2(_14205), _13039))), vec4(_23714.xyz + _13155, 1.0 - dot(textureLod(sampler3D(g_tLPV_Shadows, Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0), ((saturate(_11981).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5).xyz, 0.0).xyzw, PerViewLightingConstantBufferGpu_t._m4)));
+	        imageStore(_4931, ivec3(uvec3(ivec3(ivec2(_14205), _13039))), vec4(_23714.xyz + _13155, 1.0 - dot(textureLod(sampler3D(g_tLPV_Shadows, AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20), ((saturate(_11981).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5).xyz, 0.0).xyzw, PerViewLightingConstantBufferGpu_t._m4)));
 	        _4300 = _13039 + 1;
 	        _13039 = _4300;
 	        continue;

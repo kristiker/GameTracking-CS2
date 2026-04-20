@@ -19,7 +19,7 @@
 .bmp
 /cursor.res
 00000409
-=Ceq
+2\vpP
 ACUTE_ACCENT
 AC_BACK
 AC_BOOKMARKS
@@ -57,8 +57,8 @@ B\fp\v0
 B_BUTTON
 ButtonCode
 ButtonName
-C:\buildworker\csgo_rel_win64\build\_build_\inputsystem\_vpc_inputsystem\default\win64\_msvc_\Retail\inputsystem.pdb
-C:\buildworker\csgo_rel_win64\build\src\inputsystem\inputsystem.cpp
+C:\buildworker\cs2_beta_win64\build\_build_\inputsystem\_vpc_inputsystem\default\win64\_msvc_\Retail\inputsystem.pdb
+C:\buildworker\cs2_beta_win64\build\src\inputsystem\inputsystem.cpp
 CALCULATOR
 CANCEL
 CAPSLOCK
@@ -379,7 +379,6 @@ RIGHTARROW
 RIGHTPAREN
 RIGHT_CURLY_BRACKET
 RIGHT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK
-RSDS(k4
 RSHIFT
 RWIN
 R_AXIS

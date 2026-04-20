@@ -57,7 +57,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
@@ -244,7 +243,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tColor : register(t53, space1);
-	SamplerState Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic : register(s20, space1);
+	SamplerState AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1 : register(s20, space1);
 	
 	static float4 input_0;
 	static float4 output_0;
@@ -262,7 +261,7 @@ PS
 	void MainPs_inner()
 	{
 	    float _9614 = fmod(PerViewConstantBuffer_t_1_m0, 16.0f) * 0.0625f;
-	    float4 _20877 = g_tColor.Sample(Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, float2(clamp(input_0.x, 0.0f, 1.0f), input_0.y).xy);
+	    float4 _20877 = g_tColor.Sample(AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1, float2(clamp(input_0.x, 0.0f, 1.0f), input_0.y).xy);
 	    float3 _19636 = _20877.xyz;
 	    float3 _18437 = _19636 * 12.9200000762939453125f;
 	    float3 _7485 = (pow(_19636, 0.4166666567325592041015625f.xxx) * 1.05499994754791259765625f) - 0.054999999701976776123046875f.xxx;
@@ -288,7 +287,7 @@ PS
 	    float2 _10124 = _12631;
 	    _10124.x = _12631.x * (1.0f + ((_10306 - 0.5f) * 0.60000002384185791015625f));
 	    float2 _15887 = _10124 * ((sin(PerViewConstantBuffer_t_1_m0) * (-0.0500000007450580596923828125f)) + 1.0f);
-	    float4 _20878 = g_tColor.Sample(Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, float2(clamp(_15887.x + (((6.38377475738525390625f * pow(_9614, 0.949999988079071044921875f)) * pow(1.0f - _9614, 2.0f)) - 1.0f), 0.0f, 1.0f), _15887.y - (sin(PerViewConstantBuffer_t_1_m0 * 0.5f) * 0.100000001490116119384765625f)).xy);
+	    float4 _20878 = g_tColor.Sample(AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1, float2(clamp(_15887.x + (((6.38377475738525390625f * pow(_9614, 0.949999988079071044921875f)) * pow(1.0f - _9614, 2.0f)) - 1.0f), 0.0f, 1.0f), _15887.y - (sin(PerViewConstantBuffer_t_1_m0 * 0.5f) * 0.100000001490116119384765625f)).xy);
 	    float3 _19637 = _20878.xyz;
 	    float _17505;
 	    if (_20878.x <= 0.003130800090730190277099609375f)
@@ -302,7 +301,7 @@ PS
 	    float _21090 = PerViewConstantBuffer_t_1_m0 + 8.0f;
 	    float _22684 = fmod(_21090, 16.0f) * 0.0625f;
 	    float2 _15888 = _10124 * ((sin(_21090) * (-0.0500000007450580596923828125f)) + 1.0f);
-	    float4 _20879 = g_tColor.Sample(Filter_255_MaxAniso_1_AddressU_dynamic_AddressV_dynamic, float2(clamp(_15888.x + (((6.38377475738525390625f * pow(_22684, 0.949999988079071044921875f)) * pow(1.0f - _22684, 2.0f)) - 1.0f), 0.0f, 1.0f), _15888.y - ((sin(_21090 * 0.5f) * 0.100000001490116119384765625f) + 0.5f)).xy);
+	    float4 _20879 = g_tColor.Sample(AddressU_dynamic_AddressV_dynamic_Filter_255_MaxAniso_1, float2(clamp(_15888.x + (((6.38377475738525390625f * pow(_22684, 0.949999988079071044921875f)) * pow(1.0f - _22684, 2.0f)) - 1.0f), 0.0f, 1.0f), _15888.y - ((sin(_21090 * 0.5f) * 0.100000001490116119384765625f) + 0.5f)).xy);
 	    float3 _19638 = _20879.xyz;
 	    float _17506;
 	    if (_20879.x <= 0.003130800090730190277099609375f)

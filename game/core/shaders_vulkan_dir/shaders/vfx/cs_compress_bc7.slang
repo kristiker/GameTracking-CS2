@@ -48,7 +48,7 @@ CS
 	
 	RWTexture2D<uint4> _3592 : register(u158, space0);
 	Texture2D<float4> g_tSrc : register(t30, space0);
-	SamplerState Filter_20_AddressU_2_AddressV_2 : register(s14, space0);
+	SamplerState AddressU_2_AddressV_2_Filter_20 : register(s14, space0);
 	
 	static uint3 gl_GlobalInvocationID;
 	struct SPIRV_Cross_Input
@@ -106,7 +106,7 @@ CS
 	                {
 	                    break;
 	                }
-	                _3448[(_13039 * 4) + _13040] = g_tSrc.SampleLevel(Filter_20_AddressU_2_AddressV_2, (float2(gl_GlobalInvocationID.xy * uint2(4u, 4u)) + float2(float(_13040) + 0.5f, float(_13039) + 0.5f)) * (1.0f.xx / _Globals_1_g_vImageSize), float(_Globals_1_g_nMipLevel));
+	                _3448[(_13039 * 4) + _13040] = g_tSrc.SampleLevel(AddressU_2_AddressV_2_Filter_20, (float2(gl_GlobalInvocationID.xy * uint2(4u, 4u)) + float2(float(_13040) + 0.5f, float(_13039) + 0.5f)) * (1.0f.xx / _Globals_1_g_vImageSize), float(_Globals_1_g_nMipLevel));
 	                _4298 = _13040 + 1;
 	                _13040 = _4298;
 	                continue;

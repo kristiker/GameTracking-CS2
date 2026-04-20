@@ -113,14 +113,14 @@ PS
 	layout(set = 1) uniform _1040 _Globals_;
 	
 	layout(set = 1, binding = 30) uniform texture2D g_tDisplacement;
-	layout(set = 1, binding = 14) uniform sampler Filter_0_AddressU_2_AddressV_2;
+	layout(set = 1, binding = 14) uniform sampler AddressU_2_AddressV_2_Filter_0;
 	
 	layout(location = 0) in vec2 input_0;
 	layout(location = 0) out vec4 output_0;
 	
 	void main()
 	{
-	    vec4 _19414 = texture(sampler2D(g_tDisplacement, Filter_0_AddressU_2_AddressV_2), input_0.xy);
+	    vec4 _19414 = texture(sampler2D(g_tDisplacement, AddressU_2_AddressV_2_Filter_0), input_0.xy);
 	    vec3 _20688 = _19414.zyx * _Globals_.g_vDisplacementScale;
 	    float _13155;
 	    _13155 = 0.0;
@@ -135,7 +135,7 @@ PS
 	        }
 	        uvec2 _10352 = uvec2(textureSize(g_tDisplacement, 0));
 	        vec2 _19607 = vec2(1.0) / vec2(ivec2(int(_10352.x), int(_10352.y)));
-	        vec3 _10323 = abs(_20688 - (vec3((_19607 * _Globals_.g_vLayerSize) * _863[_16208], 0.0) + (texture(sampler2D(g_tDisplacement, Filter_0_AddressU_2_AddressV_2), (input_0 + (_19607 * _863[_16208])).xy).zyx * _Globals_.g_vDisplacementScale)));
+	        vec3 _10323 = abs(_20688 - (vec3((_19607 * _Globals_.g_vLayerSize) * _863[_16208], 0.0) + (texture(sampler2D(g_tDisplacement, AddressU_2_AddressV_2_Filter_0), (input_0 + (_19607 * _863[_16208])).xy).zyx * _Globals_.g_vDisplacementScale)));
 	        float _23793 = _10323.z;
 	        _17213 = max(_13155, (_23793 * _23793) / dot(_10323, _10323));
 	        _4505 = _16208 + 1;

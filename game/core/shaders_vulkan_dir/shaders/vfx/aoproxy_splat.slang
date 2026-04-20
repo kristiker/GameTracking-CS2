@@ -55,7 +55,7 @@ VS
 	    float4 _m0[4];
 	};
 	
-	cbuffer AoProxyConstantBuffer_t : register(b2, space0)
+	cbuffer AoProxyConstantBuffer_t : register(b1, space0)
 	{
 	    _2817 AoProxyConstantBuffer_t_1_m0 : packoffset(c5);
 	    _2817 AoProxyConstantBuffer_t_1_m1 : packoffset(c25);
@@ -183,7 +183,7 @@ PS
 	    float3 _Globals_1_m4 : packoffset(c28);
 	};
 	
-	cbuffer AoProxyConstantBuffer_t : register(b2, space1)
+	cbuffer AoProxyConstantBuffer_t : register(b1, space1)
 	{
 	    _1276 AoProxyConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 AoProxyConstantBuffer_t_1_m1 : packoffset(c4);
@@ -193,7 +193,7 @@ PS
 	
 	Texture2D<float4> g_tSceneDepth : register(t31, space1);
 	Texture3D<float4> g_tTextureAoConeLUT : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2_AddressW_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_Filter_20 : register(s14, space1);
 	
 	static float4 gl_FragCoord;
 	static uint3 input_0;
@@ -246,7 +246,7 @@ PS
 	        float3 _17194 = _17090.xyz;
 	        float _8132 = rsqrt(dot(_17194, _17194));
 	        float3 _16478 = (_17090.xyz * (-_8132)).xyz;
-	        _16164 = _13155.xyzw * float4(g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
+	        _16164 = _13155.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
 	        _21531 = _16208 + 1;
 	        _13155 = _16164;
 	        _16208 = _21531;
@@ -270,7 +270,7 @@ PS
 	        float3 _10134 = abs(_20220);
 	        float _23212 = 1.0f / (1.0f + (dot(_10134 / ((_10134.x + _10134.y) + _10134.z).xxx, 3.1415927410125732421875f.xxx / (AoProxyConstantBuffer_t_1_m3._m0[_16209].yzx * AoProxyConstantBuffer_t_1_m3._m0[_16209].zxy).xyz) * length(_20220)));
 	        float3 _16479 = normalize(_20220).xyz;
-	        _16165 = _13156.xyzw * float4(g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
+	        _16165 = _13156.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_2_AddressV_2_AddressW_2_Filter_20, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
 	        _21532 = _16209 + 1;
 	        _13156 = _16165;
 	        _16209 = _21532;

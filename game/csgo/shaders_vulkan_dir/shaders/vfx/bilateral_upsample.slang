@@ -151,7 +151,7 @@ PS
 	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23.y);
 	};
 	
-	SamplerState Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s18, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0 : register(s18, space1);
 	Texture2D<float4> g_tInputDepthHiRes : register(t32, space1);
 	Texture2D<float4> g_tInputTexture : register(t30, space1);
 	
@@ -199,10 +199,10 @@ PS
 	        float _14529 = ((_20716 + _23920) + _24495) + _19631;
 	        if (_14529 < 9.9999997473787516355514526367188e-06f)
 	        {
-	            _6805 = g_tInputTexture.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, input_0, 0.0f);
+	            _6805 = g_tInputTexture.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, input_0, 0.0f);
 	            break;
 	        }
-	        _6805 = ((((g_tInputTexture.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, input_3, 0.0f) * _20716) + (g_tInputTexture.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, input_4, 0.0f) * _23920)) + (g_tInputTexture.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, input_2, 0.0f) * _24495)) + (g_tInputTexture.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, input_1, 0.0f) * _19631)) / _14529.xxxx;
+	        _6805 = ((((g_tInputTexture.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, input_3, 0.0f) * _20716) + (g_tInputTexture.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, input_4, 0.0f) * _23920)) + (g_tInputTexture.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, input_2, 0.0f) * _24495)) + (g_tInputTexture.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, input_1, 0.0f) * _19631)) / _14529.xxxx;
 	        break;
 	    } while(false);
 	    output_0 = _6805;

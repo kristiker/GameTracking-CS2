@@ -185,7 +185,7 @@ PS
 	
 	layout(set = 1, binding = 52) uniform texture2D g_tSceneDepth;
 	layout(set = 1, binding = 53) uniform texture3D g_tSmokeNoiseTex;
-	layout(set = 1, binding = 16) uniform sampler Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 16) uniform sampler AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21;
 	
 	layout(location = 0) in vec2 input_0;
 	layout(location = 2) in vec3 input_1;
@@ -261,7 +261,7 @@ PS
 	        if (_18039 > 0.0)
 	        {
 	            _15651.z = _15651.z + (100.0 * smoothstep(7.0, 0.0, _9489));
-	            vec4 _12091 = textureLod(sampler3D(g_tSmokeNoiseTex, Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0), (_15651 * 0.007000000216066837310791015625).xyz, 0.0);
+	            vec4 _12091 = textureLod(sampler3D(g_tSmokeNoiseTex, AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21), (_15651 * 0.007000000216066837310791015625).xyz, 0.0);
 	            _19755 = clamp((_12091.y + _18039) * _18039, 0.0, 1.0) * (0.85000002384185791015625 + (_12091.x * 0.100000001490116119384765625));
 	        }
 	        else

@@ -1144,10 +1144,10 @@ PS
 	layout(set = 1) uniform _2733 _Globals_;
 	
 	layout(set = 1, binding = 30) uniform texture2D g_tAmbientOcclusion;
-	layout(set = 1, binding = 23) uniform sampler Filter_21_AllowGlobalMipBiasOverride_0_AddressU_2_AddressV_2;
+	layout(set = 1, binding = 23) uniform sampler AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21;
 	layout(set = 1, binding = 31) uniform texture2D g_tMasks;
 	layout(set = 1, binding = 38) uniform texture2D g_tWear;
-	layout(set = 1, binding = 22) uniform sampler Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0;
+	layout(set = 1, binding = 22) uniform sampler AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21;
 	layout(set = 1, binding = 39) uniform texture2D g_tGrunge;
 	layout(set = 1, binding = 35) uniform texture2D g_tMetalness;
 	layout(set = 1, binding = 34) uniform texture2D g_tColor;
@@ -1159,24 +1159,24 @@ PS
 	
 	void main()
 	{
-	    vec4 _18992 = texture(sampler2D(g_tAmbientOcclusion, Filter_21_AllowGlobalMipBiasOverride_0_AddressU_2_AddressV_2), input_0.xy);
+	    vec4 _18992 = texture(sampler2D(g_tAmbientOcclusion, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), input_0.xy);
 	    float _4306 = _18992.x;
-	    vec4 _18993 = texture(sampler2D(g_tMasks, Filter_21_AllowGlobalMipBiasOverride_0_AddressU_2_AddressV_2), input_0.xy);
-	    vec4 _20360 = texture(sampler2D(g_tWear, Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0), input_1.xy);
+	    vec4 _18993 = texture(sampler2D(g_tMasks, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), input_0.xy);
+	    vec4 _20360 = texture(sampler2D(g_tWear, AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21), input_1.xy);
 	    float _7656 = _18993.x;
 	    float _11437 = _18993.y;
 	    float _12425 = _18993.z;
 	    float _10779 = mix(mix(mix(_Globals_.g_vPaintDurability.x, _Globals_.g_vPaintDurability.y, _7656), _Globals_.g_vPaintDurability.z, _11437), _Globals_.g_vPaintDurability.w, _12425);
 	    float _4693 = _Globals_.g_fWearSoftness * _10779;
 	    float _22167 = smoothstep(0.579999983310699462890625 - _4693, 0.680000007152557373046875 + _4693, ((_18992.w + (_20360.x * _4306)) * ((_Globals_.g_flWearAmount * 6.0) + 1.0)) * _10779);
-	    vec4 _9437 = texture(sampler2D(g_tGrunge, Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0), input_1.zw);
+	    vec4 _9437 = texture(sampler2D(g_tGrunge, AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21), input_1.zw);
 	    vec4 _16529 = mix(vec4(1.0), _9437, vec4((pow(1.0 - _4306, 4.0) * 0.25) + (0.75 * _Globals_.g_flWearAmount)));
 	    float _7177 = mix(mix(mix(_Globals_.g_vPaintMetalness.x, _Globals_.g_vPaintMetalness.y, _7656), _Globals_.g_vPaintMetalness.z, _11437), _Globals_.g_vPaintMetalness.w, _12425);
 	    bool _14874 = _Globals_.bRoughnessMode != 0;
 	    vec4 _7424;
 	    if (_14874)
 	    {
-	        vec4 _19391 = texture(sampler2D(g_tMetalness, Filter_21_AllowGlobalMipBiasOverride_0_AddressU_2_AddressV_2), input_0.xy);
+	        vec4 _19391 = texture(sampler2D(g_tMetalness, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), input_0.xy);
 	        _19391.x = _19391.x;
 	        float _20271;
 	        if (_Globals_.g_bRoughnessPerColor != 0)
@@ -1235,14 +1235,14 @@ PS
 	        vec3 _21103 = _13063.xyz * _16529.xyz;
 	        vec3 _21271 = normalize(max(vec3(0.0003000000142492353916168212890625), _21103.xyz));
 	        vec3 _23898 = mix(_Globals_.g_vPaintAlbedoLevels.xyz, _Globals_.g_vMetallicPaintAlbedoLevels.xyz, vec3(_7177));
-	        vec3 _25172 = mix(mix(_21103, ((_21271.xyz * mix(min(_23898.x, dot(_13063.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), _23898.z, clamp(pow(max(_21103.x, max(_21103.y, _21103.z)), _23898.y), 0.0, 1.0))) / vec3(max(_21271.x, max(_21271.y, _21271.z)))).xyz, vec3(_Globals_.g_flWearAmount)), texture(sampler2D(g_tColor, Filter_21_AllowGlobalMipBiasOverride_0_AddressU_2_AddressV_2), input_0.xy).xyz, vec3(_22167));
+	        vec3 _25172 = mix(mix(_21103, ((_21271.xyz * mix(min(_23898.x, dot(_13063.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), _23898.z, clamp(pow(max(_21103.x, max(_21103.y, _21103.z)), _23898.y), 0.0, 1.0))) / vec3(max(_21271.x, max(_21271.y, _21271.z)))).xyz, vec3(_Globals_.g_flWearAmount)), texture(sampler2D(g_tColor, AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_21), input_0.xy).xyz, vec3(_22167));
 	        _22401 = vec4(_25172, 1.0);
 	    }
 	    else
 	    {
 	        _22401 = _7424;
 	    }
-	    vec4 _3401 = texture(sampler2D(g_tGlitterNormal, Filter_21_AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0), input_0.xy);
+	    vec4 _3401 = texture(sampler2D(g_tGlitterNormal, AddressU_0_AddressV_0_AllowGlobalMipBiasOverride_0_Filter_21), input_0.xy);
 	    vec4 _6805;
 	    if (_3401.w < 0.0)
 	    {

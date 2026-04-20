@@ -100,7 +100,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tNoise : register(t30, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0 : register(s15, space1);
 	Texture2D<float4> g_tFrameBuffer : register(t31, space1);
 	
 	static float2 input_0;
@@ -126,9 +126,9 @@ PS
 	    float _10920 = _6250 - fmod(_6250, _14384);
 	    float _17855 = _4328.y;
 	    float _9668 = _17855 - fmod(_17855, _14384);
-	    float4 _19372 = g_tNoise.Sample(Filter_0_AddressU_2_AddressV_2, float2(_10920 + _Globals_1_g_Const0.y, _9668 + _Globals_1_g_Const0.z).xy);
+	    float4 _19372 = g_tNoise.Sample(AddressU_2_AddressV_2_Filter_0, float2(_10920 + _Globals_1_g_Const0.y, _9668 + _Globals_1_g_Const0.z).xy);
 	    float _5582 = _19372.x * _Globals_1_g_Const0.x;
-	    float4 _3401 = g_tFrameBuffer.Sample(Filter_0_AddressU_2_AddressV_2, (float2(_10920, _9668) + (_5582 * 0.00999999977648258209228515625f).xx).xy);
+	    float4 _3401 = g_tFrameBuffer.Sample(AddressU_2_AddressV_2_Filter_0, (float2(_10920, _9668) + (_5582 * 0.00999999977648258209228515625f).xx).xy);
 	    float3 _8371 = _5582.xxx;
 	    float3 _21602 = lerp(_3401.xyz + _8371, _8371, _Globals_1_g_Const0.x.xxx);
 	    float3 _6979 = lerp(_21602, dot(_21602, float3(0.300000011920928955078125f, 0.589999973773956298828125f, 0.10999999940395355224609375f)).xxx, 0.60000002384185791015625f.xxx) * (abs(sin(_17855 * 900.0f) * 0.300000011920928955078125f) + 0.800000011920928955078125f);

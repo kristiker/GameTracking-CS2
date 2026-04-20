@@ -160,7 +160,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tZeroth_Moment : register(t31, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20 : register(s15, space1);
 	Texture2D<float4> g_tMoments : register(t32, space1);
 	Texture2D<float4> g_tMoments_Extra : register(t33, space1);
 	
@@ -184,9 +184,9 @@ PS
 	void MainPs_inner()
 	{
 	    float2 _13326 = (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy;
-	    output_0 = g_tZeroth_Moment.SampleLevel(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _13326, 0.0f);
-	    output_1 = g_tMoments.SampleLevel(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _13326, 0.0f);
-	    output_2 = g_tMoments_Extra.SampleLevel(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _13326, 0.0f);
+	    output_0 = g_tZeroth_Moment.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, _13326, 0.0f);
+	    output_1 = g_tMoments.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, _13326, 0.0f);
+	    output_2 = g_tMoments_Extra.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, _13326, 0.0f);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

@@ -113,13 +113,14 @@
 .?AVIShaderReloadListener@@
 .?AVIVPhysicsLegacyKeyHandler@@
 .vmdl
-2\vpTq
+2\vpd
+2\vpde
 2_BONE_IK
 8a\v6;
 <pair_a> 
 <pair_b> 
 =3vmdlkeys4
->nL\r>nL\r>nL\r>nL\r
+=CAnimFoot
 ?expf
 A8_UNORM
 ATTACHMENT_INFLUENCE_FLAGS_NONE
@@ -174,11 +175,11 @@ BoneConstraintRbf :: Cannot find output bone "%s" :: %s\n
 BoneConstraintRbf :: Invalid input %d or output %d bone count :: %s\n
 BoneConstraintRbf :: input bone count %d != input pose count %d :: %s\n
 BoneConstraintRbf :: output bone count %d != output pose count %d :: %s\n
-C:\buildworker\csgo_rel_win64\build\_build_\meshsystem\_vpc_meshsystem\default\win64\_msvc_\Retail\meshsystem.pdb
-C:\buildworker\csgo_rel_win64\build\src\meshsystem\meshinstance_imp.cpp
-C:\buildworker\csgo_rel_win64\build\src\meshsystem\meshsystem.cpp
-C:\buildworker\csgo_rel_win64\build\src\meshsystem\meshutils.cpp
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
+C:\buildworker\cs2_beta_win64\build\_build_\meshsystem\_vpc_meshsystem\default\win64\_msvc_\Retail\meshsystem.pdb
+C:\buildworker\cs2_beta_win64\build\src\meshsystem\meshinstance_imp.cpp
+C:\buildworker\cs2_beta_win64\build\src\meshsystem\meshsystem.cpp
+C:\buildworker\cs2_beta_win64\build\src\meshsystem\meshutils.cpp
+C:\buildworker\cs2_beta_win64\build\src\public\tier0\utlblockvector.h
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 CAssociateResourceBlockLoader::LoadInternal: Skipping compile of %s\n
 CAttachmentNameSymbolWithStorage
@@ -194,8 +195,8 @@ CModelAnimNameWithDeltas
 CModelAttachmentName
 CModelBodyGroupName
 CModelBoneName
-CModelEmbeddedMesh_t
 CModelMaterialGroupName
+CModelMeshBufferData_t
 CModelTypeManager::FinalizeResource
 CModelTypeManager::GetErrorResource(117): GetErrorModel() called before error model exists!\n
 CParentAttachmentName
@@ -264,6 +265,7 @@ InputLayoutBuilder
 JIGGLE_BONE
 KV3 load transfer failed for mesh '%s': %s\n
 KeyValues3
+Lean
 LightmapUV
 LightmapUVW
 LoadModelSyncNoExtrefs - AllocateResource failed\n
@@ -318,6 +320,7 @@ PerVertexLighting
 Physics
 PivotPaint
 PooledLayout
+PosXyz
 Prints the bind pose of the specified model. Optionally limits to a particular bone and its parent chain, otherwise prints the entire skeleton.
 ProjectedSceneObjectDesc
 PropWorldOrigin
@@ -381,11 +384,15 @@ RESOURCE_TYPE_MODEL
 RESOURCE_TYPE_MORPHSET_INTERNAL
 RESOURCE_TYPE_RENDERMESH_INTERNAL
 ROTATION
+RSDS3;
 RayTracingEnvironment::RefineNode
 RayTracingEnvironment::RefineNodeJob
 Rejecting load for legacy model: '%s'\n
+RelQ0
 SceneSystem/ComputeShaderSkinning
+SegmentLength
 SequenceGroupResourceData_t
+Stop/Start Planted Turn
 TILT_TWIST
 TWIST
 TanFrameQuat
@@ -397,12 +404,10 @@ TypeManager
 USAGE: print_model_bind_pose <vmdl_name> [bone_name]\n
 Unable to load tools vb block (%s: %d)\n
 Unable to read resource file %s!\n
-Unhandled vertex format %i for vertex attribute %s%i\n
 Untested code path - Morph layers without morphset/flex rules. Will try to map model flex controllers directly to cloth morph layers
 VModelError
 VectorAligned
 VertexElementAnnotation
-VertexGenericIntegerData
 VertexPaintBlendParams
 VertexPaintBlendParams1
 VertexPaintTintColor
@@ -414,7 +419,7 @@ X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
 [idx=%d] "%s"
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-_bentnormal
+_VertexGenericIntegerData
 acosf
 angularburst
 anim_data_block
@@ -422,6 +427,7 @@ anim_graph_resource
 bOwnVBAndIB == m_bOwnVBAndIB && m_pFixedMeshDataOverride
 bShaderBlended
 b\vP\n0
+bentnormal
 blendindices
 blendweight
 blendweights
@@ -437,6 +443,8 @@ compressedtangentframe
 curvature
 data_block
 distancefield_data_block
+eLean
+eUseStartAsPlantedTurn
 embedded_animation
 embedded_distancefield
 embedded_meshes
@@ -484,6 +492,7 @@ m_influenceFlags
 m_morphSet
 m_nBodyGroupChoice
 m_nBodyGroupIndex
+m_nMeshoptMeshletEncodeVersion
 m_nParentBoneNameHash
 m_nResX
 m_nResY

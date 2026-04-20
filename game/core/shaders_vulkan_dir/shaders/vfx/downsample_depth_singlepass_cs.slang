@@ -58,7 +58,7 @@ CS
 	};
 	
 	Texture2D<float4> g_tSrcDepth : register(t30, space0);
-	SamplerState Filter_0_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0 : register(s14, space0);
+	SamplerState AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_0 : register(s14, space0);
 	RWTexture2D<float4> _3043 : register(u158, space0);
 	
 	static uint3 gl_WorkGroupID;
@@ -73,10 +73,10 @@ CS
 	{
 	    int2 _5754 = (int2(uint2((((gl_LocalInvocationID.x) & 1u) | (((gl_LocalInvocationID.x >> uint(3)) & 3u) << uint(1))) | (((gl_LocalInvocationID.x >> uint(7)) & 1u) << uint(3)), ((gl_LocalInvocationID.x >> uint(1)) & 3u) | (((gl_LocalInvocationID.x >> uint(5)) & 3u) << uint(2)))) * int2(4, 4)) + int2(gl_WorkGroupID.xy * uint2(64u, 64u));
 	    float2 _11517 = float2(_5754) * _Globals_1_g_vInvSrcSize;
-	    float4 _24999 = g_tSrcDepth.GatherRed(Filter_0_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, _11517, int2(1, 1));
-	    float4 _25000 = g_tSrcDepth.GatherRed(Filter_0_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, _11517, int2(3, 1));
-	    float4 _25001 = g_tSrcDepth.GatherRed(Filter_0_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, _11517, int2(1, 3));
-	    float4 _21268 = g_tSrcDepth.GatherRed(Filter_0_AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0, _11517, int2(3, 3));
+	    float4 _24999 = g_tSrcDepth.GatherRed(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_0, _11517, int2(1, 1));
+	    float4 _25000 = g_tSrcDepth.GatherRed(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_0, _11517, int2(3, 1));
+	    float4 _25001 = g_tSrcDepth.GatherRed(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_0, _11517, int2(1, 3));
+	    float4 _21268 = g_tSrcDepth.GatherRed(AddressU_2_AddressV_2_AllowGlobalMipBiasOverride_0_Filter_0, _11517, int2(3, 3));
 	    int2 _5189 = _5754 >> int2(1, 1);
 	    _3043[uint2(_5189)] = max(max(_24999.w, _24999.z), max(_24999.x, _24999.y)).xxxx;
 	    _3043[uint2(_5189 + int2(1, 0))] = max(max(_25000.w, _25000.z), max(_25000.x, _25000.y)).xxxx;

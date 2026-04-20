@@ -20,15 +20,15 @@
 .?AVCVConsoleModuleMappingListener@@
 .?AVIModuleMappingListener@@
 .?AVIVConComm@@
-2\vppr
+2\vp0(
 <Unknown Shutdown Context>
 =============== End VConsole Buffered Messages ===============\n
 =============== Prior Messages Discarded at %d bytes ===============\n
 =============== VConsole Buffered Messages ===============\n
 ==============================================================\n
 ==========================================================\n
-C:\buildworker\csgo_rel_win64\build\_build_\vconcomm\_vpc_vconcomm\default\win64\_msvc_\Retail\vconcomm.pdb
-C:\buildworker\csgo_rel_win64\build\src\vconcomm\vconcomm.cpp
+C:\buildworker\cs2_beta_win64\build\_build_\vconcomm\_vpc_vconcomm\default\win64\_msvc_\Retail\vconcomm.pdb
+C:\buildworker\cs2_beta_win64\build\src\vconcomm\vconcomm.cpp
 CTSQueue<struct VConCommMessage_t *,0>::Push
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
@@ -58,8 +58,6 @@ No VConsole, Ignoring.\n
 PID %d @ %s\n
 QWidget
 QWindowIcon
-RSDS#
-R\fppr
 Rejecting registering message '%s'. Already registered to an alternate handler.\n
 SetHandleInformation
 TCP Local Port %d, Remote Port %d (State %d)\n
@@ -82,7 +80,6 @@ arg%d
 arg0
 commandline
 iphlpapi.dll
-r\vppr
 vc_exit %s
 vcon_clear_buffered_log
 vcon_clients

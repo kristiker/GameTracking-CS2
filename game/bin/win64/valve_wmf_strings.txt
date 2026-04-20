@@ -8,9 +8,9 @@
 .?AVIMediaFoundation@@
 2\vp0
 2\vp`b
+4cKeI
 7^d[L
->UOp
-C:\buildworker\csgo_rel_win64\build\_build_\valve_wmf\_vpc_valve_wmf\default\win64\_msvc_\Retail\valve_wmf.pdb
+C:\buildworker\cs2_beta_win64\build\_build_\valve_wmf\_vpc_valve_wmf\default\win64\_msvc_\Retail\valve_wmf.pdb
 MFCreateMediaType
 MFCreateMediaType( &pAudioTypeIn )
 MFCreateMediaType( &pAudioTypeOut )
@@ -31,6 +31,7 @@ MFSetAttributeSize( pVideoTypeIn.Get(), MF_MT_FRAME_SIZE, params.m_nWidth, param
 MFSetAttributeSize( pVideoTypeOut.Get(), MF_MT_FRAME_SIZE, params.m_nWidth, params.m_nHeight )
 MFShutdown
 MFStartup
+RSDS\r]
 R\fp0
 YUY2
 p6auds

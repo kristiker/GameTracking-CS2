@@ -104,7 +104,7 @@ PS
 	// SPIR-V source (612 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	Texture2D<float4> g_tPanoLayer : register(t30, space1);
-	SamplerState Filter_85_MaxAniso_8_AllowGlobalMipBiasOverride_0 : register(s14, space1);
+	SamplerState AllowGlobalMipBiasOverride_0_Filter_85_MaxAniso_8 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -121,7 +121,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = g_tPanoLayer.Sample(Filter_85_MaxAniso_8_AllowGlobalMipBiasOverride_0, input_0.xy);
+	    output_0 = g_tPanoLayer.Sample(AllowGlobalMipBiasOverride_0_Filter_85_MaxAniso_8, input_0.xy);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

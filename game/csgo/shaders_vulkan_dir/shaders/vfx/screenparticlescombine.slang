@@ -100,7 +100,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tScreenParticles : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20 : register(s15, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -117,7 +117,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = g_tScreenParticles.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy);
+	    output_0 = g_tScreenParticles.Sample(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

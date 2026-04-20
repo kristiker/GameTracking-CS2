@@ -63,7 +63,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
@@ -293,7 +292,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tFlashbangFrame : register(t55, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s18, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0 : register(s18, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -351,7 +350,7 @@ PS
 	    {
 	        _19456 = _9358.z;
 	    }
-	    float3 _13437 = (pow(g_tFlashbangFrame.SampleLevel(Filter_0_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 2.2000000476837158203125f.xxx).xyz * _21709).xyz * 4.0f;
+	    float3 _13437 = (pow(g_tFlashbangFrame.SampleLevel(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_0, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 2.2000000476837158203125f.xxx).xyz * _21709).xyz * 4.0f;
 	    float4 _8673;
 	    _8673.x = _13437.x;
 	    _8673.y = _13437.y;

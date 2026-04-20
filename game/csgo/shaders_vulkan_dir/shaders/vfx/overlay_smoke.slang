@@ -110,7 +110,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tSmokeAccum : register(t30, space1);
-	SamplerState Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0 : register(s15, space1);
+	SamplerState AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20 : register(s15, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -131,7 +131,7 @@ PS
 	    float _14222 = 0.0500000007450580596923828125f / _4384;
 	    float _21970 = 0.949999988079071044921875f / _4384;
 	    float4 _11368 = input_0.y.xxxx;
-	    float4 _6452 = lerp(lerp(g_tSmokeAccum.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _14222.xx), g_tSmokeAccum.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, float2(_14222, _21970)), _11368), lerp(g_tSmokeAccum.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, float2(_21970, _14222)), g_tSmokeAccum.Sample(Filter_20_AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0, _21970.xx), _11368), input_0.x.xxxx);
+	    float4 _6452 = lerp(lerp(g_tSmokeAccum.Sample(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, _14222.xx), g_tSmokeAccum.Sample(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, float2(_14222, _21970)), _11368), lerp(g_tSmokeAccum.Sample(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, float2(_21970, _14222)), g_tSmokeAccum.Sample(AddressU_2_AddressV_2_AddressW_2_AllowGlobalMipBiasOverride_0_Filter_20, _21970.xx), _11368), input_0.x.xxxx);
 	    output_0 = float4(_6452.xyz, smoothstep(0.0f, 0.949999988079071044921875f, _6452.w));
 	}
 	

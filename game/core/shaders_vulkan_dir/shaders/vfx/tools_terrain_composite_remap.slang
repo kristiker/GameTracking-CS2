@@ -107,7 +107,7 @@ PS
 	};
 	
 	Texture2D<float4> g_tInput : register(t30, space1);
-	SamplerState Filter_0_AddressU_2_AddressV_2 : register(s14, space1);
+	SamplerState AddressU_2_AddressV_2_Filter_0 : register(s14, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -124,7 +124,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = lerp(_Globals_1_g_vOutputMin.xxxx, _Globals_1_g_vOutputMax.xxxx, min(1.0f.xxxx, max(0.0f.xxxx, g_tInput.Sample(Filter_0_AddressU_2_AddressV_2, input_0.xy) - _Globals_1_g_vInputMin.xxxx) / (_Globals_1_g_vInputMax - _Globals_1_g_vInputMin).xxxx));
+	    output_0 = lerp(_Globals_1_g_vOutputMin.xxxx, _Globals_1_g_vOutputMax.xxxx, min(1.0f.xxxx, max(0.0f.xxxx, g_tInput.Sample(AddressU_2_AddressV_2_Filter_0, input_0.xy) - _Globals_1_g_vInputMin.xxxx) / (_Globals_1_g_vInputMax - _Globals_1_g_vInputMin).xxxx));
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)
