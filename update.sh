@@ -33,6 +33,21 @@ do
 		DUMPER_EXIT_CODE=$?
 	fi
 done <   <(find . -type f -name "pak01_dir.vpk" -print0)
+
+while IFS= read -r -d '' file
+do
+	echo " $file"
+
+	"$VRF_PATH" \
+		--input "$file" \
+		--output "$(echo "$file" | sed -e 's/\.vpk$/\//g')" \
+		--vpk_cache \
+		--vpk_decompile \
+		--vpk_extensions "vcs"
+	if [[ "$DUMPER_EXIT_CODE" -eq 0 ]] && [[ $? -ne 0 ]]; then
+		DUMPER_EXIT_CODE=$?
+	fi
+done <   <(find . -type f -name "shaders_vulkan_dir.vpk" -print0)
 set -e
 
 echo "::endgroup::"
